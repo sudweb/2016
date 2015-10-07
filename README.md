@@ -12,10 +12,17 @@ Sous Mac OS X, vous pouvez l'installer simplement via Homebrew
 ```bash
 $ brew install rbenv ruby-build
 ```
-
-Pour connaître votre version de Ruby :
+Pour installer la verion 2.2.3 de Ruby
 ```bash
-ruby --version
+$ rbenv install 2.2.3
+```
+Pour définir la version utilisée localement pour l'application:
+```bash
+$ rbenv local 2.2.3
+```
+Pour vérifier la version de Ruby utilisée :
+```bash
+rbenv version
 ruby 2.2.3
 ```
 
