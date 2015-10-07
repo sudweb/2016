@@ -4,3 +4,5 @@ description: Deux journées de conférences web pour faire le plein d'inspiratio
 baseurl: /2016
 permalink: /:title/
 timezone: Europe/Paris
+sass:
+    sass_dir: _sass
