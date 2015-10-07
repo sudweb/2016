@@ -1,0 +1,6 @@
+url: http://sudweb.fr/2016
+name: Sud Web 2016, Bordeaux
+description: Deux journées de conférences web pour faire le plein d'inspiration, les 17 et 18 mai 2016 à Bordeaux.
+baseurl: /2016
+permalink: /:title/
+timezone: Europe/Paris
