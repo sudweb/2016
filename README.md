@@ -8,11 +8,16 @@ Site internet du cycle de conférences annuel Sud Web, dont la 6e édition aura 
 Vous devez avoir une version de Ruby supérieure à la version 2 sur votre machine.
 Nous vous recommandons de gérer l'installation de Ruby via [rbenv](http://rbenv.org/).
 
+Sous Mac OS X, vous pouvez l'installer simplement via Homebrew
+```bash
+$ brew install rbenv ruby-build
+```
+
 Pour connaître votre version de Ruby :
 ```bash
 ruby --version
 ruby 2.2.3
-``
+```
 
 ## Installation
 
