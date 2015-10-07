@@ -30,6 +30,23 @@ Puis exécutez la commande suivante pour installer [Jekyll](http://jekyllrb.com/
 ```bash
 bundle install
 ```
+## Utilisation
+
+Pour travailler sur le site et surveiller les modifications :
+```bash
+$ jekyll serve
+Configuration file: <LOCAL_PATH>/2016/_config.yml
+            Source: <LOCAL_PATH>/2016
+       Destination: <LOCAL_PATH>/2016/_site
+      Generating...
+                    done.
+ Auto-regeneration: enabled for \'<LOCAL_PATH>/2016\'
+Configuration file: <LOCAL_PATH>/2016/_config.yml
+    Server address: http://0.0.0.0:4000/2016/
+  Server running... press ctrl-c to stop.
+```
+
+
 
 Pour plus d'information sur l'utilisation de Jekyll, reportez-vous à la [documentation officielle](http://jekyllrb.com/docs/home/).
 
