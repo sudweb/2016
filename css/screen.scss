@@ -6,7 +6,26 @@
 @import "vendor/neat/neat";
 
 body {
+  font: 400 100%/1.4 "Open Sans", sans-serif;
+}
+
+header {
+  @include outer-container;
+  text-align: center;
+  padding: 2em;
   background: #5F021F;
   color: white;
+
+  .logo img {
+    max-width: 280px;
+  }
+}
+
+.subtitle {
   text-align: center;
+}
+
+h1 {
+    @include span-columns(6);
+    @include shift(3);
 }
