@@ -2,9 +2,6 @@
 ---
 
 @import "normalize";
-
-body {
-  background: #5F021F;
-  color: white;
-  text-align: center;
-}
+@import "bourbon/bourbon";
+@import "neat/neat";
+@import "base/base";
