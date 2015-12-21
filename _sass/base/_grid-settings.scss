@@ -9,5 +9,9 @@ $visual-grid:true;
 // $max-width: 1200px;
 
 // Define your breakpoints
-$tablet: new-breakpoint(max-width 768px 8);
-$mobile: new-breakpoint(max-width 480px 4);
+$first-breakpoint-value: 32em;
+$second-breakpoint-value: 48em;
+
+$small-viewport: new-breakpoint(max-width $first-breakpoint-value 4);
+$medium-viewport: new-breakpoint(min-width $first-breakpoint-value + 0.1 max-width $second-breakpoint-value 8);
+$large-viewport: new-breakpoint(min-width $second-breakpoint-value + 0.1);
