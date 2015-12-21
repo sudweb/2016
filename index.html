@@ -2,3 +2,15 @@
 layout: page
 title: Sud Web, les 27 et 28 mai 2016 à Bordeaux
 ---
+
+{% for post in paginator.posts limit:1 %}
+<article class="post">
+  <h2 class="post-title">
+    <a href="{{ site.baseurl }}{{ post.url }}">
+      {{ post.title }}
+    </a>
+  </h2>
+
+  {{ post.content }}
+</article>
+{% endfor %}
