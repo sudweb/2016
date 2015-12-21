@@ -1,14 +1,11 @@
 ---
 ---
 
-@import "vendor/bourbon/bourbon";
-@import "grid-settings";
-@import "vendor/neat/neat";
+//@import "normalize";
+@import "bourbon/bourbon";
+@import "base/base";
+@import "neat/neat";
 @import "config";
-
-body {
-  font: 400 100%/1.4 "Open Sans", sans-serif;
-}
 
 header {
   @include outer-container;
@@ -20,6 +17,10 @@ header {
   .logo img {
     max-width: 280px;
   }
+}
+
+footer {
+
 }
 
 .subtitle {
