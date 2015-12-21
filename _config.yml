@@ -12,3 +12,4 @@ collections:
   talks:
     output: true
     order: date asc
+    permalink: /talks/:path/
