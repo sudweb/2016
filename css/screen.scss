@@ -11,7 +11,7 @@ header {
   @include outer-container;
   text-align: center;
   padding: 2em;
-  background: palette(primary);
+  background: $secondary-background-color;
   color: white;
 
   .logo img {
@@ -19,15 +19,51 @@ header {
   }
 }
 
-footer {
-
+a:hover {
+  text-decoration: underline;
 }
 
-.subtitle {
+main {
+  @include outer-container;
+}
+
+.posts {
+  max-width: 32em;
+  margin: auto;
+  text-align: justify;
+}
+
+.sponsors {
+  @include outer-container;
   text-align: center;
+
+// responsive element example, breakpoints are defined in _sass/base/_grid-settings.scss
+
+  li {
+    margin-bottom: $base-spacing;
+
+    @include media($medium-viewport) {
+      @include span-columns(4);
+      @include omega();
+    }
+
+    @include media($large-viewport) {
+      @include span-columns(4);
+    }
+  }
+
 }
 
-h1 {
-    @include span-columns(6);
-    @include shift(3);
+.main-footer {
+  @include outer-container;
+  padding-top: $small-spacing;
+  background: $dark-gray;
+  color: white;
+  a {
+    color: $orange;
+  }
+  ul,
+  p {
+    margin: $small-spacing;
+  }
 }
