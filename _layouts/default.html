@@ -1,0 +1,15 @@
+{% include head.html %}
+
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">Vous utilisez un navigateur <strong>obsolete</strong>. Merci de <a href="http://browsehappy.com/">mettre à jour votre navigateur</a> pour bénéficier d'une meilleure expérience.</p>
+        <![endif]-->
+        {% include header.html %}
+
+        {{ content }}
+
+        {% include sponsors.html %}
+        {% include footer.html %}
+        {% include analytics.html %}
+    </body>
+</html>
