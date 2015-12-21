@@ -3,6 +3,7 @@ name: Sud Web 2016, Bordeaux
 description: Deux journées pour faire le plein d'inspiration, les 27 et 28 mai 2016 à Bordeaux.
 baseurl: /2016
 permalink: /:title/
+paginate: 5
 timezone: Europe/Paris
 sass:
     sass_dir: _sass
