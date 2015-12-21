@@ -8,3 +8,7 @@ timezone: Europe/Paris
 sass:
     sass_dir: _sass
 google_analytics_id: UA-22076213-1
+collections:
+  talks:
+    output: true
+    order: date asc

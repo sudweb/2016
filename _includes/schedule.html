@@ -1,0 +1,13 @@
+<ul>
+  {% for talk in site.talks limit:4 %}
+    <li>
+      <h3><a href="{{ talk.url | prepend:"/2016/" }}">{{ talk.title }}</a></h3>
+      {% for speaker in talk.speaker %}
+      <img src="{{ speaker.avatar }}" alt="">
+      <p><a href="http://twitter.com/{{ speaker.twitter }}">{{ speaker.name }}</a></p>
+      {% endfor %}
+      <p> {{ talk.date | date: "%Hh%M" }}</p>
+      <p>{{ talk.description }}</p>
+    </li>
+  {% endfor %}
+</ul>
