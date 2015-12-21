@@ -5,21 +5,56 @@
 @import "bourbon/bourbon";
 @import "base/base";
 @import "neat/neat";
-@import "config";
+
+body {
+  color: #fff;
+  background: $red;
+}
 
 header {
   @include outer-container;
   text-align: center;
   padding: 2em;
-  background: palette(primary);
   color: white;
 
   .logo img {
     max-width: 280px;
+    width: 100%;
+  }
+}
+
+.sponsors {
+  ul {
+    @include outer-container;
+  }
+  li {
+    @include span-columns(3);
+    @include omega(3);
+    text-align: center;
+  }
+  a {
+    display: block;
   }
 }
 
 footer {
+  padding: $base-line / 2;
+  @include outer-container;
+  ul {
+    margin-bottom: $base-line;
+    text-align: center;
+  }
+
+  li {
+    display: inline-block;
+    margin: $base-line/2;
+    min-width: 300px;
+  }
+
+  li a {
+    width: 100%;
+    text-align: center;
+  }
 
 }
 
