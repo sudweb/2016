@@ -1,0 +1,28 @@
+
+$color-primary    : #e84538;
+$color-secondary  : #ffa900;
+
+// Déclartion dela palette de couleur
+$palettes: (
+    primary: (
+        base:   $color-primary,
+        light:  mix(white, $color-primary, 30%),
+        dark:   mix(black, $color-primary, 30%)
+    ),
+    secondary: (
+        base:   #ffa900,
+        light:  mix(white, $color-secondary, 30%),
+        dark:   mix(black, $color-secondary, 30%)
+    ),
+    grey: (
+        base:  #595959,
+        light: #b6b6b6,
+        dark: #353535
+    )
+);
+
+// Mixin d'appel de la palette couleur à déplacer éventuellement
+
+@function palette($palette, $tone: 'base') {
+    @return map-get(map-get($palettes, $palette), $tone);
+}

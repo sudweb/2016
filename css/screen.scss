@@ -4,6 +4,7 @@
 @import "vendor/bourbon/bourbon";
 @import "grid-settings";
 @import "vendor/neat/neat";
+@import "config";
 
 body {
   font: 400 100%/1.4 "Open Sans", sans-serif;
@@ -13,7 +14,7 @@ header {
   @include outer-container;
   text-align: center;
   padding: 2em;
-  background: #5F021F;
+  background: palette(primary);
   color: white;
 
   .logo img {
