@@ -1,0 +1,11 @@
+<section class="sponsors">
+  <ul>
+      {% for sponsor in site.data.sponsors %}
+      <li>
+        <a href="{{ sponsor.website }}">
+          {{ sponsor.name }}
+        </a>
+      </li>
+      {% endfor %}
+</ul>
+</section>
