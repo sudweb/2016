@@ -8,7 +8,6 @@ gem 'github-pages', versions['github-pages']
 gem 'foreman'
 
 group :test do
-  gem 'jekyll'
   gem 'html-proofer'
   gem 'rake'
 end

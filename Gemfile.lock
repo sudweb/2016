@@ -156,7 +156,6 @@ DEPENDENCIES
   foreman
   github-pages (= 40)
   html-proofer
-  jekyll
   json
   rake
 
