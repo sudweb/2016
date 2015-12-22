@@ -12,3 +12,4 @@ Inscrivez-vous à notre lettre d’information pour être prévenu de la publica
 La journée du vendredi est également rythmée avec des conférences courtes, où il faut faire passer un message en 5 minutes. On compte sur vous pour nous étonner.
 
 <a href="https://docs.google.com/forms/d/1ciKJyvHSYDA_qK3nGBuJLMoP5UeqOpMQk5NJ631Uvko/viewform" class="button-large" type="button">Proposez un sujet</a>
+[Inscrivez-vous à notre lettre d’information]({{ site.newsletter.url }}) pour être prévenu de la publication du programme, courant février.
