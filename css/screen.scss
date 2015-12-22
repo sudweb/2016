@@ -6,13 +6,15 @@
 @import "base/base";
 @import "neat/neat";
 
+$max-width: 1088px;
+
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // En-tête de la page
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 header {
-  @include outer-container;
+  
   text-align: center;
   padding: 2em;
   background: $secondary-background-color;
@@ -42,10 +44,14 @@ main {
   @include outer-container;
 }
 
+
+// Du coup avec Neat tu peux pas center un élément sans qu'il soit flottant
 .posts {
-  max-width: 32em;
   margin: $base-spacing auto $base-spacing*2;
   text-align: justify;
+  @include media($large-viewport) {
+    width: flex-grid(1,2);
+  };
 }
 
 
@@ -62,19 +68,36 @@ main {
 
 // responsive element example, breakpoints are defined in _sass/base/_grid-settings.scss
 
+//   li {
+//     margin-bottom: $base-spacing;
+
+//     @include media($medium-viewport) {
+//       @include span-columns(4);
+//       @include omega();
+//     }
+
+//     @include media($large-viewport) {
+//       @include span-columns(4);
+//     }
+//   }
+
+// Ou Bien
+
   li {
-    margin-bottom: $base-spacing;
-
-    @include media($medium-viewport) {
-      @include span-columns(4);
-      @include omega();
-    }
-
+    display: inline-block;
+    margin: 0 $small-spacing $base-spacing;
+    width: 100%;
+    vertical-align: middle;
     @include media($large-viewport) {
-      @include span-columns(4);
-    }
+      width: flex-grid(1,3);
+    };
   }
+
 }
+
+
+
+
 
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
