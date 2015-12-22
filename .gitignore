@@ -30,3 +30,6 @@ node_modules
 _site/
 .sass-cache/
 .jekyll-metadata
+
+# node-waf configuration
+.DS_Store

@@ -6,6 +6,11 @@
 @import "base/base";
 @import "neat/neat";
 
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// En-tête de la page
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 header {
   @include outer-container;
   text-align: center;
@@ -19,9 +24,19 @@ header {
   }
 }
 
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Styles principaux
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 a:hover {
   text-decoration: underline;
 }
+
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Contenu
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 main {
   @include outer-container;
@@ -32,6 +47,11 @@ main {
   margin: $base-spacing auto $base-spacing*2;
   text-align: justify;
 }
+
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Sponsors
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .sponsors {
   text-align: center;
@@ -55,6 +75,11 @@ main {
     }
   }
 }
+
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Pied de page
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 footer {
   background: $dark-gray;
