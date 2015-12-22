@@ -15,3 +15,4 @@ collections:
     output: true
     order: date asc
     permalink: /talks/:path/
+exclude: [Gemfile, Gemfile.lock, Procfile]
