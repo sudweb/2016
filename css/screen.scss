@@ -5,6 +5,7 @@
 @import "bourbon/bourbon";
 @import "base/base";
 @import "neat/neat";
+@import "pulse";
 
 // Note : Breakpoints can be defined in _sass/base/_grid-settings.scss
 
@@ -27,6 +28,9 @@
       img {
         max-width: 280px;
         width: 100%;
+      }
+      &:hover {
+        @include unique-pulse();
       }
   }
 
