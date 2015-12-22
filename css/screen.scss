@@ -5,7 +5,6 @@
 @import "bourbon/bourbon";
 @import "base/base";
 @import "neat/neat";
-@import "config";
 
 header {
   @include outer-container;
@@ -16,6 +15,7 @@ header {
 
   .logo img {
     max-width: 280px;
+    width: 100%;
   }
 }
 
@@ -29,13 +29,16 @@ main {
 
 .posts {
   max-width: 32em;
-  margin: auto;
+  margin: $base-spacing auto $base-spacing*2;
   text-align: justify;
 }
 
 .sponsors {
-  @include outer-container;
   text-align: center;
+
+  ul {
+    @include outer-container;
+  }
 
 // responsive element example, breakpoints are defined in _sass/base/_grid-settings.scss
 
@@ -51,19 +54,30 @@ main {
       @include span-columns(4);
     }
   }
-
 }
 
-.main-footer {
-  @include outer-container;
-  padding-top: $small-spacing;
+footer {
   background: $dark-gray;
   color: white;
-  a {
-    color: $orange;
+  padding: $small-spacing;
+
+  text-align: center;
+
+  ul {
+    @include outer-container;
+    margin-bottom: $small-spacing;
   }
-  ul,
-  p {
+
+  li {
     margin: $small-spacing;
+
+    @include media($large-viewport) {
+      display: inline-block;
+    };
+  }
+
+  li a {
+    width: 100%;
+    text-align: center;
   }
 }
