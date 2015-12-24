@@ -1,11 +1,13 @@
 # Sud Web 2016
 
+[![Build Status](https://travis-ci.org/sudweb/2016.svg)](https://travis-ci.org/sudweb/2016)
+
 Site internet du cycle de conférences annuel Sud Web, dont la 6e édition aura lieu à Bordeaux les 27 et 28 mai 2016.
 
 [http://sudweb.fr/2016](http://sudweb.fr/2016)
 
 ## Pré-requis
-Le site est géré via [Github Pages](https://pages.github.com/) et [Jekyll](http://jekyllrb.com/) et nécessite donc Ruby version 2.1.x.
+Le site est géré via [Github Pages](https://pages.github.com/) et [Jekyll](http://jekyllrb.com/) et nécessite Ruby 2.1.x
 
 Nous vous recommandons de gérer l'installation de Ruby via [rbenv](http://rbenv.org/).
 
@@ -48,7 +50,12 @@ Pour travailler sur le site et surveiller les modifications :
 ```bash
 $ bundle exec foreman start  
 ```
-Le site est maintenant accessible en local à l'adresse http://0.0.0.0:4000/2016/
+
+Si vous modifiez le fichier `_config.yml`, il faut lancer
+```bash
+$ bundle exec Jekyll build --trace  
+```
+Le site est maintenant accessible en local à l'adresse http://0.0.0.0:4000/
 
 Pour plus d'information sur l'utilisation de Jekyll, reportez-vous à la [documentation officielle](http://jekyllrb.com/docs/home/).
 
