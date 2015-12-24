@@ -53,7 +53,7 @@ $ bundle exec foreman start
 
 Si vous modifiez le fichier `_config.yml`, il faut lancer
 ```bash
-$ bundle exec Jekyll build --trace  
+$ bundle exec Jekyll build --baseurl '' --trace  
 ```
 Le site est maintenant accessible en local à l'adresse http://0.0.0.0:4000/
 

@@ -5,6 +5,7 @@ description: Deux journées pour faire le plein d'inspiration, les 27 et 28 mai 
 logo: logo-sud-web.png
 locale: fr
 url: http://sudweb.fr/2016
+baseurl: /2016
 
 # Services configuration
 analytics:
