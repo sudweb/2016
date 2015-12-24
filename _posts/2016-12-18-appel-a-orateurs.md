@@ -3,6 +3,7 @@ layout: news-item
 title: Appel à orateurs
 date: 2015-12-17 22:04:39 +0100
 analytics: false
+sitemap: false
 ---
 
 **L’appel à orateurs ne concerne que les conférences de 5 minutes**.
