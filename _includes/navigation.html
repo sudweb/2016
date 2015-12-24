@@ -1,0 +1,11 @@
+<nav role="navigation" tabindex="-1">
+  <ul>
+    {% for link in site.data.navigation.primary %}
+    {% assign class = nil %}
+    {% if page.url contains link.url %}
+      {% assign class = 'is--active' %}
+    {% endif %}
+    <li><a href="{{ site.baseurl }}{{ link.url }}" class="{{ class }}">{{ link.title }}</a></li>
+    {% endfor %}
+  </ul>
+</nav>
