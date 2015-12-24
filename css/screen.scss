@@ -3,5 +3,143 @@
 
 @import "normalize";
 @import "bourbon/bourbon";
-@import "neat/neat";
 @import "base/base";
+@import "neat/neat";
+@import "pulse";
+
+// Note : Breakpoints can be defined in _sass/base/_grid-settings.scss
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Main header
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.masthead {
+  text-align: center;
+
+  h1 {
+    text-transform: uppercase;
+    margin-bottom: 0;
+    font-weight: normal;
+  }
+
+  &__logo {
+    padding: $base-spacing;
+
+      img {
+        max-width: 280px;
+        width: 100%;
+      }
+      &:hover {
+        @include unique-pulse();
+      }
+  }
+
+  &__date {
+    padding-top: $base-spacing;
+    color: $light-gray;
+    font-size: modular-scale(2);
+    font-weight: bold;
+  }
+
+  &__baseline {
+    background: $secondary-background-color;
+    padding: $base-spacing;
+    color: white;
+    font-family: $heading-font-family;
+    font-size: 1.2rem;
+    p {
+      font-size: 1.3rem;
+      margin-top: -$small-spacing;
+    }
+  }
+
+  &__description {
+    color: $light-gray;
+    margin: auto;
+    max-width: 22em;
+    font-size: modular-scale(2);
+  }
+}
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Elements
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+a:hover {
+  text-decoration: underline;
+}
+
+h2, h3 {
+  color: $red;
+}
+
+article {
+  padding: $base-spacing;
+}
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Content
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+main {
+  @include outer-container;
+}
+
+.posts {
+  margin: $base-spacing auto;
+  max-width: 38rem;
+  ;
+}
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Sponsors
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.sponsors {
+  text-align: center;
+  margin-bottom: $base-spacing*2;
+
+  ul {
+    @include outer-container;
+  }
+
+  li {
+    display: inline-block;
+    margin: 0 $small-spacing $base-spacing;
+    width: 100%;
+    vertical-align: middle;
+    @include media($large-viewport) {
+      width: flex-grid(1,3);
+    };
+  }
+}
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Main footer
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+footer {
+  background: $dark-gray;
+  color: white;
+  padding: $small-spacing;
+
+  text-align: center;
+
+  ul {
+    @include outer-container;
+    margin-bottom: $small-spacing;
+  }
+
+  li {
+    margin: $small-spacing;
+
+    @include media($large-viewport) {
+      display: inline-block;
+    };
+  }
+
+  li a {
+    width: 100%;
+    text-align: center;
+  }
+}

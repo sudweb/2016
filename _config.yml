@@ -3,7 +3,16 @@ name: Sud Web 2016, Bordeaux
 description: Deux journées pour faire le plein d'inspiration, les 27 et 28 mai 2016 à Bordeaux.
 baseurl: /2016
 permalink: /:title/
+paginate: 5
 timezone: Europe/Paris
 sass:
     sass_dir: _sass
 google_analytics_id: UA-22076213-1
+newsletter:
+  url: http://sudweb.us2.list-manage.com/subscribe?u=af19b58cf514c01eca3f7652e&id=b579f5b507
+collections:
+  talks:
+    output: true
+    order: date asc
+    permalink: /talks/:path/
+exclude: [Gemfile, Gemfile.lock, Procfile, vendor, gems]
