@@ -4,7 +4,7 @@ rvm:
 - 2.1
 matrix:
   include:
-    - # GitHub Pages
+    - # GitHub Pages versions on https://pages.github.com/versions/
       rvm: 2.1.1
       env: JEKYLL_VERSION=2.4.0
 
