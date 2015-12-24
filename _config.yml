@@ -16,7 +16,6 @@ newsletter:
 
 # Jekyll configuration
 
-baseurl: /2016
 permalink: /:title/
 paginate: 5
 timezone: Europe/Paris
@@ -30,3 +29,6 @@ collections:
     permalink: /talks/:path/
 
 exclude: [Gemfile, Gemfile.lock, Procfile, vendor, gems]
+
+gems:
+- jekyll-sitemap
