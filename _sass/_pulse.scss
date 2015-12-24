@@ -1,3 +1,5 @@
+// source: http://tech.noredink.com/post/135195074668/creating-repeatable-css-animations-with-sass
+
 @mixin unique-pulse {
   $animation-name: unique-id();
 
@@ -5,14 +7,12 @@
     0% {
       transform: scale(1);
     }
-
     25% {
       transform: scale(1.1);
     }
     50% {
       transform: scale(1);
     }
-
     75% {
       transform: scale(1.1);
     }
