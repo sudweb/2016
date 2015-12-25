@@ -1,7 +1,8 @@
 # Site configuration
 
-name: Sud Web 2016
-description: Deux journées pour faire le plein d'inspiration, les 27 et 28 mai 2016 à Bordeaux.
+title: Sud Web
+tagline: les 27 et 28 mai 2016 à Bordeaux
+description: Deux journées pour faire le plein d'inspiration entre super-héros du web.
 logo: logo-sud-web.png
 locale: fr
 url: http://sudweb.fr/2016

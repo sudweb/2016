@@ -2,11 +2,17 @@
 <html lang="fr-FR">
     <head itemscope itemtype="http://schema.org/WebSite">
         <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>{{ page.title }}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="canonical" href="{{ site.url }}" itemprop="url" />
-        <link rel="shortcut icon" href="{{ site.baseurl }}/public/favicon.ico" type="image/x-icon">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>
+            {% if page.title == "Home" %}
+                {{ site.title }} &middot; {{ site.tagline }}
+            {% else %}
+                {{ page.title }} &middot; {{ site.title }}
+            {% endif %}
+        </title>
+        <meta name="description" content="{{ site.description }}">
+        <link rel="canonical" href="{{ site.url }}" itemprop="url">
         <link rel="stylesheet" href="{{ site.baseurl }}/css/screen.css">
         <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,700|Squada+One">
 

@@ -1,6 +1,10 @@
 <header class="masthead">
     <div class="masthead__logo">
-      <a href="#"><img src="{{ site.baseurl }}/images/logo-sud-web.png" alt=""></a>
+        {% if page.title == "Home" %}
+            <img src="{{ site.baseurl }}/images/logo-sud-web.png" alt="">
+        {% else %}
+            <a href="{{ site.url }}" title="Accueil"><img src="{{ site.baseurl }}/images/logo-sud-web.png" alt=""></a>
+        {% endif %}
     </div>
     <div class="masthead__baseline">
       <h1>SudWeb</h1>
