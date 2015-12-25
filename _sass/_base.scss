@@ -1,0 +1,14 @@
+// Elements
+
+h2,
+h3 {
+  color: $red;
+}
+
+article {
+  padding: $base-spacing;
+}
+
+a:hover {
+  text-decoration: underline;
+}
