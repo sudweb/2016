@@ -1,27 +1,27 @@
 // source: http://tech.noredink.com/post/135195074668/creating-repeatable-css-animations-with-sass
 
 @mixin unique-pulse {
-  $animation-name: unique-id();
+    $animation-name: unique-id();
 
-  @keyframes #{$animation-name} {
-    0% {
-      transform: scale(1);
+    @keyframes #{$animation-name} {
+        0% {
+            transform: scale(1);
+        }
+        25% {
+            transform: scale(1.1);
+        }
+        50% {
+            transform: scale(1);
+        }
+        75% {
+            transform: scale(1.1);
+        }
+        100% {
+            transform: scale(1);
+        }
     }
-    25% {
-      transform: scale(1.1);
-    }
-    50% {
-      transform: scale(1);
-    }
-    75% {
-      transform: scale(1.1);
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
 
-  animation-duration: 2s;
-  animation-timing-function: ease;
-  animation-name: $animation-name;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-name: $animation-name;
 }

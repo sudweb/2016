@@ -2,8 +2,10 @@
 <html lang="fr-FR">
     <head itemscope itemtype="http://schema.org/WebSite">
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="{{ site.description }}">
+        <link href="{{ site.baseurl }}/public/favicon.ico" rel="shortcut icon" type="image/x-icon">
         <title>
             {% if page.title == "Home" %}
                 {{ site.title }} &middot; {{ site.tagline }}
@@ -11,8 +13,6 @@
                 {{ page.title }} &middot; {{ site.title }}
             {% endif %}
         </title>
-        <meta name="description" content="{{ site.description }}">
-        <link rel="canonical" href="{{ site.url }}" itemprop="url">
         <link rel="stylesheet" href="{{ site.baseurl }}/css/screen.css">
         <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,700|Squada+One">
         {% include favicons.html %}
