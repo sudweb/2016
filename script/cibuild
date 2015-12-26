@@ -1,5 +1,5 @@
 #!/bin/sh
 set -e # halt script on error
 
-bundle exec jekyll build --config _config.yml,_config_ci.yml JEKYLL_ENV=production --verbose
-bundle exec htmlproof ./_site --empty-alt-ignore --url-ignore "#"
+bundle exec jekyll build --destination _site/2016/ JEKYLL_ENV=production --verbose
+bundle exec htmlproof ./_site --disable-external --empty-alt-ignore --url-ignore "#"

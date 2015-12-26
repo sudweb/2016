@@ -25,7 +25,7 @@ $ rbenv local 2.1.6
 ```
 Pour vérifier la version de Ruby utilisée :
 ```bash
-rbenv version
+$ rbenv version
 ruby 2.1.6
 ```
 
@@ -33,18 +33,18 @@ ruby 2.1.6
 
 Si vous n'avez pas déjà cloné le dépot :
 ```bash
-git clone https://github.com/sudweb/2016.git 2016 && cd 2016
+$ git clone https://github.com/sudweb/2016.git 2016 && cd 2016
 ```
 Si bundler n'est pas installé
 ```bash
-gem install bundler
+$ gem install bundler
 ```
 Pour installer toutes les dépendances du projet :
 ```bash
-bundle install
+$ bundle install
 ```
 
-## Utilisation
+## Travailler en local
 
 Pour travailler sur le site et surveiller les modifications :
 ```bash
@@ -53,9 +53,9 @@ $ bundle exec foreman start
 
 Si vous modifiez le fichier `_config.yml`, il faut lancer
 ```bash
-$ bundle exec Jekyll build --trace  
+$ bundle exec Jekyll build   
 ```
-Le site est maintenant accessible en local à l'adresse http://0.0.0.0:4000/
+Le site est maintenant accessible en local à l'adresse http://0.0.0.0:4000/2016/
 
 Pour plus d'information sur l'utilisation de Jekyll, reportez-vous à la [documentation officielle](http://jekyllrb.com/docs/home/).
 
@@ -64,6 +64,16 @@ Pour plus d'information sur l'utilisation de Jekyll, reportez-vous à la [docume
 Pour toute demande, merci de [créer une issue](https://github.com/sudweb/2016/issues/new) sur GitHub.
 
 Si vous souhaitez nous aider, vous pouvez [copier](https://help.github.com/articles/fork-a-repo/) le dépôt, faire vos modifications dans une nouvelle branche, et [faire une demande de fusion](https://github.com/sudweb/2016/pulls).
+
+Toute modification doit faire l'objet d'une `pull request` et doit passer les tests avant de pouvoir être fusionnée.
+
+## Tests
+
+Avant de soumettre votre pull request, lancez le script de test d'intégration continue :
+
+```bash
+$ script/cibuild
+```
 
 ## Licence
 
