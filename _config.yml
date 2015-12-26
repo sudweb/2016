@@ -9,6 +9,7 @@ url: http://sudweb.fr
 baseurl: /2016
 
 # Services configuration
+
 analytics:
   google :
     tracking_id : "UA-22076213-1"
@@ -30,7 +31,7 @@ collections:
     order: date asc
     permalink: /talks/:path/
 
-exclude: [Gemfile, Gemfile.lock, Procfile, vendor, gems]
+exclude: [Gemfile, Gemfile.lock, Procfile, script, vendor, gems]
 
 gems:
 - jekyll-sitemap
