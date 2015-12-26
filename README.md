@@ -53,7 +53,7 @@ $ bundle exec foreman start
 
 Si vous modifiez le fichier `_config.yml`, il faut lancer
 ```bash
-$ bundle exec Jekyll build   
+$ bundle exec jekyll build   
 ```
 Le site est maintenant accessible en local à l'adresse http://0.0.0.0:4000/2016/
 
@@ -65,7 +65,7 @@ Pour toute demande, merci de [créer une issue](https://github.com/sudweb/2016/i
 
 Si vous souhaitez nous aider, vous pouvez [copier](https://help.github.com/articles/fork-a-repo/) le dépôt, faire vos modifications dans une nouvelle branche, et [faire une demande de fusion](https://github.com/sudweb/2016/pulls).
 
-Toute modification doit faire l'objet d'une `pull request` et doit passer les tests avant de pouvoir être fusionnée.
+Toute modification doit faire l'objet d'une [pull request](https://github.com/sudweb/2016/pulls) et doit passer les tests avant de pouvoir être fusionnée.
 
 ## Tests
 
