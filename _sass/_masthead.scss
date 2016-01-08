@@ -23,7 +23,7 @@
 
     &__date {
         padding-top: $base-spacing;
-        color: $light-gray;
+        color: $medium-gray;
         font-size: modular-scale(2);
         font-weight: bold;
     }
@@ -43,7 +43,7 @@
     &__description {
         margin: auto;
         max-width: 22em;
-        color: $light-gray;
+        color: $medium-gray;
         font-size: modular-scale(2);
     }
 }
