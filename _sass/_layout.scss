@@ -19,7 +19,7 @@ main {
 
     li {
         display: inline-block;
-        margin: 0 $small-spacing $base-spacing;
+        padding: 0 $small-spacing $base-spacing;
         width: 100%;
         vertical-align: middle;
         @include media($large-viewport) {
