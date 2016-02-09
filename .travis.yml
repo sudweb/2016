@@ -6,7 +6,7 @@ rvm:
 matrix:
     include:
         - rvm: 2.1
-          env: JEKYLL_VERSION=2.4
+          env: JEKYLL_VERSION=3.03
     fast_finish: true
 
 # branch whitelist, only for GitHub Pages
