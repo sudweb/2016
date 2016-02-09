@@ -35,3 +35,4 @@ exclude: [Gemfile, Gemfile.lock, Procfile, script, vendor, gems]
 
 gems:
 - jekyll-sitemap
+- jekyll-paginate
