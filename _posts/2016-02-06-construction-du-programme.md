@@ -4,7 +4,7 @@ title: Fin de l'appel à orateurs
 date: 2015-02-07 20:15:39 +0100
 ---
 
-![Construction du programme en équipe à Bordeaux](images/oratorgate.jpg)
+![Construction du programme en équipe à Bordeaux]({{ site.baseurl }}/images/oratorgate.jpg)
 
 L'appel à orateurs est maintenant terminé. Nous avons reçu pas moins de 92 propositions soit près de **deux fois plus que l'année précédente**. Nous tenons à remercier tous ceux qui ont proposé un sujet et ainsi contribué à ce que cette édition bordelaise soit du meilleur cru.
 
