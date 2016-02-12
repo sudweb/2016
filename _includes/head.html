@@ -4,15 +4,8 @@
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="{{ site.description }}">
+        {% seo %}
         <link href="{{ site.baseurl }}/public/favicon.ico" rel="shortcut icon" type="image/x-icon">
-        <title>
-            {% if page.title == "Home" %}
-                {{ site.title }} &middot; {{ site.tagline }}
-            {% else %}
-                {{ page.title }} &middot; {{ site.title }}
-            {% endif %}
-        </title>
         <link rel="stylesheet" href="{{ site.baseurl }}/css/screen.css">
         <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,700|Squada+One">
         {% include favicons.html %}

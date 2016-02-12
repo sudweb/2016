@@ -1,6 +1,8 @@
 ---
 layout: news-item
 title: Publication prochaine du programme
+description: Publication du programme et ouverture des inscription à partir du 15 février
+image: images/oratorgate.jpg
 date: 2015-02-07 20:15:39 +0100
 ---
 
