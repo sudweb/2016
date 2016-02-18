@@ -1,0 +1,29 @@
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+	font-family: $default-font-family; font-size: 1em; line-height: $default-line-height; font-weight: $default-font-weight; color: $default-color;
+}
+
+::-moz-selection {
+    background: $selection-color;
+    text-shadow: none;
+}
+::selection {
+    background: $selection-color;
+    text-shadow: none;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+textarea {
+    resize: vertical;
+}
