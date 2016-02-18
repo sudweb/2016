@@ -1,0 +1,50 @@
+/* ==========================================================================
+   Main layout
+   ========================================================================== */
+
+.main-navigation {
+	background: $nav-bg;
+	a {
+		display: inline-block;
+		vertical-align: middle;
+	}
+	a:not(.logo) {
+		position: relative; padding: 3%; overflow: hidden;
+		font: $tiny-title-size $title-font-family; color: $nav-color; text-decoration: none;
+		&::before {
+			position: absolute; top: -.25em; left: 50%; display: block; width: .5em; height: .5em;
+			transform: translateY(-50%) translateX(-50%) rotate(-45deg) skew(10deg,10deg);
+			background: $nav-color;
+			content: ''; opacity: 0;
+			transition: .1s $default-timing-function;
+		}
+		&:hover,
+		&:focus {
+			&::before {
+				transform: translateY(0) translateX(-50%) rotate(-45deg) skew(10deg,10deg);
+				opacity: 1;
+			}
+		}
+	}
+	.sw-logo {
+		width: 7em;
+	}
+}
+
+.page-header {
+	padding: 20% 0 5%;
+	background: $header-bg no-repeat center bottom / cover url(../img/assets/hero-small.svg);
+	color: $header-color;
+	.content {
+		width: 60%;
+	}
+	.title {
+		margin: 0;
+		font-size: $regular-title-size; line-height: .9;
+	}
+	.sstitle {
+		margin: .25em 0;
+		font-size: $defaut-font-size; font-weight: $thin-font-weight;
+	}
+}
+
