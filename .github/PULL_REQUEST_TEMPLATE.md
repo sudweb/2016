@@ -1,10 +1,14 @@
 
-Fixes # .
+### Quel problème cette PR corrige-t-elle ?
 
-Changes : 
+Fixes #
 
-- 
-- 
-- 
+### Quels sont les changement(s) apporté(s) ?
 
-@sudweb/thym 
+-
+-
+-
+
+### Qui devrait être prévenu de cette demande ?
+
+@sudweb/thym
