@@ -1,15 +1,35 @@
 ---
 ---
 
-@import "normalize";
-@import "bourbon/bourbon";
-@import "base/base";
-@import "neat/neat";
-
+// Config, variables and mixins
+@import "config";
 @import "mixins";
 
-@import "base";
-@import "layout";
-@import "masthead";
+// Reset and dependencies
+@import "normalize";
+@import "animations";
 
-// Note : Breakpoints can be defined in _sass/base/_grid-settings.scss
+// Core CSS
+@import "base";
+@import "fonts";
+@import "typo";
+@import "forms";
+@import "buttons";
+@import "grid";
+
+// Browser upgrade. For IE n00b users.
+@import "browserupgrade";
+
+// Plugins vendors
+// …
+
+// Main CSS
+@import "layout";
+@import "componants";
+@import "sw-logo";
+@import "specifics";
+
+// Debug
+@import "debug";
+@import "custom";
+@import "team";

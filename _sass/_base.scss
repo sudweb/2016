@@ -1,14 +1,25 @@
-// Elements
-
-h2,
-h3 {
-  color: $red;
+html {
+	font-family: $default-font-family; font-size: 1em; line-height: $default-line-height; font-weight: $default-font-weight; color: $default-color;
 }
 
-article {
-  padding: $base-spacing;
+::-moz-selection {
+    background: $selection-color;
+    text-shadow: none;
+}
+::selection {
+    background: $selection-color;
+    text-shadow: none;
 }
 
-a:hover {
-  text-decoration: underline;
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+textarea {
+    resize: vertical;
 }
