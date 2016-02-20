@@ -1,0 +1,72 @@
+/*  ==========================================================================
+   SCSS variables
+    ========================================================================== */
+
+// Colors
+
+$darkred                : #bc3630;
+$red                    : #e84538;
+$yellow                 : #f8a912;
+$orange                 : #f0801b;
+$lightgrey              : #b6b6b6;
+$darkgrey               : #353535;
+$white                  : white;
+
+$gold                   : $yellow;
+$silver                 : $lightgrey;
+$bronze                 : #bd3a13;
+
+$selection-color        : #b3d4fc;
+
+//--
+
+$default-color          : $darkgrey;
+$alternate-color        : $white;
+
+$nav-bg                 : $darkred;
+$nav-color              : $alternate-color;
+
+$header-bg              : $red;
+$header-color           : $alternate-color;
+
+$button1-bg             : $yellow;
+$button1-color          : $white;
+$button2-bg             : $red;
+$button2-color          : $white;
+$button3-bg             : $white;
+$button3-color          : $orange;
+$button4-bg             : $white;
+$button4-color          : $red;
+
+// Sizes
+
+$base-font-size         : 16px; // Assumed browser default, for em() mixin
+
+$defaut-font-size       : 1.5em;
+$default-line-height    : 1.5;
+$default-font-weight    : 400;
+
+$great-title-size       : 3.75em;
+$regular-title-size     : 3.125em;
+$small-title-size       : 2.5em;
+$tiny-title-size        : 1.875em;
+
+$thin-font-weight       : 300;
+$bold-font-weight       : 700;
+
+
+// Fonts
+
+$default-font-family    : 'Roboto', arial, sans-serif;
+$title-font-family      : 'Squada One', cursive;
+
+
+// Grid
+
+$grid-width             : 60em;
+$grid-gutter            : 1.25em;
+$grid-col-min-width     : 15em;
+
+
+// Misc
+$default-timing-function: ease-out;

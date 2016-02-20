@@ -1,0 +1,19 @@
+h1, h2, h3, h4, h5, h6 {
+	font-family: $title-font-family; font-weight: normal;
+}
+
+.great-size {
+	font-size: $great-title-size;
+}
+.regular-size {
+	font-size: $regular-title-size;
+}
+.small-size {
+	font-size: $small-title-size;
+}
+.tiny-size {
+	font-size: $tiny-title-size;
+}
+.default-size {
+	font-size: $defaut-font-size;
+}
