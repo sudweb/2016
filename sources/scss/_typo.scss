@@ -6,18 +6,54 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: $title-font-family; font-weight: normal;
 }
 
-.great-size {
+.great-title-size {
 	font-size: $great-title-size;
 }
-.regular-size {
+.regular-title-size {
 	font-size: $regular-title-size;
 }
-.small-size {
+.small-title-size {
 	font-size: $small-title-size;
 }
-.tiny-size {
+.tiny-title-size {
 	font-size: $tiny-title-size;
 }
 .default-size {
 	font-size: $defaut-font-size;
+}
+.small-size {
+	font-size: $small-font-size;
+}
+.tiny-size {
+	font-size: $tiny-font-size;
+}
+
+.text-left {
+	text-align: left;
+}
+.text-right {
+	text-align: right;
+}
+.text-center {
+	text-align: center;
+}
+.text-justify {
+	text-align: justify;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+.lowercase {
+	text-transform: lowercase;
+}
+.capitalize {
+	text-transform: capitalize;
+}
+.capfirstletter::first-letter {
+	text-transform: uppercase;
+}
+
+.red {
+	color: $red;
 }

@@ -2,3 +2,28 @@
    Buttons classes
    ========================================================================== */
 
+%button {
+	display: inline-block; margin: 1em 0; padding: .5em 1.5em;
+	border-radius: .25em;
+	font-size: $defaut-font-size; font-weight: $bold-font-weight; text-decoration: none;
+	&.cta {
+		margin: 1em 0;
+	}
+}
+
+@each $button in $buttons {
+	$name: map-get($button, 'name');
+	$background: map-get($button, 'background');
+	$color: map-get($button, 'color');
+
+	.button-#{$name} {
+		@extend %button;
+		background: $background;
+		color: $color;
+		&:hover,
+		&:focus {
+			transform: translateY(.15em);
+			background: darken($background, 5%);
+		}
+	}
+}

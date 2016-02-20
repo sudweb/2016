@@ -84,6 +84,6 @@ J'ai préféré tenter l'approche par flexbox, qui me semblait plus flexible (!)
 
 L'idée était donc d'avoir autant de colonnes qu'on veut, mais avec l'obligation de définir une largeur minimum, ce qui va fatalement définir le nombre maximum de colonne.
 
-Au vu des maquettes, j'ai défini la largeur maximum de la grille à 60em (équivalent à 960px), des gouttières à 1.25em (équivalent à 20px), et une largeur minimum des colonnes à 15em, ce qui délimite le nombre de colonnes possible à trois.
+Au vu des maquettes, j'ai défini la largeur maximum de la grille à 60em (équivalent à 960px), des gouttières à 1.25em (équivalent à 20px), <del>et une largeur minimum des colonnes à 15em, ce qui délimite le nombre de colonnes possible à trois</del> <ins>et je calcule la largeur des colonnes en divisant la largeur de la grille par le nombre de colonnes voulu + 1, mais sans y soustraire les gouttières, ce qui définit en fin de compte une largeur __minimum__ sous laquelle ne pas réduire</ins>.
 
-Le dimensionnement de ces colonnes étant défini par le flex-grow et flex-shrink, identiques pour toutes les colonnes, elles seront donc aux mêmes dimensions, de manière fluide, jusqu'à une largeur minimum de 15em, défini par flex-basis. Le tout en shorthand via flex.
+Le dimensionnement de ces colonnes étant défini par `flex-grow` et `flex-shrink`, identiques pour toutes les colonnes, elles seront donc aux mêmes dimensions, de manière fluide, jusqu'à la largeur minimum choisie, définie par `flex-basis`. Le tout en shorthand via `flex`.

@@ -1,3 +1,12 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>
+readme.md
+</title>
+</head>
+<body>
 <h1 id="notes">Notes</h1>
 <h2 id="le-logo-en-svg">Le logo en SVG</h2>
 <p>J&#39;ai d&#39;abord pensé mettre tous les SVG en haut de la page HTML, déclarés en symboles, mais j&#39;ai ensuite tenté de les insérer par ressource externe.</p>
@@ -52,5 +61,8 @@ Donc l&#39;idée ensuite est de modifier le code pour que ça fonctionne partout
 <p>Je ne voulais surtout pas d&#39;une énième grille utilisant des flottants qui font ch<em>*</em>. C&#39;est moche, ça pue, c&#39;est dépassé.</p>
 <p>J&#39;ai préféré tenter l&#39;approche par flexbox, qui me semblait plus flexible (!), et suffisamment compatible (comparé à grid).</p>
 <p>L&#39;idée était donc d&#39;avoir autant de colonnes qu&#39;on veut, mais avec l&#39;obligation de définir une largeur minimum, ce qui va fatalement définir le nombre maximum de colonne.</p>
-<p>Au vu des maquettes, j&#39;ai défini la largeur maximum de la grille à 60em (équivalent à 960px), des gouttières à 1.25em (équivalent à 20px), et une largeur minimum des colonnes à 15em, ce qui délimite le nombre de colonnes possible à trois.</p>
-<p>Le dimensionnement de ces colonnes étant défini par le flex-grow et flex-shrink, identiques pour toutes les colonnes, elles seront donc aux mêmes dimensions, de manière fluide, jusqu&#39;à une largeur minimum de 15em, défini par flex-basis. Le tout en shorthand via flex.</p>
+<p>Au vu des maquettes, j&#39;ai défini la largeur maximum de la grille à 60em (équivalent à 960px), des gouttières à 1.25em (équivalent à 20px), <del>et une largeur minimum des colonnes à 15em, ce qui délimite le nombre de colonnes possible à trois</del> <ins>et je calcule la largeur des colonnes en divisant la largeur de la grille par le nombre de colonnes voulu + 1, mais sans y soustraire les gouttières, ce qui définit en fin de compte une largeur <strong>minimum</strong> sous laquelle ne pas réduire</ins>.</p>
+<p>Le dimensionnement de ces colonnes étant défini par <code>flex-grow</code> et <code>flex-shrink</code>, identiques pour toutes les colonnes, elles seront donc aux mêmes dimensions, de manière fluide, jusqu&#39;à la largeur minimum choisie, définie par <code>flex-basis</code>. Le tout en shorthand via <code>flex</code>.</p>
+
+</body>
+</html>
