@@ -4,7 +4,7 @@
         {% for sponsor in site.data.sponsors %}
         <li>
           <a href="{{ sponsor.website }}">
-            <img src="{{ sponsor.logo }}" alt="{{ sponsor.name }}">
+            <img src="{{ site.baseurl }}/images/2016/partenaires/{{ sponsor.logo }}" alt="{{ sponsor.name }}">
           </a>
         </li>
         {% endfor %}
