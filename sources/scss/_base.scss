@@ -27,3 +27,16 @@ video {
 textarea {
     resize: vertical;
 }
+
+p {
+	font-size: $defaut-font-size;
+}
+
+a,
+button {
+	transition: $default-delay $default-timing-function;
+}
+
+img {
+	width: auto; max-width: 100%;
+}

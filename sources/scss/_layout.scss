@@ -2,7 +2,7 @@
    Main layout
    ========================================================================== */
 
-.main-navigation {
+.main-nav {
 	background: $nav-bg;
 	a {
 		display: inline-block;
@@ -16,7 +16,7 @@
 			transform: translateY(-50%) translateX(-50%) rotate(-45deg) skew(10deg,10deg);
 			background: $nav-color;
 			content: ''; opacity: 0;
-			transition: .1s $default-timing-function;
+			transition: $default-delay $default-timing-function;
 		}
 		&:hover,
 		&:focus {
