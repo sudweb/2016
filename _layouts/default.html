@@ -1,16 +1,12 @@
 {% include head.html %}
 
     <body itemscope itemtype="http://schema.org/WebPage">
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">Vous utilisez un navigateur <strong>obsolete</strong>. Merci de <a href="http://browsehappy.com/">mettre à jour votre navigateur</a> pour bénéficier d'une meilleure expérience.</p>
-        <![endif]-->
+        {% include navigation.html %}
         {% include header.html %}
 
         <main>
           {{ content }}
         </main>
 
-        {% include sponsors.html %}
-        {% include footer.html %}
     </body>
 </html>
