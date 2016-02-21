@@ -1,3 +1,7 @@
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
 html {
 	font-family: $default-font-family; font-size: 1em; line-height: $default-line-height; font-weight: $default-font-weight; color: $default-color;
 }
@@ -22,4 +26,17 @@ video {
 
 textarea {
     resize: vertical;
+}
+
+p {
+	font-size: $defaut-font-size;
+}
+
+a,
+button {
+	transition: $default-delay $default-timing-function;
+}
+
+img {
+	width: auto; max-width: 100%;
 }
