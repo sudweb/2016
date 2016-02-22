@@ -59,6 +59,12 @@ Le site est maintenant accessible en local à l'adresse http://0.0.0.0:4000/2016
 
 Pour plus d'information sur l'utilisation de Jekyll, reportez-vous à la [documentation officielle](http://jekyllrb.com/docs/home/).
 
+## Documentation
+
+Consulter et compléter la documentation à cette adresse
+
+http://127.0.0.1:4000/2016/pages/style-guide/#guide-typographie
+
 ## Contribution
 
 Pour toute demande, merci de [créer une issue](https://github.com/sudweb/2016/issues/new) sur GitHub.
