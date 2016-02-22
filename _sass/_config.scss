@@ -10,6 +10,7 @@ $yellow                 : #f8a912;
 $orange                 : #f0801b;
 $lightgrey              : #b6b6b6;
 $darkgrey               : #353535;
+$black                  : black;
 $white                  : white;
 
 $gold                   : $yellow;
@@ -17,6 +18,11 @@ $silver                 : $lightgrey;
 $bronze                 : #bd3a13;
 
 $selection-color        : #b3d4fc;
+
+$success-color          : #69af1d;
+$info-color             : #5bc0de;
+$warning-color          : #f0ad4e;
+$danger-color           : #d9534f;
 
 //--
 
@@ -30,21 +36,21 @@ $header-bg              : $red;
 $header-color           : $alternate-color;
 
 $buttons                : ((
-	'name'              : 'type1',
-	'background'        : $yellow,
-	'color'             : $white
+  'name'              : 'type1',
+  'background'        : $yellow,
+  'color'             : $white
 ),(
-	'name'              : 'type2',
-	'background'        : $red,
-	'color'             : $white
+  'name'              : 'type2',
+  'background'        : $red,
+  'color'             : $white
 ),(
-	'name'              : 'type3',
-	'background'        : $white,
-	'color'             : $orange
+  'name'              : 'type3',
+  'background'        : $white,
+  'color'             : $orange
 ),(
-	'name'              : 'type4',
-	'background'        : $white,
-	'color'             : $red
+  'name'              : 'type4',
+  'background'        : $white,
+  'color'             : $red
 ));
 
 

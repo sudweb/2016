@@ -1,0 +1,114 @@
+/* ==========================================================================
+   WEBSITE STYLE GUIDE
+   ========================================================================== */
+
+.component {
+  margin-bottom: 1em;
+  background-color: #fff;
+  padding: 1em;
+  border-radius: 4px;
+  border: 1px solid $lightgrey;
+}
+
+.component__header {
+  h3 {
+    margin-top: 0 !important;
+  }
+  p {
+    margin-top: 0;
+    font-family: $default-font-family;
+    font-size: 0.8rem;
+    a {
+      border-bottom-width: 0;
+    }
+    &.entry--last {
+      margin-bottom: 1em;
+    }
+  }
+}
+
+.component__rendered {
+  &--color {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @media screen and (min-width: 768px) {
+      flex-wrap: nowrap;
+    }
+  }
+}
+
+.component__code {
+  clear: both;
+  position: relative;
+  padding-top: 3em;
+  &:before {
+    content: "HTML";
+    position: absolute;
+    top: 1.5em;
+    font-family: $default-font-family;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+}
+
+#component-select {
+  min-height: 32px;
+}
+
+
+/*
+   Color swatches
+   ========================================================================== */
+
+.color__tile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  width: 98%;
+  height: 100px;
+  text-align: center;
+  border-radius: 4px;
+  border: 1px solid $lightgrey;
+}
+
+.color__name {
+  font-size: 0.64rem;
+  color: $darkgrey;
+  white-space: nowrap;
+  margin: 0 2px;
+  padding: 0 5px;
+  border: 1px solid $lightgrey;
+  background-color: #fefefe;
+  border-radius: 4px;
+  white-space: normal;
+}
+
+/*
+   Background colors
+   ========================================================================== */
+
+$color:
+(white-bg, $white),
+(black-bg, $black),
+(gray-bg, $lightgrey),
+(background, $lightgrey),
+(text, $darkgrey),
+(headline, $darkgrey),
+(highlighter, $darkgrey),
+(primary, $darkred),
+(success, $success-color),
+(warning, $warning-color),
+(danger, $danger-color),
+(info, $info-color),
+(border, $lightgrey),
+(link, $darkred);
+
+@each $name, $bgcolor in $color {
+  .color__tile--#{$name} {
+    background-color: $bgcolor;
+  }
+}
