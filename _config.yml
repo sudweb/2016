@@ -36,7 +36,7 @@ sass:
 
 collections:
   talks:
-    output: true
+    output: false
     order: date asc
     permalink: /talks/:path/
   components:

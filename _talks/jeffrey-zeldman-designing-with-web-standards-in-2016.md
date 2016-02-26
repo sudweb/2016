@@ -2,12 +2,7 @@
 title: Designing With Web Standards in 2016
 description: Survey the state of the art, and learn how to ensure that your site will work everywhere—today and tomorrow.
 date: 2016-05-27 09:40:00 +0100
-speaker:
-  - name: Jeffrey Zeldman
-    url: http://www.zeldman.com/
-    twitter: zeldman
-    avatar: https://pbs.twimg.com/profile_images/626137507512610816/e_fXml7r_bigger.jpg
-    bio: Designing With Web Standards. Happy Cog. A Book Apart. A List Apart. An Event Apart. The Big Web Show.
+speaker: Jeffrey Zeldman
 sitemap: false
 ---
 

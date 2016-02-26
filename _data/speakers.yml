@@ -1,0 +1,63 @@
+bill:
+  name: Bill Murray
+  bio: Actor
+  twitter: BiIIMurray
+  avatar: http://www.fillmurray.com/200/200
+
+Jeffrey Zeldman:
+    name: Jeffrey Zeldman
+    twitter: zeldman
+    avatar: https://pbs.twimg.com/profile_images/626137507512610816/e_fXml7r_bigger.jpg
+    bio: Designing With Web Standards. Happy Cog. A Book Apart. A List Apart. An Event Apart. The Big Web Show.
+    website: http://www.zeldman.com/
+
+hannah:
+  name: Hannah Wolfe
+  bio: CTO de Ghost.io
+  location: Northampton
+  country: United Kingdom
+  twitter: erisds
+  avatar: https://pbs.twimg.com/profile_images/479584528239820800/4yt7SjFl.jpeg
+  website: https://hannah.wf/
+
+jan:
+  name: Jan Monschke
+  bio: Ingénieur front-end chez Soundcloud
+  location: Berlin
+  country: Germany
+  twitter: thedeftone
+  avatar: https://avatars3.githubusercontent.com/u/68591?v=3&s=200
+  website: http://janmonschke.com/
+
+stefanie:
+  name: Stefanie Posavec
+  bio: Designer et co-auteur du projet Dear Data
+  location: Londres
+  country: United Kingdom
+  twitter: stefpos
+  avatar: https://pbs.twimg.com/profile_images/577532169943306240/pBEz9eH6.jpeg
+  website: http://www.stefanieposavec.co.uk/
+
+chris:
+  name: Chris Lowis
+  bio: Ingénieur chez FutureLearn
+  location: Londres
+  country: United Kingdom
+  twitter: chrislowis
+  avatar: https://pbs.twimg.com/profile_images/479578242123190272/0sDbyS5O.jpeg
+  website: http://blog.chrislowis.co.uk/
+
+roxane:
+  name: Roxane Debruyker
+  bio: Étudiante en sciences cognitives
+  location: Bordeaux
+  country: France
+  twitter: dbr_roxane
+  avatar: https://pbs.twimg.com/profile_images/689002478340288512/6A9J2kTQ.jpg
+  website:
+
+bill:
+  name: Bill Murray
+  bio: Actor
+  twitter: BiIIMurray
+  avatar: http://www.fillmurray.com/200/200
