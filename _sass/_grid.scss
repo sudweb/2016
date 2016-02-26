@@ -11,19 +11,15 @@
 	flex-flow: row wrap;
 	& > * {
 		box-sizing: border-box; margin-top: $grid-goetter; margin-left: $grid-goetter; /* margin-right: $grid-goetter; */
-		flex: 1 0 $grid-col-min-width;
+		flex: 1 0 $grid-width / ($grid-max-col-number + 1);
 	}
 }
 
-.grid-2 {
-	@extend .grid;
-	& > * {
-		flex-basis: ($grid-width / 3);
-	}
-}
-.grid-3 {
-	@extend .grid;
-	& > * {
-		flex-basis: ($grid-width / 4);
+@for $i from 2 through $grid-max-col-number {
+	.grid-#{$i} {
+		@extend .grid;
+		& > * {
+			flex-basis: ($grid-width / ($i + 1));
+		}
 	}
 }

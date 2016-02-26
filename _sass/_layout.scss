@@ -26,14 +26,20 @@
 			}
 		}
 	}
+	.logo {
+		&:hover,
+		&:focus {
+			animation: heart-beat 1s infinite; transition-timing-function: $easeInOutCubic;
+		}
+	}
 	.sw-logo {
-		width: 7em;
+		width: 7em; height: auto;
 	}
 }
 
 .page-header {
 	padding: 20% 0 5%;
-	background: $header-bg no-repeat center bottom / cover url(../images/hero-small.svg);		
+	background: $header-bg no-repeat center bottom / cover url(../img/assets/hero-small.svg);
 	color: $header-color;
 	.content {
 		width: 60%;
@@ -47,3 +53,4 @@
 		font-size: $defaut-font-size; font-weight: $thin-font-weight;
 	}
 }
+

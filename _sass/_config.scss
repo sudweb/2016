@@ -10,19 +10,20 @@ $yellow                 : #f8a912;
 $orange                 : #f0801b;
 $lightgrey              : #b6b6b6;
 $darkgrey               : #353535;
-$black                  : black;
 $white                  : white;
+$black                  : black;
 
 $gold                   : $yellow;
 $silver                 : $lightgrey;
 $bronze                 : #bd3a13;
 
-$selection-color        : #b3d4fc;
-
 $success-color          : #69af1d;
 $info-color             : #5bc0de;
 $warning-color          : #f0ad4e;
 $danger-color           : #d9534f;
+
+
+$selection-color        : #b3d4fc;
 
 //--
 
@@ -36,21 +37,25 @@ $header-bg              : $red;
 $header-color           : $alternate-color;
 
 $buttons                : ((
-  'name'              : 'type1',
-  'background'        : $yellow,
-  'color'             : $white
+	'name'              : 'type1',
+	'background'        : $yellow,
+	'color'             : $white
 ),(
-  'name'              : 'type2',
-  'background'        : $red,
-  'color'             : $white
+	'name'              : 'type2',
+	'background'        : $red,
+	'color'             : $white
 ),(
-  'name'              : 'type3',
-  'background'        : $white,
-  'color'             : $orange
+	'name'              : 'type3',
+	'background'        : $white,
+	'color'             : $yellow
 ),(
-  'name'              : 'type4',
-  'background'        : $white,
-  'color'             : $red
+	'name'              : 'type4',
+	'background'        : $white,
+	'color'             : $orange
+),(
+	'name'              : 'type5',
+	'background'        : $white,
+	'color'             : $red
 ));
 
 
@@ -59,7 +64,7 @@ $buttons                : ((
 $base-font-size         : 16px; // Assumed browser default, for em() mixin
 
 $defaut-font-size       : 1.5em;
-$default-line-height    : 1.5;
+$default-line-height    : 1.4;
 $default-font-weight    : 400;
 
 $great-title-size       : 3.75em;
@@ -67,6 +72,7 @@ $regular-title-size     : 3.125em;
 $small-title-size       : 2.5em;
 $tiny-title-size        : 1.875em;
 
+$great-font-size        : 2.25em;
 $small-font-size        : 1.25em;
 $tiny-font-size         : 1.125em;
 
@@ -84,7 +90,14 @@ $title-font-family      : 'Squada One', cursive;
 
 $grid-width             : 60rem;
 $grid-goetter           : 1.25rem;
-$grid-col-min-width     : $grid-width / 4;
+$grid-max-col-number    : 4;
+
+
+// Responsive
+
+$media-break-point      : 40em;
+$large-media-font-size  : 1em;
+$small-media-font-size  : .75em;
 
 
 // Ceaser vars (http://easings.net/)
@@ -126,3 +139,6 @@ $easeInOutBack          :  "0.680, -0.550, 0.265, 1.550" !default;
 // Misc
 $default-delay          : .2s;
 $default-timing-function: cubic-bezier(unquote($easeOutBack));
+
+$section-margin         : 5%;
+$svg-size               : 8em;

@@ -87,3 +87,28 @@ L'idée était donc d'avoir autant de colonnes qu'on veut, mais avec l'obligatio
 Au vu des maquettes, j'ai défini la largeur maximum de la grille à 60em (équivalent à 960px), des gouttières à 1.25em (équivalent à 20px), <del>et une largeur minimum des colonnes à 15em, ce qui délimite le nombre de colonnes possible à trois</del> <ins>et je calcule la largeur des colonnes en divisant la largeur de la grille par le nombre de colonnes voulu + 1, mais sans y soustraire les gouttières, ce qui définit en fin de compte une largeur __minimum__ sous laquelle ne pas réduire</ins>.
 
 Le dimensionnement de ces colonnes étant défini par `flex-grow` et `flex-shrink`, identiques pour toutes les colonnes, elles seront donc aux mêmes dimensions, de manière fluide, jusqu'à la largeur minimum choisie, définie par `flex-basis`. Le tout en shorthand via `flex`.
+
+## La gestion des SVG
+
+Comme précisé pour le logo en SVG, toutes les illustrations sont externalisées en `<symbol>` dans un fichier SVG séparé. L'idée est de profiter du cache navigateur et de n'avoir qu'un seul accès serveur.
+
+Pour la gestion de la couleur, hors-mis pour le logo, j'ai voulu qu'elle soit de base héritée de la couleur de la police du parent le plus proche sur lequel elle est définie. Cela m'est permis grâce à ça:
+
+```css
+svg {
+    fill: currentColor;
+}
+
+```
+
+Fourberie ! Je n'ai plus ensuite qu'à définir une `color` sur ce svg ou un de ces parents pour changer sa couleur.
+
+Concernant le dimensionnement, là c'était chaud ! Je voulais  pouvoir dimensionner la largeur d'un `<svg>`, et qu'il se dimensionne en hauteur tout seul en gardant sa proportion.
+
+Je vais passer le détail de mes tests, mais j'ai trouvé une solution pas trop moche en lisant [cet article de CSS-Tricks](https://css-tricks.com/scale-svg/). La solution que j'ai préférée est simplement de recopier la propriété `viewbox` du `<symbol>` sur le `<svg>`. Le navigateur (récent) gardera tout seul de ratio en fonction de la taille dimensionnée.
+
+## La gestion responsive
+
+Puisque la grille est gérée par flexbox, une grande partie est déjà géree. Cependant, la taille de la police peut sembler très grande sur mobile.
+
+J'ai hésité à utilisé l'unité `wv` pour la taille de police&hellip; mais non. J'ai donc tout mis en `em`, je profite donc d'un héritage jusqu'au root `<html>`. C'est sur celui-ci que je diminue ou augmente la `font-size` en fonction de la largeur du média.

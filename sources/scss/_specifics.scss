@@ -6,10 +6,40 @@
 	margin-top: 0;
 }
 
+.section-margin,
+.white-section,
+.yellow-section,
+.orange-section,
+.darkgrey-section {
+	padding-top: $section-margin; padding-bottom: $section-margin;
+}
+
+.white-section {
+	background-color: $white;
+	color: $default-color;
+}
+.yellow-section {
+	background-color: $yellow;
+	color: $alternate-color;
+}
+.orange-section {
+	background-color: $orange;
+	color: $alternate-color;
+}
+.darkgrey-section {
+	background-color: $darkgrey;
+	color: $alternate-color;
+}
+
+.svg-size {
+	max-width: $svg-size;
+}
+
+
 // Page programme -----------------------------------------------------------
 
 .cta-zone-1 {
-	position: relative; padding: 5% 0;
+	position: relative;
 	background: center / cover no-repeat url(../img/assets/2016/bordeaux01.jpg);
 	&::before {
 		position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: 0;
@@ -27,29 +57,26 @@
 .schedule-nav {
 	background: $darkgrey;
 	& > * {
-		display: table; width: 100%;
-		border-collapse: collapse;
+		display: flex; padding: -1px 0; overflow: hidden;
+		flex-flow: row wrap; justify-content: center;
 	}
 	a {
-		display: table-cell; padding: .5em;
-		border: solid lighten($darkgrey, 30%); border-width: 0 1px;
+		display: block; margin: -1px; padding: .5em;
+		flex: 1 0 auto;
+		border: 2px solid lighten($darkgrey, 20%);
 		font: $tiny-title-size $title-font-family; color: $alternate-color; text-align: center; text-decoration: none;
 		&:hover,
 		&:focus {
 			background: lighten($darkgrey, 10%);
 		}
 	}
+	time {
+		display: block;
+	}
 }
 
 .day-section {
-	.intro,
-	.confs {
-		padding: 5% 0;
-	}
-	.confs {
-		background: $yellow;
-		color: $white;
-	}
+
 }
 
 .pres-item {
@@ -57,6 +84,16 @@
 	border-radius: .5em;
 	background: $white;
 	color: $darkgrey; text-align: left;
+	.pres-type {
+		display: block; float: left; width: 1em * $default-line-height; height: 1em * $default-line-height; margin: 0 .25em 0 0; padding: .3em; box-sizing: border-box;
+		border-radius: 50%;
+		background: $orange;
+		font-size: $tiny-title-size; text-align: center;
+		svg {
+			display: block; width: 100%; height: 100%;
+			fill: $white;
+		}
+	}
 	.pres-title {
 		margin: 0;
 	}
@@ -75,5 +112,27 @@
 	.author-desc {
 		margin: 0;
 		font-size: $tiny-font-size;
+	}
+	a {
+		color: $orange; text-decoration: underline;
+		&:hover,
+		&:focus {
+			text-decoration: none;
+		}
+	}
+}
+
+.pres-link {
+	display: flex; padding: 1em;
+	border-radius: .5em;
+	background: $orange;
+	color: $alternate-color; text-align: center; text-decoration: none;
+	& > * {
+		max-width: 75%; margin: auto;
+		font: $great-font-size / 1 $title-font-family;
+	}
+	&:hover,
+	&:focus {
+		background: darken($orange, 5%);
 	}
 }

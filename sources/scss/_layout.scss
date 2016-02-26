@@ -26,8 +26,14 @@
 			}
 		}
 	}
+	.logo {
+		&:hover,
+		&:focus {
+			animation: heart-beat 1s infinite; transition-timing-function: $easeInOutCubic;
+		}
+	}
 	.sw-logo {
-		width: 7em;
+		width: 7em; height: auto;
 	}
 }
 

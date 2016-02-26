@@ -3,7 +3,10 @@
    ========================================================================== */
 
 html {
-	font-family: $default-font-family; font-size: 1em; line-height: $default-line-height; font-weight: $default-font-weight; color: $default-color;
+	font-family: $default-font-family; font-size: $small-media-font-size; line-height: $default-line-height; font-weight: $default-font-weight; color: $default-color;
+	@media (min-width: $media-break-point) {
+		font-size: $large-media-font-size;
+	}
 }
 
 ::-moz-selection {
@@ -37,6 +40,11 @@ button {
 	transition: $default-delay $default-timing-function;
 }
 
-img {
+img,
+svg {
 	width: auto; max-width: 100%;
+}
+
+svg {
+	fill: currentColor;
 }
