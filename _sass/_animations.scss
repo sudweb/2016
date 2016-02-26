@@ -2,3 +2,8 @@
    Animations declarations
    ========================================================================== */
 
+@keyframes heart-beat {
+	40% { transform: scale(1.05); }
+	65% { transform: scale(1); }
+	90% { transform: scale(1.05); }
+}

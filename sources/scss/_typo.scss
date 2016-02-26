@@ -2,7 +2,7 @@
    Typo classes
    ========================================================================== */
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, .h-like {
 	font-family: $title-font-family; font-weight: normal;
 }
 
@@ -17,6 +17,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 .tiny-title-size {
 	font-size: $tiny-title-size;
+}
+
+.great-size {
+	font-size: $great-font-size;
 }
 .default-size {
 	font-size: $defaut-font-size;
@@ -54,6 +58,9 @@ h1, h2, h3, h4, h5, h6 {
 	text-transform: uppercase;
 }
 
+.orange {
+	color: $orange;
+}
 .red {
 	color: $red;
 }

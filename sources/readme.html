@@ -63,6 +63,19 @@ Donc l&#39;idée ensuite est de modifier le code pour que ça fonctionne partout
 <p>L&#39;idée était donc d&#39;avoir autant de colonnes qu&#39;on veut, mais avec l&#39;obligation de définir une largeur minimum, ce qui va fatalement définir le nombre maximum de colonne.</p>
 <p>Au vu des maquettes, j&#39;ai défini la largeur maximum de la grille à 60em (équivalent à 960px), des gouttières à 1.25em (équivalent à 20px), <del>et une largeur minimum des colonnes à 15em, ce qui délimite le nombre de colonnes possible à trois</del> <ins>et je calcule la largeur des colonnes en divisant la largeur de la grille par le nombre de colonnes voulu + 1, mais sans y soustraire les gouttières, ce qui définit en fin de compte une largeur <strong>minimum</strong> sous laquelle ne pas réduire</ins>.</p>
 <p>Le dimensionnement de ces colonnes étant défini par <code>flex-grow</code> et <code>flex-shrink</code>, identiques pour toutes les colonnes, elles seront donc aux mêmes dimensions, de manière fluide, jusqu&#39;à la largeur minimum choisie, définie par <code>flex-basis</code>. Le tout en shorthand via <code>flex</code>.</p>
+<h2 id="la-gestion-des-svg">La gestion des SVG</h2>
+<p>Comme précisé pour le logo en SVG, toutes les illustrations sont externalisées en <code>&lt;symbol&gt;</code> dans un fichier SVG séparé. L&#39;idée est de profiter du cache navigateur et de n&#39;avoir qu&#39;un seul accès serveur.</p>
+<p>Pour la gestion de la couleur, hors-mis pour le logo, j&#39;ai voulu qu&#39;elle soit de base héritée de la couleur de la police du parent le plus proche sur lequel elle est définie. Cela m&#39;est permis grâce à ça:</p>
+<pre><code class="lang-css">svg {
+    fill: currentColor;
+}
+</code></pre>
+<p>Fourberie ! Je n&#39;ai plus ensuite qu&#39;à définir une <code>color</code> sur ce svg ou un de ces parents pour changer sa couleur.</p>
+<p>Concernant le dimensionnement, là c&#39;était chaud ! Je voulais  pouvoir dimensionner la largeur d&#39;un <code>&lt;svg&gt;</code>, et qu&#39;il se dimensionne en hauteur tout seul en gardant sa proportion.</p>
+<p>Je vais passer le détail de mes tests, mais j&#39;ai trouvé une solution pas trop moche en lisant <a href="https://css-tricks.com/scale-svg/">cet article de CSS-Tricks</a>. La solution que j&#39;ai préférée est simplement de recopier la propriété <code>viewbox</code> du <code>&lt;symbol&gt;</code> sur le <code>&lt;svg&gt;</code>. Le navigateur (récent) gardera tout seul de ratio en fonction de la taille dimensionnée.</p>
+<h2 id="la-gestion-responsive">La gestion responsive</h2>
+<p>Puisque la grille est gérée par flexbox, une grande partie est déjà géree. Cependant, la taille de la police peut sembler très grande sur mobile.</p>
+<p>J&#39;ai hésité à utilisé l&#39;unité <code>wv</code> pour la taille de police&hellip; mais non. J&#39;ai donc tout mis en <code>em</code>, je profite donc d&#39;un héritage jusqu&#39;au root <code>&lt;html&gt;</code>. C&#39;est sur celui-ci que je diminue ou augmente la <code>font-size</code> en fonction de la largeur du média.</p>
 
 </body>
 </html>
