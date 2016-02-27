@@ -4,4 +4,5 @@ description: "Du sens et de la fierté en travaillant pour le plaisir, sans avoi
 speaker: basile
 symbol: well
 type: lt
+start-time:
 ---
