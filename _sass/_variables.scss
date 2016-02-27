@@ -1,7 +1,3 @@
-/*  ==========================================================================
-   SCSS variables
-    ========================================================================== */
-
 // Colors
 
 $darkred                : #bc3630;
@@ -11,17 +7,10 @@ $orange                 : #f0801b;
 $lightgrey              : #b6b6b6;
 $darkgrey               : #353535;
 $white                  : white;
-$black                  : black;
 
 $gold                   : $yellow;
 $silver                 : $lightgrey;
 $bronze                 : #bd3a13;
-
-$success-color          : #69af1d;
-$info-color             : #5bc0de;
-$warning-color          : #f0ad4e;
-$danger-color           : #d9534f;
-
 
 $selection-color        : #b3d4fc;
 
@@ -35,6 +24,9 @@ $nav-color              : $alternate-color;
 
 $header-bg              : $red;
 $header-color           : $alternate-color;
+
+$default-button-bg      : $yellow;
+$default-button-color   : $alternate-color;
 
 $buttons                : ((
 	'name'              : 'type1',
@@ -56,6 +48,10 @@ $buttons                : ((
 	'name'              : 'type5',
 	'background'        : $white,
 	'color'             : $red
+),(
+	'name'              : 'type6',
+	'background'        : $white,
+	'color'             : $darkgrey
 ));
 
 
@@ -89,7 +85,7 @@ $title-font-family      : 'Squada One', cursive;
 // Grid
 
 $grid-width             : 60rem;
-$grid-goetter           : 1.25rem;
+$grid-goetter           : 2rem;
 $grid-max-col-number    : 4;
 
 
@@ -140,5 +136,6 @@ $easeInOutBack          :  "0.680, -0.550, 0.265, 1.550" !default;
 $default-delay          : .2s;
 $default-timing-function: cubic-bezier(unquote($easeOutBack));
 
+$button-default-radius  : .25em;
 $section-margin         : 5%;
 $svg-size               : 8em;
