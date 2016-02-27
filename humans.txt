@@ -10,6 +10,4 @@
   Language:     French
   Built with:   Jekyll <http://jekyllrb.com>
                 Github Pages <https://pages.github.com/>
-                Bourbon <http://bourbon.io/>
-                Neat <http://neat.bourbon.io/>
                 Atom <https://atom.io/>
