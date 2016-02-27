@@ -4,4 +4,5 @@ description: "A dix ans, j'écrivais des poèmes, je faisais du piano et je prog
 speaker: bastien
 type: lt
 symbol: well
+start-time:
 ---
