@@ -9,6 +9,8 @@ GEM
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
     addressable (2.3.8)
+    autoprefixer-rails (6.3.3.1)
+      execjs
     coffee-script (2.4.1)
       coffee-script-source
       execjs
@@ -24,7 +26,7 @@ GEM
     foreman (0.78.0)
       thor (~> 0.19.1)
     gemoji (2.1.0)
-    github-pages (51)
+    github-pages (52)
       RedCloth (= 4.2.9)
       github-pages-health-check (= 1.0.1)
       jekyll (= 3.0.3)
@@ -35,7 +37,7 @@ GEM
       jekyll-paginate (= 1.1.0)
       jekyll-redirect-from (= 0.9.1)
       jekyll-sass-converter (= 1.3.0)
-      jekyll-seo-tag (= 1.2.0)
+      jekyll-seo-tag (= 1.3.1)
       jekyll-sitemap (= 0.10.0)
       jekyll-textile-converter (= 0.1.0)
       jemoji (= 0.5.1)
@@ -87,8 +89,8 @@ GEM
       jekyll (>= 2.0)
     jekyll-sass-converter (1.3.0)
       sass (~> 3.2)
-    jekyll-seo-tag (1.2.0)
-      jekyll (>= 2.0)
+    jekyll-seo-tag (1.3.1)
+      jekyll (~> 3.0)
     jekyll-sitemap (0.10.0)
     jekyll-textile-converter (0.1.0)
       RedCloth (~> 4.0)
@@ -113,7 +115,10 @@ GEM
       mini_portile2 (~> 2.0.0.rc2)
     octokit (4.2.0)
       sawyer (~> 0.6.0, >= 0.5.3)
-    parallel (1.6.1)
+    octopress-autoprefixer (2.0.0)
+      autoprefixer-rails
+      jekyll (~> 3.0)
+    parallel (1.6.2)
     public_suffix (1.5.3)
     rake (10.5.0)
     rb-fsevent (0.9.7)
@@ -141,10 +146,11 @@ PLATFORMS
 
 DEPENDENCIES
   foreman
-  github-pages
+  github-pages (= 52)
   html-proofer
   jekyll (= 3.0.3)
   json
+  octopress-autoprefixer
   rake
 
 BUNDLED WITH
