@@ -3,10 +3,14 @@
    ========================================================================== */
 
 html {
-	font-family: $default-font-family; font-size: $small-media-font-size; line-height: $default-line-height; font-weight: $default-font-weight; color: $default-color;
+	font-size: $small-media-font-size;
 	@media (min-width: $media-break-point) {
 		font-size: $large-media-font-size;
 	}
+}
+
+html, input, textarea, select {
+	font-family: $default-font-family; line-height: $default-line-height; font-weight: $default-font-weight; color: $default-color;
 }
 
 ::-moz-selection {
@@ -18,12 +22,7 @@ html {
     text-shadow: none;
 }
 
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
+audio, canvas, iframe, img, svg, video {
     vertical-align: middle;
 }
 
@@ -31,20 +30,30 @@ textarea {
     resize: vertical;
 }
 
-p {
+p, li {
 	font-size: $defaut-font-size;
 }
 
-a,
-button {
+a, button, input, textarea, select {
 	transition: $default-delay $default-timing-function;
 }
 
-img,
-svg {
+a {
+	color: $red; text-decoration: underline;
+	&:hover, &:focus {
+		text-decoration: none;
+	}
+}
+
+img, svg {
 	width: auto; max-width: 100%;
 }
 
 svg {
 	fill: currentColor;
+}
+
+%ul-reset {
+	margin: 0; padding: 0;
+	list-style: none;
 }

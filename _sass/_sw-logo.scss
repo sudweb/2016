@@ -35,4 +35,28 @@
 		[id='sw-wave-shadow']   { fill: $orange; }
 		[id='sw-wave']          { fill: $yellow; }
 	}
+	&.gold {
+		[id='sw-hands']         { fill: $yellow; }
+		[id='sw-hands-shadows'] { fill: $orange; }
+		[id='sw-heart']         { fill: $yellow; }
+		[id='sw-heart-top']     { fill: $orange; }
+		[id='sw-wave-shadow']   { fill: $orange; }
+		[id='sw-wave']          { fill: $white; }
+	}
+	&.silver {
+		[id='sw-hands']         { fill: $lightgrey; }
+		[id='sw-hands-shadows'] { fill: $darkgrey; }
+		[id='sw-heart']         { fill: $lightgrey; }
+		[id='sw-heart-top']     { fill: $darkgrey; }
+		[id='sw-wave-shadow']   { fill: $darkgrey; }
+		[id='sw-wave']          { fill: $white; }
+	}
+	&.bronze {
+		[id='sw-hands']         { fill: $darkred; }
+		[id='sw-hands-shadows'] { fill: $darkgrey; }
+		[id='sw-heart']         { fill: $darkred; }
+		[id='sw-heart-top']     { fill: $darkgrey; }
+		[id='sw-wave-shadow']   { fill: $darkgrey; }
+		[id='sw-wave']          { fill: $white; }
+	}
 }
