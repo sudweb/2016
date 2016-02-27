@@ -334,11 +334,11 @@ title: La conférence web à dimension humaine
 								<h2 class="tiny-title-size uppercase">Épisodes précédents</h2>
 								<nav>
 									<ul>
-										<li><a href="#" title="SudWeb 2015 à Montpellier">2015 à Montpellier</a></li>
-										<li><a href="#" title="SudWeb 2014 à Toulouse">2014 à Toulouse</a></li>
-										<li><a href="#" title="SudWeb 2013 à Avignon">2013 à Avignon</a></li>
-										<li><a href="#" title="SudWeb 2012 à Toulouse">2012 à Toulouse</a></li>
-										<li><a href="#" title="SudWeb 2011 à Nîmes">2011 à Nîmes</a></li>
+										{% for edition in site.data.editions reversed %}
+											<li>
+												<a href="http://sudweb.fr/{{ edition.year}}">{{ edition.year}} à {{ edition.town }}</a>
+											</li>
+										{% endfor %}
 									</ul>
 								</nav>
 							</section>
@@ -346,7 +346,7 @@ title: La conférence web à dimension humaine
 								<h2 class="tiny-title-size uppercase">Pour en savoir plus</h2>
 								<nav>
 									<ul>
-										<li><a href="#">Dossier de partenariat</a></li>
+										<li><a href="{{site.baseurl}}/files/dossier-de-partenariat-sudweb-2016.pdf">Dossier de partenariat</a></li>
 										<li><a href="http://sudweb.fr/blog/">Blog</a></li>
 										<li><a href="#">Mentions légales</a></li>
 										<li><a href="http://sudweb.fr/blog/contact">Contact</a></li>
@@ -364,26 +364,13 @@ title: La conférence web à dimension humaine
 									</div>
 								</form>
 								<ul class="social-links">
+									{% for social in site.data.social %}
 									<li>
-										<a href="//www.facebook.com/SudWeb" class="button-type6" title="SudWeb sur Facebook">
-											<svg><use xlink:href="{{ site.baseurl }}/images/symbol-defs.svg#facebook" /></svg>
+										<a href="{{ social.url }}" class="button-type6" title="{{ site.title }} sur {{ social.name | capitalize }}">
+											<svg><use xlink:href="{{ site.baseurl }}/images/symbol-defs.svg#{{ social.name }}" /></svg>
 										</a>
 									</li>
-									<li>
-										<a href="//twitter.com/sudweb" class="button-type6" title="SudWeb sur Twitter">
-											<svg><use xlink:href="{{ site.baseurl }}/images/symbol-defs.svg#twitter" /></svg>
-										</a>
-									</li>
-									<li>
-										<a href="//flickr.com/people/sudweb/" class="button-type6" title="SudWeb sur Flickr">
-											<svg><use xlink:href="{{ site.baseurl }}/images/symbol-defs.svg#flickr" /></svg>
-										</a>
-									</li>
-									<li>
-										<a href="//vimeo.com/sudweb" class="button-type6" title="SudWeb sur Vimeo">
-											<svg><use xlink:href="{{ site.baseurl }}/images/symbol-defs.svg#vimeo" /></svg>
-										</a>
-									</li>
+									{% endfor %}
 								</ul>
 							</section>
 						</div>
