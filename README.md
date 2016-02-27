@@ -59,11 +59,10 @@ Le site est maintenant accessible en local à l'adresse http://0.0.0.0:4000/2016
 
 Pour plus d'information sur l'utilisation de Jekyll, reportez-vous à la [documentation officielle](http://jekyllrb.com/docs/home/).
 
-## Documentation
+## Styleguide et notes d'intégration
 
-Consulter et compléter la documentation à cette adresse
-
-http://127.0.0.1:4000/2016/pages/style-guide/#guide-typographie
+* [Styleguide](http://sudweb.fr/2016/styleguide/)
+* [Notes d'intégration]((http://sudweb.fr/2016/notes-integration/)) de @Twikito
 
 ## Contribution
 
@@ -79,6 +78,9 @@ Avant de soumettre votre pull request, lancez le script de test d'intégration c
 
 ```bash
 $ script/cibuild
+Running ["ScriptCheck", "LinkCheck", "ImageCheck"] on ./_site on *.html...
+
+HTML-Proofer finished successfully.
 ```
 
 ## Licence
