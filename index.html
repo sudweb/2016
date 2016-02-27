@@ -66,7 +66,7 @@ title: La conférence web à dimension humaine
             {% for conference in conferences %}
               <section class="pres-item">
               <figure class="pres-type">
-                <svg><use id="sw-hands" xlink:href="{{ site.baseurl }}/images/symbol-defs.svg#{{conference.symbol}}" /></svg>
+                <svg><use id="sw-hands" xlink:href="{{ site.baseurl }}/assets/images/symbol-defs.svg#{{conference.symbol}}" /></svg>
               </figure>
               <h4 class="pres-title tiny-title-size">{{ conference.title }}</h4>
               <p class="pres-desc">{{ conference.description }}</p>
@@ -74,7 +74,7 @@ title: La conférence web à dimension humaine
               {% assign speaker = site.data.speakers[conference.speaker] %}
               <section class="pres-author clearfix">
                 <figure class="author-img">
-                  <img src="{{ site.baseurl}}/images/2016/orateurs/{{ speaker.avatar }}.jpg" alt="{{ speaker.name }}">
+                  <img src="{{ site.baseurl}}/assets/images/2016/orateurs/{{ speaker.avatar }}.jpg" alt="{{ speaker.name }}">
                 </figure>
                 <h5 class="author-name default-size">{{ speaker.name }}</h5>
                 <p class="author-desc">{{ speaker.bio }}</p>
@@ -101,7 +101,7 @@ title: La conférence web à dimension humaine
             {% for lt in lightning-talks %}
               <section class="pres-item">
               <figure class="pres-type">
-                <svg><use id="sw-hands" xlink:href="{{ site.baseurl }}/images/symbol-defs.svg#{{lt.symbol}}" /></svg>
+                <svg><use id="sw-hands" xlink:href="{{ site.baseurl }}/assets/images/symbol-defs.svg#{{lt.symbol}}" /></svg>
               </figure>
               <h4 class="pres-title tiny-title-size">{{ lt.title }}</h4>
               <p class="pres-desc">{{ lt.description }}</p>
@@ -109,7 +109,7 @@ title: La conférence web à dimension humaine
               {% assign speaker = site.data.speakers[lt.speaker] where:"type","lt" %}
               <section class="pres-author clearfix">
                 <figure class="author-img">
-                  <img src="{{ site.baseurl}}/images/2016/orateurs/{{ speaker.avatar }}.jpg" alt="{{ speaker.name }}">
+                  <img src="{{ site.baseurl}}/assets/images/2016/orateurs/{{ speaker.avatar }}.jpg" alt="{{ speaker.name }}">
                 </figure>
                 <h5 class="author-name default-size">{{ speaker.name }}</h5>
                 <p class="author-desc">{{ speaker.bio }}</p>
@@ -147,15 +147,15 @@ title: La conférence web à dimension humaine
         <div class="wrapper">
           <div class="grid-3 text-center">
             <div>
-              <svg class="svg-size" viewBox="0 0 400 400"><use xlink:href="{{ site.baseurl }}/images/symbol-defs.svg#clap" /></svg>
+              <svg class="svg-size" viewBox="0 0 400 400"><use xlink:href="{{ site.baseurl }}/assets/images/symbol-defs.svg#clap" /></svg>
               <p><strong>Une journée auto-organisée</strong> où vous allez être les propres acteurs à travers un open space.</p>
             </div>
             <div>
-              <svg class="svg-size" viewBox="0 0 400 400"><use xlink:href="{{ site.baseurl }}/images/symbol-defs.svg#move" /></svg>
+              <svg class="svg-size" viewBox="0 0 400 400"><use xlink:href="{{ site.baseurl }}/assets/images/symbol-defs.svg#move" /></svg>
               <p><strong>Les participants sont libres</strong> de passer d’une session à L’autre à tout moment de la journée.</p>
             </div>
             <div>
-              <svg class="svg-size" viewBox="0 0 400 400"><use xlink:href="{{ site.baseurl }}/images/symbol-defs.svg#write" /></svg>
+              <svg class="svg-size" viewBox="0 0 400 400"><use xlink:href="{{ site.baseurl }}/assets/images/symbol-defs.svg#write" /></svg>
               <p><strong>Vous pouvez soumettre le sujet que vous voulez</strong>, aussi bien pour partager que pour apprendre.</p>
             </div>
           </div>
@@ -175,25 +175,25 @@ title: La conférence web à dimension humaine
           <h3 class="regular-title-size uppercase">Quatre principes et une loi</h3>
           <div class="grid-4 text-center">
             <div>
-              <svg class="orange svg-size" viewBox="0 0 400 400"><use xlink:href="{{ site.baseurl }}/images/symbol-defs.svg#people" /></svg>
+              <svg class="orange svg-size" viewBox="0 0 400 400"><use xlink:href="{{ site.baseurl }}/assets/images/symbol-defs.svg#people" /></svg>
               <p class="h-like tiny-title-size">Les personnes présentes sont les bonnes personnes</p>
             </div>
             <div>
-              <svg class="orange svg-size" viewBox="0 0 400 400"><use xlink:href="{{ site.baseurl }}/images/symbol-defs.svg#thumb" /></svg>
+              <svg class="orange svg-size" viewBox="0 0 400 400"><use xlink:href="{{ site.baseurl }}/assets/images/symbol-defs.svg#thumb" /></svg>
               <p class="h-like tiny-title-size">Ce qui arrive devait arriver</p>
             </div>
             <div>
-              <svg class="orange svg-size" viewBox="0 0 400 400"><use xlink:href="{{ site.baseurl }}/images/symbol-defs.svg#clock" /></svg>
+              <svg class="orange svg-size" viewBox="0 0 400 400"><use xlink:href="{{ site.baseurl }}/assets/images/symbol-defs.svg#clock" /></svg>
               <p class="h-like tiny-title-size">&Ccedil;a commence quand ça commence</p>
             </div>
             <div>
-              <svg class="orange svg-size" viewBox="0 0 400 400"><use xlink:href="{{ site.baseurl }}/images/symbol-defs.svg#stop" /></svg>
+              <svg class="orange svg-size" viewBox="0 0 400 400"><use xlink:href="{{ site.baseurl }}/assets/images/symbol-defs.svg#stop" /></svg>
               <p class="h-like tiny-title-size">&Ccedil;a finit quand c’est finit</p>
             </div>
           </div>
           <p>L’idée est de partir sur des bases saines. Une autre chose importante : c’est à vous de construire votre journée pour qu’elle vous apporte ce que vous êtes venus chercher. Si aucun des sujets proposés ne vous apporte de sens, alors à vous d’en proposer un.</p>
           <p>Une fois qu’on a dit ça il ne reste plus qu’à parler de LA loi qui régit tous les super-héros :</p>
-          <svg class="orange svg-size" viewBox="0 0 400 400"><use xlink:href="{{ site.baseurl }}/images/symbol-defs.svg#rocket" /></svg>
+          <svg class="orange svg-size" viewBox="0 0 400 400"><use xlink:href="{{ site.baseurl }}/assets/images/symbol-defs.svg#rocket" /></svg>
           <p class="h-like tiny-title-size">La loi des deux pieds</p>
           <p>&Agrave; partir du moment où vous n’êtes plus en train d’apprendre ni de contribuer, vous êtes libres à tout moment de vous envoler vers de nouveaux cieux et de quitter le groupe pour aller en voir un autre, puis un autre et ainsi de suite&hellip; Aucune représaille ne sera faite, allez et venez autant que vous le voulez.</p>
         </div>
@@ -252,12 +252,12 @@ title: La conférence web à dimension humaine
 								<div>
 									<svg class="sw-logo gold" viewBox="0 0 500 276.37">
 										<title>Logo SudWeb</title>
-										<use id="sw-hands" xlink:href="{{ site.baseurl }}/images/symbol-defs.svg#sw-hands" />
-										<use id="sw-hands-shadows" xlink:href="{{ site.baseurl }}/images/symbol-defs.svg#sw-hands-shadows" />
-										<use id="sw-heart" xlink:href="{{ site.baseurl }}/images/symbol-defs.svg#sw-heart" />
-										<use id="sw-heart-top" xlink:href="{{ site.baseurl }}/images/symbol-defs.svg#sw-heart-top" />
-										<use id="sw-wave-shadow" xlink:href="{{ site.baseurl }}/images/symbol-defs.svg#sw-wave-shadow" />
-										<use id="sw-wave" xlink:href="{{ site.baseurl }}/images/symbol-defs.svg#sw-wave" />
+										<use id="sw-hands" xlink:href="{{ site.baseurl }}/assets/images/symbol-defs.svg#sw-hands" />
+										<use id="sw-hands-shadows" xlink:href="{{ site.baseurl }}/assets/images/symbol-defs.svg#sw-hands-shadows" />
+										<use id="sw-heart" xlink:href="{{ site.baseurl }}/assets/images/symbol-defs.svg#sw-heart" />
+										<use id="sw-heart-top" xlink:href="{{ site.baseurl }}/assets/images/symbol-defs.svg#sw-heart-top" />
+										<use id="sw-wave-shadow" xlink:href="{{ site.baseurl }}/assets/images/symbol-defs.svg#sw-wave-shadow" />
+										<use id="sw-wave" xlink:href="{{ site.baseurl }}/assets/images/symbol-defs.svg#sw-wave" />
 									</svg>
 								</div>
 							</div>
@@ -266,7 +266,7 @@ title: La conférence web à dimension humaine
 								{% for sponsor in sponsors %}
 									<li>
 										<figure>
-											<a href="{{ sponsor.url }}" title=" {{ sponsor.title }}"><img src="images/2016/partenaires/{{ sponsor.logo }}" alt="{{ sponsor.name }}"></a>
+											<a href="{{ sponsor.url }}" title=" {{ sponsor.title }}"><img src="{{ site.baseurl}}/assets/images/2016/partenaires/{{ sponsor.logo }}" alt="{{ sponsor.name }}"></a>
 											<figcation class="visuallyhidden">{{ sponsor.name }}</figcation>
 										</figure>
 									</li>
@@ -279,12 +279,12 @@ title: La conférence web à dimension humaine
 								<div>
 									<svg class="sw-logo silver" viewBox="0 0 500 276.37">
 										<title>Logo SudWeb</title>
-										<use id="sw-hands" xlink:href="{{ site.baseurl }}/images/symbol-defs.svg#sw-hands" />
-										<use id="sw-hands-shadows" xlink:href="{{ site.baseurl }}/images/symbol-defs.svg#sw-hands-shadows" />
-										<use id="sw-heart" xlink:href="{{ site.baseurl }}/images/symbol-defs.svg#sw-heart" />
-										<use id="sw-heart-top" xlink:href="{{ site.baseurl }}/images/symbol-defs.svg#sw-heart-top" />
-										<use id="sw-wave-shadow" xlink:href="{{ site.baseurl }}/images/symbol-defs.svg#sw-wave-shadow" />
-										<use id="sw-wave" xlink:href="{{ site.baseurl }}/images/symbol-defs.svg#sw-wave" />
+										<use id="sw-hands" xlink:href="{{ site.baseurl }}/assets/images/symbol-defs.svg#sw-hands" />
+										<use id="sw-hands-shadows" xlink:href="{{ site.baseurl }}/assets/images/symbol-defs.svg#sw-hands-shadows" />
+										<use id="sw-heart" xlink:href="{{ site.baseurl }}/assets/images/symbol-defs.svg#sw-heart" />
+										<use id="sw-heart-top" xlink:href="{{ site.baseurl }}/assets/images/symbol-defs.svg#sw-heart-top" />
+										<use id="sw-wave-shadow" xlink:href="{{ site.baseurl }}/assets/images/symbol-defs.svg#sw-wave-shadow" />
+										<use id="sw-wave" xlink:href="{{ site.baseurl }}/assets/images/symbol-defs.svg#sw-wave" />
 									</svg>
 								</div>
 							</div>
@@ -293,7 +293,7 @@ title: La conférence web à dimension humaine
 								{% for sponsor in sponsors %}
 									<li>
 										<figure>
-											<a href="{{ sponsor.url }}" title=" {{ sponsor.title }}"><img src="images/2016/partenaires/{{ sponsor.logo }}" alt="{{ sponsor.name }}"></a>
+											<a href="{{ sponsor.url }}" title=" {{ sponsor.title }}"><img src="{{ site.baseurl}}/assets/images/2016/partenaires/{{ sponsor.logo }}" alt="{{ sponsor.name }}"></a>
 											<figcation class="visuallyhidden">{{ sponsor.name }}</figcation>
 										</figure>
 									</li>
@@ -306,12 +306,12 @@ title: La conférence web à dimension humaine
 								<div>
 									<svg class="sw-logo bronze" viewBox="0 0 500 276.37">
 										<title>Logo SudWeb</title>
-										<use id="sw-hands" xlink:href="{{ site.baseurl }}/images/symbol-defs.svg#sw-hands" />
-										<use id="sw-hands-shadows" xlink:href="{{ site.baseurl }}/images/symbol-defs.svg#sw-hands-shadows" />
-										<use id="sw-heart" xlink:href="{{ site.baseurl }}/images/symbol-defs.svg#sw-heart" />
-										<use id="sw-heart-top" xlink:href="{{ site.baseurl }}/images/symbol-defs.svg#sw-heart-top" />
-										<use id="sw-wave-shadow" xlink:href="{{ site.baseurl }}/images/symbol-defs.svg#sw-wave-shadow" />
-										<use id="sw-wave" xlink:href="{{ site.baseurl }}/images/symbol-defs.svg#sw-wave" />
+										<use id="sw-hands" xlink:href="{{ site.baseurl }}/assets/images/symbol-defs.svg#sw-hands" />
+										<use id="sw-hands-shadows" xlink:href="{{ site.baseurl }}/assets/images/symbol-defs.svg#sw-hands-shadows" />
+										<use id="sw-heart" xlink:href="{{ site.baseurl }}/assets/images/symbol-defs.svg#sw-heart" />
+										<use id="sw-heart-top" xlink:href="{{ site.baseurl }}/assets/images/symbol-defs.svg#sw-heart-top" />
+										<use id="sw-wave-shadow" xlink:href="{{ site.baseurl }}/assets/images/symbol-defs.svg#sw-wave-shadow" />
+										<use id="sw-wave" xlink:href="{{ site.baseurl }}/assets/images/symbol-defs.svg#sw-wave" />
 									</svg>
 								</div>
 							</div>
@@ -367,7 +367,7 @@ title: La conférence web à dimension humaine
 									{% for social in site.data.social %}
 									<li>
 										<a href="{{ social.url }}" class="button-type6" title="{{ site.title }} sur {{ social.name | capitalize }}">
-											<svg><use xlink:href="{{ site.baseurl }}/images/symbol-defs.svg#{{ social.name }}" /></svg>
+											<svg><use xlink:href="{{ site.baseurl }}/assets/images/symbol-defs.svg#{{ social.name }}" /></svg>
 										</a>
 									</li>
 									{% endfor %}
