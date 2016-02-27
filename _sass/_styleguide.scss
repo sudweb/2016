@@ -1,6 +1,4 @@
-/* ==========================================================================
-   WEBSITE STYLE GUIDE
-   ========================================================================== */
+// Styleguide
 
 .component {
   margin-bottom: 1em;
@@ -57,10 +55,7 @@
   min-height: 32px;
 }
 
-
-/*
-   Color swatches
-   ========================================================================== */
+// Color swatches
 
 .color__tile {
   display: flex;
@@ -87,23 +82,16 @@
   white-space: normal;
 }
 
-/*
-   Background colors
-   ========================================================================== */
+// Background colors
 
 $color:
 (white-bg, $white),
-(black-bg, $black),
 (gray-bg, $lightgrey),
 (background, $lightgrey),
 (text, $darkgrey),
 (headline, $darkgrey),
 (highlighter, $darkgrey),
 (primary, $darkred),
-(success, $success-color),
-(warning, $warning-color),
-(danger, $danger-color),
-(info, $info-color),
 (border, $lightgrey),
 (link, $darkred);
 
