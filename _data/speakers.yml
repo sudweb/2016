@@ -1,23 +1,10 @@
-bill:
-  name: Bill Murray
-  bio: Actor
-  twitter: BiIIMurray
-  avatar: http://www.fillmurray.com/200/200
-
-Jeffrey Zeldman:
-    name: Jeffrey Zeldman
-    twitter: zeldman
-    avatar: https://pbs.twimg.com/profile_images/626137507512610816/e_fXml7r_bigger.jpg
-    bio: Designing With Web Standards. Happy Cog. A Book Apart. A List Apart. An Event Apart. The Big Web Show.
-    website: http://www.zeldman.com/
-
 hannah:
   name: Hannah Wolfe
   bio: CTO de Ghost.io
   location: Northampton
   country: United Kingdom
   twitter: erisds
-  avatar: https://pbs.twimg.com/profile_images/479584528239820800/4yt7SjFl.jpeg
+  avatar: hannah-wolfe
   website: https://hannah.wf/
 
 jan:
@@ -26,7 +13,7 @@ jan:
   location: Berlin
   country: Germany
   twitter: thedeftone
-  avatar: https://avatars3.githubusercontent.com/u/68591?v=3&s=200
+  avatar: jan-monschke
   website: http://janmonschke.com/
 
 stefanie:
@@ -35,7 +22,7 @@ stefanie:
   location: Londres
   country: United Kingdom
   twitter: stefpos
-  avatar: https://pbs.twimg.com/profile_images/577532169943306240/pBEz9eH6.jpeg
+  avatar: stefanie-povasec
   website: http://www.stefanieposavec.co.uk/
 
 chris:
@@ -56,8 +43,73 @@ roxane:
   avatar: https://pbs.twimg.com/profile_images/689002478340288512/6A9J2kTQ.jpg
   website:
 
-bill:
-  name: Bill Murray
-  bio: Actor
-  twitter: BiIIMurray
-  avatar: http://www.fillmurray.com/200/200
+raphael:
+  name: Raphael Yharrassary
+  bio: UX dans tous ses états
+  location: Bayonne
+  country: France
+  twitter: iergo
+  avatar: raphael-yharrassarry
+
+laurence:
+  name: Laurence Wagner
+  bio: Utilisability Quuen
+  location: Metz
+  country: France
+  twitter: hellgy
+  avatar: laurence-wagner
+
+thomas:
+  name: Thomas Gasc
+  bio: Dev @1001 pharma
+  location: Montpellier
+  country: France
+  twitter: methylbro
+  avatar: thomas-gasc
+
+boris:
+  name: Boris Schapira
+  bio: Clever Guy
+  location: Bordeaux
+  country: France
+  twitter: borisschapira
+  avatar: boris-schapira
+
+marion:
+  name: Marion Lambert
+  bio: Développeur Ruby on Rails
+  location:
+  country: France
+  twitter:
+  avatar: marion-lambert
+
+charles:
+  name: Charles Pernet
+  bio: Teacher assistant
+  location: Bordeaux
+  country: France
+  twitter: CharlesPernet
+  avatar: charles-pernet
+
+alexandre:
+  name: Alexandre Pronine
+  bio: Manager
+  location: Paris
+  twitter:
+  avatar: alexandre-pronine
+
+basile:
+  name: Basile Simon
+  bio: 
+  avatar: basile-simon
+  twitter:
+
+antoine:
+  name: Antoine Fauchié
+  bio:
+  avatar: antoine-fauchie
+
+bastien:
+  name: Bastien Guerry
+  bio:
+  avatar: bastien-guerry
