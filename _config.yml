@@ -45,7 +45,23 @@ collections:
     output: false
 
 
-exclude: [Gemfile, Gemfile.lock, Procfile, script, vendor, gems]
+exclude:
+  - .editorconfig
+  - .gitattributes
+  - .gitignore
+  - .ruby-version
+  - .travis.yml
+  - Gemfile
+  - Gemfile.lock
+  - Procfile
+  - script
+  - vendor
+  - gems
+  - tmp
+  - LICENSE
+  - README
+  - sources
+  - script
 
 gems:
 - jekyll-sitemap
