@@ -9,6 +9,8 @@ GEM
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
     addressable (2.3.8)
+    autoprefixer-rails (6.3.3.1)
+      execjs
     coffee-script (2.4.1)
       coffee-script-source
       execjs
@@ -113,6 +115,9 @@ GEM
       mini_portile2 (~> 2.0.0.rc2)
     octokit (4.2.0)
       sawyer (~> 0.6.0, >= 0.5.3)
+    octopress-autoprefixer (2.0.0)
+      autoprefixer-rails
+      jekyll (~> 3.0)
     parallel (1.6.2)
     public_suffix (1.5.3)
     rake (10.5.0)
@@ -141,10 +146,11 @@ PLATFORMS
 
 DEPENDENCIES
   foreman
-  github-pages
+  github-pages (= 52)
   html-proofer
   jekyll (= 3.0.3)
   json
+  octopress-autoprefixer
   rake
 
 BUNDLED WITH
