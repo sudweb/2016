@@ -1,7 +1,9 @@
 ---
 layout: default
-title: "Guide de styles"
-excerpt: "Guide de styles : couleurs, typographie, UI patterns et composants"
+title: "Styleguide"
+description: "Documentation des composants d'interface du site"
+excerpt: "Styleguide : couleurs, typographie, UI patterns et composants"
+permalink: /styleguide/
 ---
 
 
