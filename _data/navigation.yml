@@ -1,8 +1,6 @@
 # Primary navigation links
 primary:
   - title: "Programme"
-    url: /programme/
+    url: "/"
   - title: "Lieux"
-    url: /lieux/
-  - title: "Inscription"
-    url: /inscription/
+    url: "/"
