@@ -262,12 +262,15 @@ title: La conférence web à dimension humaine
 								</div>
 							</div>
 							<ul class="grid-2">
-								<li>
-									<figure>
-										<a href="//alienor.net/" title="L'Internet Professionnel"><img src="images/2016/partenaires/alienor.png" alt="Alienor"></a>
-										<figcation class="visuallyhidden">Alienor</figcation>
-									</figure>
-								</li>
+								{% assign sponsors = site.data.sponsors | where:"level","gold" %}
+								{% for sponsor in sponsors %}
+									<li>
+										<figure>
+											<a href="{{ sponsor.url }}" title=" {{ sponsor.title }}"><img src="images/2016/partenaires/{{ sponsor.logo }}" alt="{{ sponsor.name }}"></a>
+											<figcation class="visuallyhidden">{{ sponsor.name }}</figcation>
+										</figure>
+									</li>
+								{% endfor %}
 							</ul>
 						</section>
 						<section class="silver-partners">
@@ -286,48 +289,15 @@ title: La conférence web à dimension humaine
 								</div>
 							</div>
 							<ul class="grid-4">
-								<li>
-									<figure>
-										<a href="//www.globalis-ms.com/" title="Accélérateur de projet digitaux"><img src="images/2016/partenaires/globalis.svg" alt="Globalis"></a>
-										<figcation class="visuallyhidden">Globalis</figcation>
-									</figure>
-								</li>
-								<li>
-									<figure>
-										<a href="//craftsmen.io/" title="Building a better digital world"><img src="images/2016/partenaires/craftsmen.svg" alt="Craftsmen"></a>
-										<figcation class="visuallyhidden">Craftmen</figcation>
-									</figure>
-								</li>
-								<li>
-									<figure>
-										<a href="//jolicode.com/" title="Agence experte dans la réalisation de projets Web et mobiles de qualité"><img src="images/2016/partenaires/jolicode.svg" alt="JoliCode"></a>
-										<figcation class="visuallyhidden">JoliCode</figcation>
-									</figure>
-								</li>
-								<li>
-									<figure>
-										<a href="//lewagon.com/fr/bordeaux" title="Changez de vie : apprenez à coder"><img src="images/2016/partenaires/le-wagon-bordeaux.svg" alt="Le Wagon Bordeaux"></a>
-										<figcation class="visuallyhidden">Le Wagon Bordeaux</figcation>
-									</figure>
-								</li>
-								<li>
-									<figure>
-										<a href="//www.alwaysdata.com/" title="Hébergement simple, rapide et infogéré"><img src="images/2016/partenaires/alwaysdata.svg" alt="alwaysdata"></a>
-										<figcation class="visuallyhidden">alwaysdata</figcation>
-									</figure>
-								</li>
-								<li>
-									<figure>
-										<a href="//jechange.fr/" title="On gagne toujours à comparer"><img src="images/2016/partenaires/jechange.svg" alt="JeChange"></a>
-										<figcation class="visuallyhidden">JeChange</figcation>
-									</figure>
-								</li>
-								<li>
-									<figure>
-										<a href="//mailchimp.com/" title="Send Better Email"><img src="images/2016/partenaires/mailchimp.svg" alt="MailChimp"></a>
-										<figcation class="visuallyhidden">MailChimp</figcation>
-									</figure>
-								</li>
+								{% assign sponsors = site.data.sponsors | where:"level","silver" %}
+								{% for sponsor in sponsors %}
+									<li>
+										<figure>
+											<a href="{{ sponsor.url }}" title=" {{ sponsor.title }}"><img src="images/2016/partenaires/{{ sponsor.logo }}" alt="{{ sponsor.name }}"></a>
+											<figcation class="visuallyhidden">{{ sponsor.name }}</figcation>
+										</figure>
+									</li>
+								{% endfor %}
 							</ul>
 						</section>
 						<section class="bronze-partners">
@@ -346,8 +316,12 @@ title: La conférence web à dimension humaine
 								</div>
 							</div>
 							<ul>
-								<li><a href="//epitech.eu/" title="L'école de l'innovation et de l'expertise informatique">Epitech</a></li>
-								<li><a href="//eyrolles.com/" title="La librairie des passionnés et des experts">Eyrolles</a></li>
+								{% assign sponsors = site.data.sponsors | where:"level","bronze" %}
+								{% for sponsor in sponsors %}
+									<li>
+											<a href="{{ sponsor.url }}" title="{{ sponsor.title }}">{{ sponsor.name }}</a>
+									</li>
+								{% endfor %}
 							</ul>
 						</section>
 					</div>
