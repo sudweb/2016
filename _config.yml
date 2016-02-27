@@ -22,9 +22,11 @@ analytics:
   google :
     tracking_id : "UA-22076213-1"
 
+weezevent:
+    mini-site-url: https://www.weezevent.com/sudweb-2016
+
 newsletter:
   url: http://sudweb.us2.list-manage.com/subscribe?u=af19b58cf514c01eca3f7652e&id=b579f5b507
-
 
 # Jekyll configuration
 
