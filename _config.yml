@@ -61,7 +61,8 @@ exclude:
   - gems
   - tmp
   - LICENSE
-  - README
+  - README.md
+  - notes-integration.md
   - sources
   - script
 
