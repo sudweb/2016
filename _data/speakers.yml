@@ -1,115 +1,164 @@
+# Conferences
+
 hannah:
   name: Hannah Wolfe
-  bio: CTO de Ghost.io
+  bio: "Hannah est cofondatrice et CTO de <a href=\"//ghost.org\">Ghost</a>, une plateforme de publication innovante à la fois libre et rentable, financée par le service payant Ghost(Pro)."
   location: Northampton
   country: United Kingdom
   twitter: erisds
   avatar: hannah-wolfe
-  website: https://hannah.wf/
+  website: //hannah.wf/
 
 jan:
   name: Jan Monschke
-  bio: Ingénieur front-end chez Soundcloud
+  bio: "Ingénieur front-end à Berlin chez <a href=\"//soundcloud.com/\">Soundcloud</a>, amoureux de musique et de web. Quand il n'organise pas <a href=\"//twitter.com/webaudioberlin\">@webaudioberlin</a> ou <a href=\"//rejectjs.org/\">Reject.js</a>, il aime rider sur son longboard et voyager."
   location: Berlin
   country: Germany
   twitter: thedeftone
   avatar: jan-monschke
-  website: http://janmonschke.com/
+  website: //janmonschke.com/
+
+chris:
+  name: Chris Lowis
+  bio: "Ingénieur chez FutureLearn"
+  location: Londres
+  country: United Kingdom
+  twitter: chrislowis
+  avatar: chris-lowis
+  website: http://blog.chrislowis.co.uk/
+
+ludivine:
+  name: Ludivine Probst
+  bio: "Ingénieur de données, Ludivine jongle avec le code, les données et les mathématiques quand elle ne participe pas à des projets comme <a href=\"//www.ladiesofcode.com/\">Ladies of Code</a>."
+  location: Paris
+  twitter: nivdul
+  avatar: ludivine-probst
+  website: //nivdul.wordpress.com/
+
+mylene:
+  name: Mylène L'Orguilloux
+  bio: "Accroc à la couture, son patron préféré c'est encore celui du prochain vêtement qu'elle va designer."
+  avatar: mylene
+  location: Bordeaux
+  twitter: MilanAvJC
+  website: //letskeepsewing.com/
+
+olivier:
+  name: Olivier Thereaux
+  bio: "Après avoir longtemps travaillé pour le W3C et parcouru le monde, Olivier dirige aujourd'hui un service de <a href=\"//www.bbc.co.uk/rd\">recherche et développement à la BBC</a>."
+  location: Londres
+  twitter: olivierthereaux
+  website: //olivier.thereaux.net/
+
+rachel:
+    name: Rachel Saada
+    bio: "Avocate au barreau de Paris, spécialiste du droit du travail et de la protection sociale. Auteure, avec Marie Pezé et Nicolas Sandret, de <a href=\"//www.pearson.fr/livre/?GCOI=27440100950120\">Travailler à armes égales</a>."
+    avatar: rachel-saada
+    location: Paris
+    twitter:
+    website:
+
+roxane:
+  name: Roxane Debruyker
+  bio: "Étudiante en sciences cognitives, Roxanne a beaucoup appris pendant son stage chez <a href=\"http://weareants.fr/\">We are Ants</a>, notamment sur l'intelligence articielle et l'Internet des objets."
+  location: Bordeaux
+  country: France
+  twitter: dbr_roxane
+  avatar: roxane-debruyker
 
 stefanie:
   name: Stefanie Posavec
-  bio: Designer et co-auteur du projet Dear Data
+  bio: "Designer d'information, traite les données à l'aide de ses crayons. Co-auteur de du livre <a href=\"http://www.dear-data.com/all\">Dear Data</a> à paraître courant 2016."
   location: Londres
   country: United Kingdom
   twitter: stefpos
   avatar: stefanie-povasec
-  website: http://www.stefanieposavec.co.uk/
+  website: //www.stefanieposavec.co.uk/
 
-chris:
-  name: Chris Lowis
-  bio: Ingénieur chez FutureLearn
+stephanie:
+  name: Stéphanie Troeth
+  bio: "UX Strategist"
   location: Londres
   country: United Kingdom
-  twitter: chrislowis
-  avatar: https://pbs.twimg.com/profile_images/479578242123190272/0sDbyS5O.jpeg
-  website: http://blog.chrislowis.co.uk/
-
-roxane:
-  name: Roxane Debruyker
-  bio: Étudiante en sciences cognitives
-  location: Bordeaux
-  country: France
-  twitter: dbr_roxane
-  avatar: https://pbs.twimg.com/profile_images/689002478340288512/6A9J2kTQ.jpg
+  twitter: sniffles
+  avatar: stephanie-troeth
   website:
 
-raphael:
-  name: Raphael Yharrassary
-  bio: UX dans tous ses états
-  location: Bayonne
-  country: France
-  twitter: iergo
-  avatar: raphael-yharrassarry
+# Lightning talks
 
-laurence:
-  name: Laurence Wagner
-  bio: Utilisability Quuen
-  location: Metz
-  country: France
-  twitter: hellgy
-  avatar: laurence-wagner
+alexandre:
+  name: Alexandre Pronine
+  bio: "Chef de projet technico-fonctionnel web. Passionné de sport, gastronomie et curieux du reste."
+  location: Paris
+  twitter: Alex_Pronine
+  avatar: alexandre-pronine
 
-thomas:
-  name: Thomas Gasc
-  bio: Dev @1001 pharma
-  location: Montpellier
-  country: France
-  twitter: methylbro
-  avatar: thomas-gasc
+antoine:
+  name: Antoine Fauchié
+  bio: "Accompagne les professionnels du livre dans les mutations liées au numérique. Antoine est aussi enseignant et participe à divers projets associatifs."
+  avatar: antoine-fauchie
+
+basile:
+  name: Basile Simon
+  bio: "Hacker journaliste dans le <a href=\"http://bbcnewslabs.co.uk/\">labo de BBC News</a>. Data-journalist @airwars_. ddj, infosec, stuff."
+  avatar: basile-simon
+  twitter: basilesimon
+
+bastien:
+  name: Bastien Guerry
+  bio: "Après des études de philosophie et de sciences cognitives, Bastien a contribué à de nombreux projets libres et est devenu hacktiviste indépendant."
+  avatar: bastien-guerry
+  twitter: bzg2
+  website: //bzg.fr/
 
 boris:
   name: Boris Schapira
-  bio: Clever Guy
+  bio: "Ingénieur de formation, consultant chez Clever Age. Boris accompagne ses clients lors de missions de conseil, de gestion de projets, de formation et parfois de développements."
   location: Bordeaux
   country: France
   twitter: borisschapira
   avatar: boris-schapira
+  website: //borisschapira.com/
+
+charles:
+  name: Charles Pernet
+  bio: "Ancien photographe, formé à Ruby on Rails est aujourd'hui Teacher assistant au Wagon Bordeaux"
+  location: Bordeaux
+  country: France
+  twitter: CharlesPernet
+  avatar: charles-pernet
+  website: //charlespernet.com/
+
+laurence:
+  name: Laurence Wagner
+  bio: Créative, scientifique, geek, fan de photo et de vélos étranges, capillairement instable, allergique à la kryptonite. Dresseuse de petits dinosaures en plastique.
+  location: Metz
+  country: France
+  twitter: hellgy
+  avatar: laurence-wagner
+  website: //www.redisdead.net/
 
 marion:
   name: Marion Lambert
-  bio: Développeur Ruby on Rails
+  bio: "Développeur Ruby on Rails et femme d'agriculteur"
   location:
   country: France
   twitter:
   avatar: marion-lambert
 
-charles:
-  name: Charles Pernet
-  bio: Teacher assistant
-  location: Bordeaux
+raphael:
+  name: Raphael Yharrassary
+  bio: Ergonome, UX, Psychologue
+  location: Bayonne
   country: France
-  twitter: CharlesPernet
-  avatar: charles-pernet
+  twitter: iergo
+  avatar: raphael-yharrassarry
+  website: //www.iergo.fr/
 
-alexandre:
-  name: Alexandre Pronine
-  bio: Manager
-  location: Paris
-  twitter:
-  avatar: alexandre-pronine
-
-basile:
-  name: Basile Simon
-  bio: 
-  avatar: basile-simon
-  twitter:
-
-antoine:
-  name: Antoine Fauchié
-  bio:
-  avatar: antoine-fauchie
-
-bastien:
-  name: Bastien Guerry
-  bio:
-  avatar: bastien-guerry
+thomas:
+  name: Thomas Gasc
+  bio: Développeur chez 1001 pharmas
+  location: Montpellier
+  country: France
+  twitter: methylbro
+  avatar: thomas-gasc
