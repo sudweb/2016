@@ -58,7 +58,7 @@ title: La conférence web à dimension humaine
       <section class="yellow-section">
         <div class="wrapper text-center">
           <h3 class="conf-title regular-title-size uppercase">8 conférences</h3>
-          <p>Éducation, transmission.</p>
+          <p>Une diversité de sujets et d'orateurs unique en son genre.</p>
 
           <div class="grid-2">
             {% assign conferences = site.talks | where: "type","conference" | sort: "start-time" %}
@@ -77,7 +77,13 @@ title: La conférence web à dimension humaine
                 <figure class="author-img">
                   <img src="{{ site.baseurl}}/assets/images/2016/orateurs/{{ speaker.avatar }}.jpg" alt="{{ speaker.name }}">
                 </figure>
-                <h5 class="author-name default-size">{{ speaker.name }}</h5>
+                <h5 class="author-name default-size">
+									{% if speaker.twitter %}
+									   <a href="//twitter.com/{{speaker.twitter}}">{{ speaker.name }}</a>
+									{% else %}
+									  	{{ speaker.name }}
+									{% endif %}
+								</h5>
                 <p class="author-desc">{{ speaker.bio }}</p>
               </section>
             </footer>
@@ -112,7 +118,13 @@ title: La conférence web à dimension humaine
                 <figure class="author-img">
                   <img src="{{ site.baseurl}}/assets/images/2016/orateurs/{{ speaker.avatar }}.jpg" alt="{{ speaker.name }}">
                 </figure>
-                <h5 class="author-name default-size">{{ speaker.name }}</h5>
+                <h5 class="author-name default-size">
+									{% if speaker.twitter %}
+									   <a href="//twitter.com/{{speaker.twitter}}">{{ speaker.name }}</a>
+									{% else %}
+									  	{{ speaker.name }}
+									{% endif %}
+								</h5>
                 <p class="author-desc">{{ speaker.bio }}</p>
               </section>
             </footer>
