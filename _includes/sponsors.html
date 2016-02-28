@@ -1,11 +1,30 @@
 <section class="sponsors">
   <h2>Merci</h2>
     <ul>
-        {% for sponsor in site.data.sponsors %}
+        {% assign sponsors = site.data.sponsors | where: "level","gold" %}
+        {% for sponsor in sponsors %}
         <li>
           <a href="{{ sponsor.website }}">
-            <img src="{{ site.baseurl }}/images/2016/partenaires/{{ sponsor.logo }}" alt="{{ sponsor.name }}">
+            <img src="{{ site.baseurl }}/images/2016/partenaires/{{ sponsor.logo }}" width="300" alt="{{ sponsor.name }}">
           </a>
+        </li>
+        {% endfor %}
+    </ul>
+    <ul>
+        {% assign sponsors = site.data.sponsors | where: "level","silver" %}
+        {% for sponsor in sponsors %}
+        <li>
+          <a href="{{ sponsor.website }}" title="{{ sponsor.title }}">
+            <img src="{{ site.baseurl }}/images/2016/partenaires/{{ sponsor.logo }}" width="150" alt="{{ sponsor.name }}">
+          </a>
+        </li>
+        {% endfor %}
+    </ul>
+    <ul>
+        {% assign sponsors = site.data.sponsors | where: "level","bronze" %}
+        {% for sponsor in sponsors %}
+        <li>
+          <a href="{{ sponsor.website }}" title="{{ sponsor.title }}">{{ sponsor.name }}</a>
         </li>
         {% endfor %}
     </ul>

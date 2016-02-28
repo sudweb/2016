@@ -1,18 +1,53 @@
+# Gold
 - name: Alienor
-  website: http://www.alienor.net/
+  website: //www.alienor.net/
+  title: "L'Internet Professionnel"
   logo: alienor.png
+  level: gold
+
+#Silver
 - name: Jolicode
-  website: http://jolicode.com/
-  logo: jolicode.png
+  website: //jolicode.com/
+  title: "Agence experte dans la réalisation de projets Web et mobiles de qualité"
+  logo: jolicode.svg
+  level: silver
 - name: Globalis
-  website: http://www.globalis-ms.com/
-  logo: globalis-media-systems.png
-- name: jeChange.fr
-  website: http://www.jechange.fr/
-  logo: jechangefr.png
-- name: Le Wagon
-  website: https://www.lewagon.com/fr/bordeaux
-  logo: lewagon.png
+  website: //www.globalis-ms.com/
+  title: "Accélérateur de projet digitaux"
+  logo: globalis.svg
+  level: silver
 - name: Alwaysdata
-  website: https://www.alwaysdata.com/
-  logo: alwaysdata.png
+  website: //alwaysdata.com/
+  title: "Hébergement simple, rapide et infogéré"
+  logo: alwaysdata.svg
+  level: silver
+- name: Craftsmen
+  website: //craftsmen.io
+  title: "Building a better digital world"
+  logo: craftsmen.png
+  level: silver
+- name: Mailchimp
+  website: //mailchimp.com
+  title: "Send Better Email"
+  logo: mailchimp.svg
+  level: silver
+- name: jeChange.fr
+  website: //www.jechange.fr/
+  title: "On gagne toujours à comparer"
+  logo: jechange.svg
+  level: silver
+- name: Le Wagon Bordeaux
+  website: //www.lewagon.com/fr/bordeaux
+  title: "Changez de vie : apprenez à coder"
+  logo: le-wagon-bordeaux.svg
+  level: silver
+
+# Bronze
+- name: Eyrolles
+  website: //www.editions-eyrolles.com/Theme/116/informatique/conception-web
+  title: "La librairie des passionnés et des experts"
+  level: bronze
+- name: Epitech
+  website: //epitech.eu/
+  title: "L'école de l'innovation et de l'expertise informatique"
+  level: bronze
