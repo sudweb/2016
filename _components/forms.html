@@ -1,0 +1,24 @@
+---
+title: "Contact Form"
+type: forms
+scss: _sass/_forms.scss
+usage: "Formulaire"
+---
+
+<form id="form1" name="form1" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" novalidate action="#">
+    <label class="desc">Nom</label>
+    <input type="text" />
+
+    <label class="desc" id="title2" for="Field2"> Email address <span id="req_2" class="req">*</span> </label>
+    <input type="email" />
+    <p><small>Your email address will remain private and won't be shared with anyone.</small></p>
+    <label> Message <span class="req">*</span> </label>
+    <textarea id="Field1" name="Field1" class="field textarea medium" spellcheck="true" rows="10" cols="50" tabindex="3" onkeyup="" required></textarea>
+    <label class="desc" id="title10" for="Field10"> How'd you hear about my website? </label>
+    <input id="Field10" name="Field10" type="text" class="field text large" value="" maxlength="255" tabindex="4" onKeyUp="" />
+
+    <input id="saveForm" name="saveForm" class="btn" type="submit" value="Send Message" />
+
+    <label for="comment">Ne pas remplir ce champ (robots)</label>
+    <textarea name="comment" id="comment" rows="1" cols="1"></textarea>
+</form>
