@@ -1,0 +1,25 @@
+{% for conference in conferences %}
+  <section class="pres-item">
+  <figure class="pres-type">
+    <svg><use id="sw-hands" xlink:href="{{ site.baseurl }}/assets/images/symbol-defs.svg#{{conference.symbol}}" /></svg>
+  </figure>
+  <h4 class="pres-title tiny-title-size">{{ conference.title }}</h4>
+  <p class="pres-desc">{{ conference.description }}</p>
+  <footer>
+  {% assign speaker = site.data.speakers[conference.speaker] %}
+  <section class="pres-author clearfix">
+    <figure class="author-img">
+      <img src="{{ site.baseurl}}/assets/images/2016/orateurs/{{ speaker.avatar }}.jpg" alt="{{ speaker.name }}">
+    </figure>
+    <h5 class="author-name default-size">
+      {% if speaker.twitter %}
+         <a href="//twitter.com/{{speaker.twitter}}">{{ speaker.name }}</a>
+      {% else %}
+          {{ speaker.name }}
+      {% endif %}
+    </h5>
+    <p class="author-desc">{{ speaker.bio }}</p>
+  </section>
+</footer>
+</section>
+{% endfor %}

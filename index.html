@@ -62,34 +62,7 @@ title: La conférence web à dimension humaine
 
           <div class="grid-2">
             {% assign conferences = site.talks | where: "type","conference" | sort: "start-time" %}
-
-            {% for conference in conferences %}
-
-              <section class="pres-item">
-              <figure class="pres-type">
-                <svg><use id="sw-hands" xlink:href="{{ site.baseurl }}/assets/images/symbol-defs.svg#{{conference.symbol}}" /></svg>
-              </figure>
-              <h4 class="pres-title tiny-title-size">{{ conference.title }}</h4>
-              <p class="pres-desc">{{ conference.description }}</p>
-              <footer>
-              {% assign speaker = site.data.speakers[conference.speaker] %}
-              <section class="pres-author clearfix">
-                <figure class="author-img">
-                  <img src="{{ site.baseurl}}/assets/images/2016/orateurs/{{ speaker.avatar }}.jpg" alt="{{ speaker.name }}">
-                </figure>
-                <h5 class="author-name default-size">
-									{% if speaker.twitter %}
-									   <a href="//twitter.com/{{speaker.twitter}}">{{ speaker.name }}</a>
-									{% else %}
-									  	{{ speaker.name }}
-									{% endif %}
-								</h5>
-                <p class="author-desc">{{ speaker.bio }}</p>
-              </section>
-            </footer>
-            </section>
-            {% endfor %}
-
+            {% include loop-speaker.html %}
             <a class="pres-link" href="#">
               <span>Le programme complet<br> c'est par ici</span>
             </a>
@@ -105,31 +78,7 @@ title: La conférence web à dimension humaine
 
           <div class="grid-2">
             {% assign lightning-talks = site.talks | where:"type","lt" %}
-            {% for lt in lightning-talks %}
-              <section class="pres-item">
-              <figure class="pres-type">
-                <svg><use id="sw-hands" xlink:href="{{ site.baseurl }}/assets/images/symbol-defs.svg#{{lt.symbol}}" /></svg>
-              </figure>
-              <h4 class="pres-title tiny-title-size">{{ lt.title }}</h4>
-              <p class="pres-desc">{{ lt.description }}</p>
-              <footer>
-              {% assign speaker = site.data.speakers[lt.speaker] %}
-              <section class="pres-author clearfix">
-                <figure class="author-img">
-                  <img src="{{ site.baseurl}}/assets/images/2016/orateurs/{{ speaker.avatar }}.jpg" alt="{{ speaker.name }}">
-                </figure>
-                <h5 class="author-name default-size">
-									{% if speaker.twitter %}
-									   <a href="//twitter.com/{{speaker.twitter}}">{{ speaker.name }}</a>
-									{% else %}
-									  	{{ speaker.name }}
-									{% endif %}
-								</h5>
-                <p class="author-desc">{{ speaker.bio }}</p>
-              </section>
-            </footer>
-            </section>
-            {% endfor %}
+            {% include loop-speaker.html %}
           </div>
         </div>
       </section>
@@ -259,84 +208,13 @@ title: La conférence web à dimension humaine
 				<article class="white-section">
 					<div class="wrapper text-center">
 						<h2 class="great-title-size red uppercase">Nos partenaires de choc</h2>
-						<section class="gold-partners">
-							<h3 class="partners-title small-title-size uppercase yellow">Or</h3>
-							<div class="partners-hr">
-								<div>
-									<svg class="sw-logo gold" viewBox="0 0 500 276.37">
-										<title>Logo SudWeb</title>
-										<use id="sw-hands" xlink:href="{{ site.baseurl }}/assets/images/symbol-defs.svg#sw-hands" />
-										<use id="sw-hands-shadows" xlink:href="{{ site.baseurl }}/assets/images/symbol-defs.svg#sw-hands-shadows" />
-										<use id="sw-heart" xlink:href="{{ site.baseurl }}/assets/images/symbol-defs.svg#sw-heart" />
-										<use id="sw-heart-top" xlink:href="{{ site.baseurl }}/assets/images/symbol-defs.svg#sw-heart-top" />
-										<use id="sw-wave-shadow" xlink:href="{{ site.baseurl }}/assets/images/symbol-defs.svg#sw-wave-shadow" />
-										<use id="sw-wave" xlink:href="{{ site.baseurl }}/assets/images/symbol-defs.svg#sw-wave" />
-									</svg>
-								</div>
-							</div>
-							<ul class="grid-2">
-								{% assign sponsors = site.data.sponsors | where:"level","gold" %}
-								{% for sponsor in sponsors %}
-									<li>
-										<figure>
-											<a href="{{ sponsor.url }}" title=" {{ sponsor.title }}"><img src="{{ site.baseurl}}/assets/images/2016/partenaires/{{ sponsor.logo }}" alt="{{ sponsor.name }}"></a>
-											<figcation class="visuallyhidden">{{ sponsor.name }}</figcation>
-										</figure>
-									</li>
-								{% endfor %}
-							</ul>
-						</section>
-						<section class="silver-partners">
-							<h3 class="partners-title small-title-size uppercase lightgrey">Argent</h3>
-							<div class="partners-hr">
-								<div>
-									<svg class="sw-logo silver" viewBox="0 0 500 276.37">
-										<title>Logo SudWeb</title>
-										<use id="sw-hands" xlink:href="{{ site.baseurl }}/assets/images/symbol-defs.svg#sw-hands" />
-										<use id="sw-hands-shadows" xlink:href="{{ site.baseurl }}/assets/images/symbol-defs.svg#sw-hands-shadows" />
-										<use id="sw-heart" xlink:href="{{ site.baseurl }}/assets/images/symbol-defs.svg#sw-heart" />
-										<use id="sw-heart-top" xlink:href="{{ site.baseurl }}/assets/images/symbol-defs.svg#sw-heart-top" />
-										<use id="sw-wave-shadow" xlink:href="{{ site.baseurl }}/assets/images/symbol-defs.svg#sw-wave-shadow" />
-										<use id="sw-wave" xlink:href="{{ site.baseurl }}/assets/images/symbol-defs.svg#sw-wave" />
-									</svg>
-								</div>
-							</div>
-							<ul class="grid-4">
-								{% assign sponsors = site.data.sponsors | where:"level","silver" %}
-								{% for sponsor in sponsors %}
-									<li>
-										<figure>
-											<a href="{{ sponsor.url }}" title=" {{ sponsor.title }}"><img src="{{ site.baseurl}}/assets/images/2016/partenaires/{{ sponsor.logo }}" alt="{{ sponsor.name }}"></a>
-											<figcation class="visuallyhidden">{{ sponsor.name }}</figcation>
-										</figure>
-									</li>
-								{% endfor %}
-							</ul>
-						</section>
-						<section class="bronze-partners">
-							<h3 class="partners-title small-title-size uppercase darkred">Bronze</h3>
-							<div class="partners-hr">
-								<div>
-									<svg class="sw-logo bronze" viewBox="0 0 500 276.37">
-										<title>Logo SudWeb</title>
-										<use id="sw-hands" xlink:href="{{ site.baseurl }}/assets/images/symbol-defs.svg#sw-hands" />
-										<use id="sw-hands-shadows" xlink:href="{{ site.baseurl }}/assets/images/symbol-defs.svg#sw-hands-shadows" />
-										<use id="sw-heart" xlink:href="{{ site.baseurl }}/assets/images/symbol-defs.svg#sw-heart" />
-										<use id="sw-heart-top" xlink:href="{{ site.baseurl }}/assets/images/symbol-defs.svg#sw-heart-top" />
-										<use id="sw-wave-shadow" xlink:href="{{ site.baseurl }}/assets/images/symbol-defs.svg#sw-wave-shadow" />
-										<use id="sw-wave" xlink:href="{{ site.baseurl }}/assets/images/symbol-defs.svg#sw-wave" />
-									</svg>
-								</div>
-							</div>
-							<ul>
-								{% assign sponsors = site.data.sponsors | where:"level","bronze" %}
-								{% for sponsor in sponsors %}
-									<li>
-											<a href="{{ sponsor.url }}" title="{{ sponsor.title }}">{{ sponsor.name }}</a>
-									</li>
-								{% endfor %}
-							</ul>
-						</section>
+            {% assign sponsortypes = "gold|silver|bronze" | split: "|" %}
+            {% for sponsortype in sponsortypes %}
+            <section class="{{ sponsortype }}-partners">
+              {% assign sponsors = site.data.sponsors | where:"level", sponsortype %}
+              {% include loop-sponsor.html %}
+            </section>
+            {% endfor %}
 					</div>
 				</article>
 
