@@ -35,6 +35,7 @@ paginate: 5
 timezone: Europe/Paris
 sass:
     sass_dir: _sass
+    style: compressed
 
 collections:
   talks:
