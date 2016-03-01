@@ -61,7 +61,7 @@ title: La conférence web super humaine
           <p>Une diversité de sujets et d'orateurs unique en son genre.</p>
 
           <div class="grid-2">
-            {% assign conferences = site.talks | where: "type","conference" | sort: "start-time" %}
+            {% assign conferences = site.talks | where: "type","conference" | sort: "display-order" %}
             {% include speakers.html %}
             <!-- <a class="pres-link" href="#">
               <span>Le programme complet<br> c'est par ici</span>

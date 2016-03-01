@@ -2,7 +2,8 @@
 
 hannah:
   name: Hannah Wolfe
-  bio: "Hannah est cofondatrice et CTO de <a href=\"//ghost.org\">Ghost</a>, une plateforme de publication innovante à la fois libre et rentable, financée par le service payant Ghost(Pro)."
+  bio:  >-
+    Hannah est cofondatrice et CTO de [Ghost](https://ghost.org), une plateforme de publication innovante à la fois libre et rentable, financée par le service payant Ghost(Pro)."
   location: Northampton
   country: United Kingdom
   twitter: erisds
@@ -11,7 +12,10 @@ hannah:
 
 chris:
   name: Chris Lowis
-  bio: "Ingénieur et data scientist chez <a href=\"//www.futurelearn.com/\">FutureLearn</a>. Aime travailler avec les matières premières que ce soit des données, du bois ou de la farine."
+  bio: >-
+    Ingénieur et data scientist chez [FutureLearn](https://www.futurelearn.com/) et
+    éditeur de [Web Audio Weekly](http://blog.chrislowis.co.uk/waw.html).
+    Aime travailler avec les matières premières que ce soit des données, du bois ou de la farine.
   location: Londres
   country: United Kingdom
   twitter: chrislowis
@@ -20,7 +24,9 @@ chris:
 
 mylene:
   name: Mylène L'Orguilloux
-  bio: "<em>Accroc</em> à la couture, son patron préféré c'est encore celui du prochain vêtement qu'elle va designer."
+  bio: >-
+    *Accroc* à la couture, son patron préféré c'est encore celui du prochain
+    vêtement qu'elle va designer.
   avatar: mylene
   location: Bordeaux
   twitter: MilanAvJC
@@ -28,7 +34,11 @@ mylene:
 
 olivier:
   name: Olivier Thereaux
-  bio: "Après avoir travaillé pour le W3C, Olivier dirige aujourd'hui un service de <a href=\"//www.bbc.co.uk/rd\">recherche et développement à la BBC</a>."
+  bio: >-
+    Curieux, voyageur et adepte du *pun* britannique.
+
+    Olivier assemble Web et innovation auprès du W3C et
+    la [BBC R&D](//www.bbc.co.uk/rd).
   avatar: olivier-thereaux
   location: Londres
   twitter: olivierthereaux
@@ -36,7 +46,10 @@ olivier:
 
 rachel:
     name: Rachel Saada
-    bio: "Avocate au barreau de Paris, spécialiste du droit du travail et de la protection sociale. co-auteure de <a href=\"//www.pearson.fr/livre/?GCOI=27440100950120\">Travailler à armes égales</a>."
+    bio: >-
+      Avocate au barreau de Paris, spécialiste du droit du travail
+      et de la protection sociale. co-auteure de l'ouvrage
+      [Travailler à armes égales](//www.pearson.fr/livre/?GCOI=27440100950120)
     avatar: rachel-saada
     location: Paris
     twitter: safsaada
@@ -44,7 +57,10 @@ rachel:
 
 roxane:
   name: Roxane Debruyker
-  bio: "Étudiante en sciences cognitives, Roxanne a beaucoup appris pendant son stage chez <a href=\"http://weareants.fr/\">We are Ants</a>, notamment sur l'intelligence articielle et l'Internet des objets."
+  bio: >-
+    Étudiante en sciences cognitives, Roxanne a beaucoup appris pendant
+    son stage chez [Ants](http://weareants.fr/), notamment sur
+    l'intelligence articielle et l'Internet des objets.
   location: Bordeaux
   country: France
   twitter: dbr_roxane
@@ -52,7 +68,10 @@ roxane:
 
 stefanie:
   name: Stefanie Posavec
-  bio: "Designer d'information, traite les données à l'aide de ses crayons. Co-auteur du livre <a href=\"http://www.dear-data.com/all\">Dear Data</a> à paraître courant 2016."
+  bio: >-
+    Designer d'information, traite les données à l'aide de ses crayons.
+    Co-auteur du livre [Dear Data](http://www.dear-data.com/all) à
+     paraître courant 2016.
   location: Londres
   country: United Kingdom
   twitter: stefpos
@@ -61,42 +80,67 @@ stefanie:
 
 stephanie:
   name: Stéphanie Troeth
-  bio: "Stratège UX, designer/chercheur. Jardinière urbaine, afficionada du slow food, polyglotte."
+  bio: >-
+    Stratège UX, designer/chercheur. Jardinière urbaine, afficionada du
+    slow food, polyglotte.
   location: Londres
   country: United Kingdom
   twitter: sniffles
   avatar: stephanie-troeth
 
+gaelle:
+  name: Gaëlle Periat
+  bio: >-
+    Sa devise c'est *la data c'est bon, mangez-en !*. Gaëlle voit la vie avec
+    beaucoup de couleurs, de joie et de positiviCSVme.
+  location: Paris
+  country: France
+  twitter: GaellePeriat
+  avatar: gaelle-periat
+
 # Lightning talks
 
 alexandre:
   name: Alexandre Pronine
-  bio: "Chef de projet technico-fonctionnel web. Passionné de sport, gastronomie et curieux du reste."
+  bio: >-
+    Chef de projet technico-fonctionnel web. Passionné de sport,
+    gastronomie et curieux du reste.
   location: Paris
   twitter: Alex_Pronine
   avatar: alexandre-pronine
 
 antoine:
   name: Antoine Fauchié
-  bio: "Accompagne les professionnels du livre dans les mutations liées au numérique. Antoine est aussi enseignant et participe à divers projets associatifs."
+  bio: >-
+    Accompagne les professionnels du livre dans les mutations liées
+    au numérique. Antoine est aussi enseignant et participe à
+    divers projets associatifs.
   avatar: antoine-fauchie
 
 basile:
   name: Basile Simon
-  bio: "Hacker journaliste dans le <a href=\"http://bbcnewslabs.co.uk/\">labo de BBC News</a>. Data-journalist @airwars_. ddj, infosec, stuff."
+  bio: >-
+    Hacker journaliste pour [BBC News Labs](http://bbcnewslabs.co.uk/).
+    Data-journaliste bénévole [Airwars](http://airwars.org/).
   avatar: basile-simon
   twitter: basilesimon
 
 bastien:
   name: Bastien Guerry
-  bio: "Après des études de philosophie et de sciences cognitives, Bastien a contribué à de nombreux projets libres et est devenu hacktiviste indépendant."
+  bio: >-
+    Après des études de philosophie et de sciences cognitives, Bastien
+    a contribué à de nombreux projets libres et est devenu
+    hacktiviste indépendant.
   avatar: bastien-guerry
   twitter: bzg2
   website: //bzg.fr/
 
 boris:
   name: Boris Schapira
-  bio: "Ingénieur de formation, consultant chez Clever Age. Boris accompagne ses clients lors de missions de conseil, de gestion de projets, de formation et parfois de développements."
+  bio: >-
+    Ingénieur de formation, consultant chez Clever Age. Boris accompagne
+    ses clients lors de missions de conseil, de gestion de projets,
+    de formation et parfois de développements.
   location: Bordeaux
   country: France
   twitter: borisschapira
@@ -105,7 +149,9 @@ boris:
 
 charles:
   name: Charles Pernet
-  bio: "Ancien photographe formé à Ruby on Rails et aujourd'hui assistant enseignant au Wagon Bordeaux"
+  bio: >-
+    Ancien photographe formé à Ruby on Rails et aujourd'hui assistant
+    enseignant au Wagon Bordeaux
   location: Bordeaux
   country: France
   twitter: CharlesPernet
@@ -113,8 +159,10 @@ charles:
   website: //charlespernet.com/
 
 laurence:
-  name: Laurence Wagner
-  bio: "Créative, scientifique, geek, fan de photo et de vélos étranges, capillairement instable, allergique à la kryptonite."
+  name: Laurence Vagner
+  bio: >-
+    Créative, scientifique, geek, fan de photo et de vélos étranges,
+    capillairement instable, allergique à la kryptonite.
   location: Metz
   country: France
   twitter: hellgy
@@ -123,7 +171,8 @@ laurence:
 
 marion:
   name: Marion Lambert
-  bio: "Développeur Ruby on Rails et femme d'agriculteur"
+  bio: >-
+    Développeur Ruby on Rails et femme d'agriculteur.
   location:
   country: France
   twitter:
@@ -131,7 +180,9 @@ marion:
 
 raphael:
   name: Raphael Yharrassary
-  bio: "Ergonome et psychologue de formation, pratique l'UX depuis le siècle dernier. Actuel président de l'association FLUPA."
+  bio: >-
+    Ergonome et psychologue de formation, pratique l'UX depuis le
+    siècle dernier. Actuel président de l'association FLUPA.
   location: Bayonne
   country: France
   twitter: iergo
@@ -140,7 +191,9 @@ raphael:
 
 thomas:
   name: Thomas Gasc
-  bio: "Développeur backend chez 1001 Pharmacies, une chouette startup basée à Montpellier."
+  bio: >-
+    Développeur backend chez 1001 Pharmacies, une chouette startup
+    basée à Montpellier.
   location: Montpellier
   country: France
   twitter: methylbro
