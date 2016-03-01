@@ -5,6 +5,7 @@
   </figure>
   <h4 class="pres-title tiny-title-size">{{ conference.title }}</h4>
   <p class="pres-desc">{{ conference.description }}</p>
+  {% if conference.lang == "en" %}<p class="pres-desc"><em>Conférence en anglais</em></p>{% endif %}
   <footer>
   {% assign speaker = site.data.speakers[conference.speaker] %}
   <section class="pres-author clearfix">

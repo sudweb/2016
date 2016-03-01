@@ -5,4 +5,5 @@ speaker: stefanie
 type: conference
 symbol: crea
 start-time: 15:40
+lang: en
 ---
