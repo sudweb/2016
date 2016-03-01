@@ -1,6 +1,6 @@
 ---
 title: Le syndrome de l'anti-imposteur
-description: Parce que mal faire est mieux que de ne rien faire autant bien faire et laisser braire.
+description: "Je ne suis pas capable de participer à une association, une conférence, un atelier sans m’impliquer, sans proposer un sujet, sans publier un article. Parce que mal faire est mieux que de ne rien faire, vous aussi impliquez-vous, proposez, faîtes par vous-mêmes."
 speaker: raphael
 type: lt
 symbol: expe
