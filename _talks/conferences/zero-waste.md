@@ -1,9 +1,16 @@
 ---
 title: Zero waste
-description: "Comment éviter de perdre les 15% de matières premières jetées par l'industrie du textile grâce au design collaboratif ? Quand la créativité et les Fab Labs se mettent au servive de l'éco-conception et de la mode."
+description: >-
+  L'industrire textile jette au minimum 15% de matières premières à la sortie
+  des usines à cause des … courbes des patrons. Pourquoi ?
+
+
+  Entre révolution du *Do It Yourself* et décloisement des silos,
+  Mylène nous mettra à contribution pour tisser un lien avec le public.
 speaker:
   - mylene
 type: conference
 symbol: crea
 start-time: 11:40
+display-order: 8
 ---
