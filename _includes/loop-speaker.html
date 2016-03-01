@@ -7,20 +7,24 @@
   <p class="pres-desc">{{ conference.description }}</p>
   {% if conference.lang == "en" %}<p class="pres-desc"><em>Conférence en anglais</em></p>{% endif %}
   <footer>
-  {% assign speaker = site.data.speakers[conference.speaker] %}
-  <section class="pres-author clearfix">
-    <figure class="author-img">
-      <img src="{{ site.baseurl}}/assets/images/2016/orateurs/{{ speaker.avatar }}.jpg" alt="{{ speaker.name }}">
-    </figure>
-    <h5 class="author-name default-size">
-      {% if speaker.twitter %}
-         <a href="//twitter.com/{{speaker.twitter}}">{{ speaker.name }}</a>
-      {% else %}
-          {{ speaker.name }}
-      {% endif %}
-    </h5>
-    <p class="author-desc">{{ speaker.bio }}</p>
-  </section>
+  {% assign speakers = conference.speaker | split:"," %}
+  {% for s in speakers %}
+    {% assign key = s | strip %}
+    {% assign speaker = site.data.speakers[key] %}
+    <section class="pres-author clearfix">
+      <figure class="author-img">
+        <img src="{{ site.baseurl}}/assets/images/2016/orateurs/{{ speaker.avatar }}.jpg" alt="{{ speaker.name }}">
+      </figure>
+      <h5 class="author-name default-size">
+        {% if speaker.twitter %}
+           <a href="//twitter.com/{{speaker.twitter}}">{{ speaker.name }}</a>
+        {% else %}
+            {{ speaker.name }}
+        {% endif %}
+      </h5>
+      <p class="author-desc">{{ speaker.bio }}</p>
+    </section>
+  {% endfor%}
 </footer>
 </section>
 {% endfor %}
