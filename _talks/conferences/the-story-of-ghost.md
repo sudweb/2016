@@ -5,6 +5,6 @@ speaker:
   - hannah
 type: conference
 symbol: well
-start-time: 10:20
+start-time: 09:30
 lang: en
 ---
