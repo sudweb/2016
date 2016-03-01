@@ -1,25 +1,25 @@
 ---
 layout: main
-title: La conférence web à dimension humaine
+title: La conférence web super humaine
 ---
 
 <div class="cta-zone-1 section-margin">
 		<div class="wrapper">
 			<div class="grid-2 text-center">
 				<section class="text1">
-					<h2 class="cta-title">Une journée de conférences</h2>
-					<p>volontairement accessible à tous les métiers du web, pour sortir de votre zone de confort et confronter les points de vue.</p>
+					<h2 class="cta-title">Deux journées</h2>
+					<p>Des conférences et des ateliers accessibles à tous les métiers du web, pour sortir de sa zone de confort et confronter nos points de vue.</p>
 				</section>
 				<section class="text2">
-					<h2 class="cta-title">Des lieux pour s’immerger</h2>
-					<p>dans l’esprit de Sudweb, spécialement choisis pour leur emplacement, leur confort et l’esprit qu’ils dégagent.</p>
+					<h2 class="cta-title">Des lieux </h2>
+					<p>Faciles d'accès et adaptés à l'esprit de chaque journée : du confort pour les conférences, de l'espace pour le forum ouvert.</p>
 				</section>
-				<div class="cta1">
+				<!-- <div class="cta1">
 					<a class="cta button-type1" href="{{ site.weezevent.mini-site-url}}">Je m'inscris</a>
 				</div>
 				<div class="cta2">
 					<a class="cta button-type1" href="#">Repérez les lieux</a>
-				</div>
+				</div> -->
 			</div>
 		</div>
 	</div>
@@ -46,11 +46,11 @@ title: La conférence web à dimension humaine
       <!-- INTRO -->
       <header class="white-section">
         <div class="wrapper text-center">
-          <h2 class="great-title-size red uppercase">Vendredi : faites le plein</h2>
-          <p>Des retours d'expériences dans différents domaines, pour sortir de sa zone de confort, prendre du recul et repartir avec le plein d'inspiration.</p>
-          <!-- <div class="text-center">
-            <a class="cta button-type1" href="#">Téléchargez le programme</a>
-          </div> -->
+          <h2 class="great-title-size red uppercase">Faites le plein d'inspiration</h2>
+          <p>Des retours d'expériences pour alimenter votre réflexion, vous aider à progresser et à expérimenter.</p>
+          <div class="text-center">
+            <a class="cta button-type1" href="{{ site.weezevent.mini-site-url}}">Je m'inscris</a>
+          </div>
         </div>
       </header>
 
@@ -63,9 +63,9 @@ title: La conférence web à dimension humaine
           <div class="grid-2">
             {% assign conferences = site.talks | where: "type","conference" | sort: "start-time" %}
             {% include loop-speaker.html %}
-            <a class="pres-link" href="#">
+            <!-- <a class="pres-link" href="#">
               <span>Le programme complet<br> c'est par ici</span>
-            </a>
+            </a> -->
           </div>
         </div>
       </section>
@@ -77,7 +77,7 @@ title: La conférence web à dimension humaine
           <p>Des conférences de 5 minutes pour donner du rythme.</p>
 
           <div class="grid-2">
-            {% assign lightning-talks = site.talks | where:"type","lt" %}
+            {% assign conferences = site.talks | where:"type","lt" %}
             {% include loop-speaker.html %}
           </div>
         </div>
@@ -99,7 +99,7 @@ title: La conférence web à dimension humaine
       <header class="white-section">
         <div class="wrapper text-center">
           <h2 class="great-title-size red uppercase">Samedi&nbsp;: place à l'action&nbsp;!</h2>
-          <p><span lang="oc">Qu'es aquò ?</span> Toi, super héros du Web, tu ne connais pas encore l’Open Space ? Aucun problème, on va t’aider à sauter le pas pour que tu puisses voler de tes propres ailes comme Superman durant cette journée où tu as tous les pouvoirs !</p>
+          <p><span lang="oc">Qu'es aquò ?</span> Une journée où toutes les super-héros présents partagent leurs super-pouvoirs.</p>
           <div class="text-center">
             <a class="cta button-type1" href="{{ site.weezevent.mini-site-url }}">Inscris-moi direct&nbsp;!</a>
           </div>
@@ -110,15 +110,15 @@ title: La conférence web à dimension humaine
           <div class="grid-3 text-center">
             <div>
               <svg class="svg-size" viewBox="0 0 400 400"><use xlink:href="{{ site.baseurl }}/assets/images/symbol-defs.svg#clap" /></svg>
-              <p><strong>Une journée auto-organisée</strong> où vous allez être les propres acteurs à travers un open space.</p>
+              <p><strong>Une journée auto-organisée</strong> dont vous êtes les principaux acteurs.</p>
             </div>
             <div>
               <svg class="svg-size" viewBox="0 0 400 400"><use xlink:href="{{ site.baseurl }}/assets/images/symbol-defs.svg#move" /></svg>
-              <p><strong>Les participants sont libres</strong> de passer d’une session à L’autre à tout moment de la journée.</p>
+              <p><strong>Vous êtes libres</strong> de passer d’une session à l’autre à tout moment.</p>
             </div>
             <div>
               <svg class="svg-size" viewBox="0 0 400 400"><use xlink:href="{{ site.baseurl }}/assets/images/symbol-defs.svg#write" /></svg>
-              <p><strong>Vous pouvez soumettre le sujet que vous voulez</strong>, aussi bien pour partager que pour apprendre.</p>
+              <p><strong>Vous soumettez des sujets</strong> sur lesquels vous réfléchissez avec les autres participants.</p>
             </div>
           </div>
         </div>
@@ -126,8 +126,8 @@ title: La conférence web à dimension humaine
       <section class="orange-section">
         <div class="wrapper text-center">
           <h3 class="regular-title-size uppercase">Votre mission si vous l'acceptez</h3>
-          <p>C’est assez simple en fait, la journée démarre par <strong>la proposition de sujets parmi les participants</strong> : vous pouvez soumettre aussi bien un sujet <strong>sur lequel vous aimeriez apprendre</strong> qu’un sujet <strong>sur lequel vous souhaitez partager votre savoir-faire</strong>.</p>
-          <p><strong>Tous les sujets sont proposés sur des post-its, positionnés sur un wall pour les présenter très rapidement aux autres participants (1 minute max par sujet).</strong> Une fois toutes les propositions présentées, tous les participants auto-organisent la journée qu’ils souhaitent avoir et prennent les post-its qui les intéressent pour les placer sur un deuxième wall appelé « place du marché ». Les participants peuvent débattre autour de certains sujets s’ils souhaitent en rassembler ou encore prolonger un sujet intéressant sur deux créneaux, si le temps accordé n’est pas estimé suffisant. &Agrave; la fin de la journée on fait un compte-rendu.
+          <p>La journée démarre par <strong>les proposition de sujets </strong> : vous pouvez soumettre aussi bien un sujet <strong>sur lequel vous aimeriez apprendre</strong> qu’un sujet <strong>sur lequel vous souhaitez partager votre savoir-faire</strong>.</p>
+          <p><strong>Les sujets sont tous visibles sur un mur à l'aide de notes autocollanteset sont présentés dans la limite d'une minute par sujet.</strong> Une fois toutes les propositions présentées, tous les participants auto-organisent la journée qu’ils souhaitent avoir et prennent les post-its qui les intéressent et les positionnent sur la « place du marché ». Les participants décident de rassembler ou pas certains sujets ou de prolonger un sujet intéressant sur deux créneaux. &Agrave; la fin de la journée on fait un compte-rendu de ce qui s'est passé.
           </p>
         </div>
       </section>
@@ -142,7 +142,7 @@ title: La conférence web à dimension humaine
             </div>
             <div>
               <svg class="orange svg-size" viewBox="0 0 400 400"><use xlink:href="{{ site.baseurl }}/assets/images/symbol-defs.svg#thumb" /></svg>
-              <p class="h-like tiny-title-size">Ce qui arrive devait arriver</p>
+              <p class="h-like tiny-title-size">Il arrive ce qui pouvait arriver de mieux</p>
             </div>
             <div>
               <svg class="orange svg-size" viewBox="0 0 400 400"><use xlink:href="{{ site.baseurl }}/assets/images/symbol-defs.svg#clock" /></svg>
@@ -150,14 +150,14 @@ title: La conférence web à dimension humaine
             </div>
             <div>
               <svg class="orange svg-size" viewBox="0 0 400 400"><use xlink:href="{{ site.baseurl }}/assets/images/symbol-defs.svg#stop" /></svg>
-              <p class="h-like tiny-title-size">&Ccedil;a finit quand c’est finit</p>
+              <p class="h-like tiny-title-size">&Ccedil;a finit quand c’est fini</p>
             </div>
           </div>
-          <p>L’idée est de partir sur des bases saines. Une autre chose importante : c’est à vous de construire votre journée pour qu’elle vous apporte ce que vous êtes venus chercher. Si aucun des sujets proposés ne vous apporte de sens, alors à vous d’en proposer un.</p>
+          <p>Partons sur des bases saines : c’est vous qui contribuez et qui construisez cette journée afin d'en retirer le maximum. Si aucun des sujets proposés ne vous convient, alors à vous d’en proposer un.</p>
           <p>Une fois qu’on a dit ça il ne reste plus qu’à parler de LA loi qui régit tous les super-héros :</p>
           <svg class="orange svg-size" viewBox="0 0 400 400"><use xlink:href="{{ site.baseurl }}/assets/images/symbol-defs.svg#rocket" /></svg>
           <p class="h-like tiny-title-size">La loi des deux pieds</p>
-          <p>&Agrave; partir du moment où vous n’êtes plus en train d’apprendre ni de contribuer, vous êtes libres à tout moment de vous envoler vers de nouveaux cieux et de quitter le groupe pour aller en voir un autre, puis un autre et ainsi de suite&hellip; Aucune représaille ne sera faite, allez et venez autant que vous le voulez.</p>
+          <p>&Agrave; partir du moment où vous n’êtes plus en train d’apprendre ni de contribuer, vous êtes libres à tout moment  de changer de session. Allez et venez autant que vous le voulez.</p>
         </div>
       </section>
     </article>
@@ -172,9 +172,9 @@ title: La conférence web à dimension humaine
 					<header class="white-section">
 						<div class="wrapper text-center">
 							<h2 class="great-title-size red uppercase">Après (ou avant) l'effort : le réconfort</h2>
-							<p>Parce qu’un super-héros après une dure journée a aussi besoin de repos et de se sustenter, nous avons prévu de vous accueillir le soir dans des lieux conviviaux afin de prolonger les bons moments vécus pendant la journée. Rien de tel qu’un échange autour d’une bonne chopine ou d’un bon petit plat tous ensemble !</p>
+								<p>Afin de prolonger les discussions et passer un bon moment, les super-héros se retrouvent autour d’un verre et d'une bonne table. Vous pouvez vous joindre à eux, même si vous n'étiez pas présent pendant les conférences.</p>
 							<div class="text-center">
-								<a class="cta button-type1" href="{{ site.weezevent.mini-site-url }}">Je m’inscris à la soirée communautaire</a>
+								<a class="cta button-type1" href="{{ site.weezevent.mini-site-url }}">Je viens juste à la soirée communautaire</a>
 							</div>
 						</div>
 					</header>
@@ -185,15 +185,15 @@ title: La conférence web à dimension humaine
 							<div class="grid-3">
 								<section>
 									<h4 class="tiny-title-size"><time>Jeudi 26 mai</time><br> Veillée communautaire</h4>
-									<p>L’avant Sud Web en quelque sorte, l’occasion de se rencontrer pour la première fois ou se revoir avant les conférences du lendemain de manière informelle.</p>
+									<p>Première rencontre informelle avant les conférences du lendemain.</p>
 								</section>
 								<section>
 									<h4 class="tiny-title-size"><time>Vendredi 27 mai</time><br> Soirée communautaire</h4>
-									<p>Nous vous attendons dans un lieu choisi avec soin afin de prolonger les échanges après les conférences. Tout est prévu vous n’avez qu’à vous laisser guider !</p>
+									<p>Pour prolonger les échanges après les conférences dans un lieu sympa. Inclus dans le pass, mais ouverte à tout le monde.</p>
 								</section>
 								<section>
 									<h4 class="tiny-title-size"><time>Dimanche 29 mai</time><br> L’after</h4>
-									<p>Une journée informelle le dimanche pour proposer un atelier et/ou se restaurer dans un chouette lieu de Bordeaux.</p>
+									<p>Encore sur place ? Profitez du dimanche pour flâner dans les rues de Bordeaux ou pourquoi pas en bord de plage à l'océan !</p>
 								</section>
 							</div>
 						</div>
@@ -207,7 +207,7 @@ title: La conférence web à dimension humaine
 
 				<article class="white-section">
 					<div class="wrapper text-center">
-						<h2 class="great-title-size red uppercase">Nos partenaires de choc</h2>
+						<h2 class="great-title-size red uppercase">Nos super partenaires</h2>
             {% assign sponsortypes = "gold|silver|bronze" | split: "|" %}
             {% for sponsortype in sponsortypes %}
             <section class="{{ sponsortype }}-partners">
@@ -271,7 +271,7 @@ title: La conférence web à dimension humaine
 				<div class="page-ground">
 					<div class="wrapper text-center">
 						<p>
-							Alors&hellip; <a href="{{ site.weezevent.mini-site-url }}" class="button-type1" title="Inscris-moi !">Cape</a> ou <a href="//kiwiparty.fr/" class="pffff" title="Cay nul ! 😜">pas cape</a> ?
+							Alors&hellip; <a href="{{ site.weezevent.mini-site-url }}" class="button-type1" title="J'enfile mes collants !">Cape</a> ou pas cape ?
 						</p>
 					</div>
 				</div>
