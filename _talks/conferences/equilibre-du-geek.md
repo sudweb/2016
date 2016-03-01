@@ -1,6 +1,6 @@
 ---
 title: Trouver le bon équilibre
-description: "Comment trouver le bon équilbre, quand on vit avec un autre geek."
+description: "Comment trouver le bon équilbre, quand on vit en couple avec un autre geek."
 speaker: stephanie, olivier
 type: conference
 symbol: well
