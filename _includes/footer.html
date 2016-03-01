@@ -1,15 +1,57 @@
-<footer class="main-footer">
-  <ul>
-    <li><a href="https://vimeo.com/sudweb/videos">Vidéos</a></li>
-    <li><a href="{{ site.newsletter.url }}">S'abonner à la newsletter</a></li>
-  </ul>
-  <ul class="previous-editions">
-     {% for edition in site.data.editions reversed %}
-     <li>
-       <a href="http://sudweb.fr/{{ edition.year}}">{{ edition.year}} à {{ edition.town }}</a>
-     </li>
-     {% endfor %}
-  </ul>
-
-  <p>Sud Web est un évènement à but non-lucratif organisé par une équipe de bénévoles passionnés.</p>
+<footer class="page-footer">
+  <div class="wrapper">
+    <div class="grid-3">
+      <section>
+	<h2 class="tiny-title-size uppercase">Épisodes précédents</h2>
+	<nav>
+	  <ul>
+	    {% for edition in site.data.editions reversed %}
+	      <li>
+		<a href="http://sudweb.fr/{{ edition.year}}">{{ edition.year}} à {{ edition.town }}</a>
+	      </li>
+	    {% endfor %}
+	  </ul>
+	</nav>
+      </section>
+      <section>
+	<h2 class="tiny-title-size uppercase">Pour en savoir plus</h2>
+	<nav>
+	  <ul>
+	    <li><a href="{{site.baseurl}}/assets/files/dossier-de-partenariat-sudweb-2016.pdf">Dossier de partenariat</a></li>
+	    <li><a href="http://sudweb.fr/blog/">Blog</a></li>
+	    <!-- <li><a href="#">Mentions légales</a></li> -->
+	    <li><a href="http://sudweb.fr/blog/contact">Contact</a></li>
+	  </ul>
+	</nav>
+      </section>
+      <section>
+	<h2 class="tiny-title-size uppercase">Who you gonna call?</h2>
+	<form class="newsletter-form">
+	  <label for="i1">Inscrivez-vous à la newsletter</label>
+	  <input type="text" id="i2" name="name">
+	  <div class="row">
+	    <input type="email" id="i1" name="email">
+	    <button type="submit" class="button uppercase">Ok</button>
+	  </div>
+	</form>
+	<ul class="social-links">
+	  {% for social in site.data.social %}
+	  <li>
+	    <a href="{{ social.url }}" class="button-type6" title="{{ site.title }} sur {{ social.name | capitalize }}">
+	      <svg><use xlink:href="{{ site.baseurl }}/assets/images/symbol-defs.svg#{{ social.name }}" /></svg>
+	    </a>
+	  </li>
+	  {% endfor %}
+	</ul>
+      </section>
+    </div>
+  </div>
 </footer>
+
+<div class="page-ground">
+  <div class="wrapper text-center">
+    <p>
+      Alors&hellip; <a href="{{ site.baseurl }}/inscription/" class="button-type1" title="J'enfile mes collants !">Cape</a> ou pas cape ?
+    </p>
+  </div>
+</div>
