@@ -77,7 +77,7 @@ title: La conférence web super humaine
           <p>Des conférences de 5 minutes pour donner du rythme.</p>
 
           <div class="grid-2">
-            {% assign conferences = site.talks | where:"type","lt" | sort: "start-time" %}
+            {% assign conferences = site.talks | where:"type","lt" | sort: "display-order" %}
             {% include speakers.html %}
           </div>
         </div>
