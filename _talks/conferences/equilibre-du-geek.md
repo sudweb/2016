@@ -13,6 +13,6 @@ speaker:
   - olivier
 type: conference
 symbol: well
-start-time: 11:00
+date: 2016-05-27 16:40:00 +0100
 display-order: 4
 ---

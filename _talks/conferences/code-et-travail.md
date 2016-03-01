@@ -1,5 +1,5 @@
 ---
-title: Code && travail
+title: Code & travail
 description: >-
   Travail, emploi et compétence.
 
@@ -13,7 +13,7 @@ description: >-
 speaker:
   - rachel
 type: conference
-symbol: well
-start-time: 11:00
+symbol: expe
+date: 2016-05-27 17:40:00 +0100
 display-order: 5
 ---
