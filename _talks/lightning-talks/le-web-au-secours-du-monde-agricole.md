@@ -1,6 +1,6 @@
 ---
 title: Le web dans le monde agricole
-description: "Petit panorama des applications web qui facilitent le quotidien des agriculteurs et expression des besoins restants à couvrir."
+description: "À l'opposé des idées reçues, les agriculteurs utilisent de nombreuses applications web pour faciliter leur quotidien et il reste encore de nombreux besoins couvrir… <em>l'ageekculture</em> a besoin de vous !"
 speaker: marion
 type: lt
 symbol: expe
