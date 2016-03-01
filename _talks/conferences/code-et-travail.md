@@ -5,5 +5,5 @@ speaker:
   - rachel
 type: conference
 symbol: well
-start-time: 16:40
+start-time: 11:00
 ---

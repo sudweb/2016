@@ -5,6 +5,6 @@ speaker:
   - chris
 type: conference
 symbol: educ
-start-time: 10:20
+start-time: 10:00
 lang: en
 ---
