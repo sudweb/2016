@@ -5,4 +5,5 @@ speaker: jan
 type: conference
 symbol: expe
 start-time: 09:40
+lang: en
 ---
