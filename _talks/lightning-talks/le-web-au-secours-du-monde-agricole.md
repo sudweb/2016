@@ -5,5 +5,5 @@ speaker:
   - marion
 type: lt
 symbol: expe
-start-time:
+start-time: 11:20
 ---

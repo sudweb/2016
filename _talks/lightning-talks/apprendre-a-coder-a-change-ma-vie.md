@@ -5,5 +5,5 @@ speaker:
   - charles
 type: lt
 symbol: educ
-start-time: 16:00
+start-time: 15:20
 ---

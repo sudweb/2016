@@ -5,5 +5,5 @@ speaker:
   - basile
 symbol: well
 type: lt
-start-time:
+start-time: 11:00
 ---
