@@ -9,15 +9,6 @@ hannah:
   avatar: hannah-wolfe
   website: //hannah.wf/
 
-jan:
-  name: Jan Monschke
-  bio: "Ingénieur front-end à Berlin chez <a href=\"//soundcloud.com/\">Soundcloud</a>, amoureux de musique et de web. Quand il n'organise pas <a href=\"//twitter.com/webaudioberlin\">@webaudioberlin</a> ou <a href=\"//rejectjs.org/\">Reject.js</a>, il aime rider sur son longboard et voyager."
-  location: Berlin
-  country: Germany
-  twitter: thedeftone
-  avatar: jan-monschke
-  website: //janmonschke.com/
-
 chris:
   name: Chris Lowis
   bio: "Ingénieur et data scientist chez <a href=\"//www.futurelearn.com/\">FutureLearn</a>. Aime travailler avec les matières premières que ce soit des données, du bois ou de la farine."
