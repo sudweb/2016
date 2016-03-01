@@ -8,11 +8,11 @@ title: La conférence web super humaine
 			<div class="grid-2 text-center">
 				<section class="text1">
 					<h2 class="cta-title">Deux journées</h2>
-					<p>Des conférences et des ateliers accessibles à tous les métiers du web, pour sortir de sa zone de confort et confronter les points&nbsp;de&nbsp;vue.</p>
+					<p>Une journée de conférences et une journée d'élaboratoires pour sortir de sa zone de confort en toute sécurité.</p>
 				</section>
 				<section class="text2">
 					<h2 class="cta-title">Deux lieux </h2>
-					<p>Faciles d'accès et adaptés à l'esprit de chaque journée : du confort pour les conférences,&nbsp;de l'espace pour le forum&nbsp;ouvert.</p>
+					<p>En plein cœur de Bordeaux et adaptés à l'esprit de chaque journée : du confort pour les conférences,&nbsp;de l'espace pour les élaboratoires.</p>
 				</section>
 				<!-- <div class="cta1">
 					<a class="cta button-type1" href="{{ site.weezevent.mini-site-url}}">Je m'inscris</a>
@@ -46,8 +46,11 @@ title: La conférence web super humaine
       <!-- INTRO -->
       <header class="white-section">
         <div class="wrapper text-center">
-          <h2 class="great-title-size red uppercase">Vendredi,&nbsp;faites le plein d'inspiration</h2>
-          <p>Des retours d'expériences pour alimenter votre réflexion, <br />vous aider à progresser et à&nbsp;expérimenter.</p>
+          <h2 class="great-title-size red uppercase">Vendredi,&nbsp;faire le plein d'inspiration</h2>
+          <p>
+						Des retours d'expérience pour alimenter nos réflexions, découvrir
+						de nouveaux horizons et mieux comprendre le sens de nos métiers.
+					</p>
           <div class="text-center">
             <a class="cta button-type1" href="{{ site.weezevent.mini-site-url}}">Je m'inscris</a>
           </div>
@@ -58,7 +61,7 @@ title: La conférence web super humaine
       <section class="yellow-section">
         <div class="wrapper text-center">
           <h3 class="conf-title regular-title-size uppercase">8 conférences</h3>
-          <p>Une diversité de sujets et d'orateurs unique en son genre.</p>
+          <p>Une sélection unique et variée qui devrait vous parler.</p>
 
           <div class="grid-2">
             {% assign conferences = site.talks | where: "type","conference" | sort: "display-order" %}
@@ -85,9 +88,12 @@ title: La conférence web super humaine
 
       <section class="orange-section">
         <div class="wrapper text-center">
-          <h3 class="onemorething-title regular-title-size uppercase">Moments d'échanges</h3>
-					<p>Toutes les pauses sont volontairement longues pour vous permettre de profiter de la présence de chacun.</p>
-          <p>Vous avez des choses à dire ? Ça tombien bien, nous avons envie de les entendre. Pendant une heure, nous coupons les caméras et vous donnons le micro pour vous exprimer et réagir à la dernière conférence.</p>
+          <h3 class="onemorething-title regular-title-size uppercase">De loooongues pauses</h3>
+					<p>Les entractes durent 30 minutes et la pause déjeuner dure 2 heures.</p>
+					<p>
+						C'est le temps idéal pour se reposer, prendre le temps de rencontrer de nouvelles têtes
+						et de tailler une bavette entre potes (<em>valable également pour les végétariens</em>).
+					</p>
           <!-- <div class="text-center">
             <a class="cta button-type4" href="#">Découvrez le programme complet</a>
           </div> -->
@@ -100,16 +106,8 @@ title: La conférence web super humaine
       <header class="white-section">
         <div class="wrapper text-center">
           <h2 class="great-title-size red uppercase">Samedi,&nbsp;place à l'action&nbsp;!</h2>
-          <p><span lang="oc">Qu'es aquò ?</span> Une journée où toutes les super-héros partagent leurs super-pouvoirs.</p>
-					<p>La journée démarre par <strong>les proposition de sujets </strong> : vous pouvez soumettre aussi bien un sujet sur lequel vous aimeriez apprendre qu’un sujet sur lequel vous souhaitez partager votre savoir-faire.</p>
-          <div class="text-center">
-            <a class="cta button-type1" href="{{ site.weezevent.mini-site-url }}">Je participe&nbsp;!</a>
-          </div>
-        </div>
-      </header>
-      <section class="darkgrey-section">
-        <div class="wrapper">
-          <div class="grid-3 text-center">
+
+					<div class="grid-3 text-center">
             <div>
               <svg class="svg-size" viewBox="0 0 400 400"><use xlink:href="{{ site.baseurl }}/assets/images/symbol-defs.svg#clap" /></svg>
               <p><strong>Une journée auto-organisée</strong> dont vous êtes les principaux acteurs.</p>
@@ -123,38 +121,39 @@ title: La conférence web super humaine
               <p><strong>Vous soumettez des sujets</strong> sur lesquels vous réfléchissez avec les autres participants.</p>
             </div>
           </div>
-        </div>
-      </section>
-      <section class="orange-section">
-        <div class="wrapper text-center">
-          <h3 class="regular-title-size uppercase">Votre mission si vous l'acceptez</h3>
-          <p>Les sujets sont tous visibles sur un mur à l'aide de notes autocollantes et sont présentés dans la limite d'une minute par sujet. Une fois toutes les propositions présentées, tous les participants <strong>auto-organisent</strong> la journée qu’ils souhaitent avoir : ils prennent les post-its qui les intéressent et les positionnent sur la « place du marché ». Les participants décident de rassembler ou pas certains sujets ou de prolonger un sujet intéressant sur deux créneaux.</p>
-					<p>&Agrave; la fin de la journée on fait un <strong>compte-rendu</strong> de ce qui s'est passé.
-          </p>
-        </div>
-      </section>
 
-      <section class="white-section">
+          <div class="text-center">
+            <a class="cta button-type1" href="{{ site.weezevent.mini-site-url }}">Je participe&nbsp;!</a>
+          </div>
+        </div>
+      </header>
+
+      <section class="orange-section">
         <div class="wrapper text-center">
           <h3 class="regular-title-size uppercase">Quatre principes et une loi</h3>
           <div class="grid-4 text-center">
             <div>
-              <svg class="orange svg-size" viewBox="0 0 400 400"><use xlink:href="{{ site.baseurl }}/assets/images/symbol-defs.svg#people" /></svg>
+              <svg class="white svg-size" viewBox="0 0 400 400"><use xlink:href="{{ site.baseurl }}/assets/images/symbol-defs.svg#people" /></svg>
               <p class="h-like tiny-title-size">Les personnes présentes sont les bonnes personnes</p>
             </div>
             <div>
-              <svg class="orange svg-size" viewBox="0 0 400 400"><use xlink:href="{{ site.baseurl }}/assets/images/symbol-defs.svg#thumb" /></svg>
+              <svg class="white svg-size" viewBox="0 0 400 400"><use xlink:href="{{ site.baseurl }}/assets/images/symbol-defs.svg#thumb" /></svg>
               <p class="h-like tiny-title-size">Il arrive ce qui pouvait arriver de mieux</p>
             </div>
             <div>
-              <svg class="orange svg-size" viewBox="0 0 400 400"><use xlink:href="{{ site.baseurl }}/assets/images/symbol-defs.svg#clock" /></svg>
+              <svg class="white svg-size" viewBox="0 0 400 400"><use xlink:href="{{ site.baseurl }}/assets/images/symbol-defs.svg#clock" /></svg>
               <p class="h-like tiny-title-size">&Ccedil;a commence quand ça commence</p>
             </div>
             <div>
-              <svg class="orange svg-size" viewBox="0 0 400 400"><use xlink:href="{{ site.baseurl }}/assets/images/symbol-defs.svg#stop" /></svg>
+              <svg class="white svg-size" viewBox="0 0 400 400"><use xlink:href="{{ site.baseurl }}/assets/images/symbol-defs.svg#stop" /></svg>
               <p class="h-like tiny-title-size">&Ccedil;a finit quand c’est fini</p>
             </div>
           </div>
+				</div>
+			</section>
+
+			<section class="white-section">
+				<div class="wrapper text-center">
           <p>Partons sur des bases saines : c’est vous qui contribuez et qui construisez cette journée afin d'en retirer le maximum. Si aucun des sujets proposés ne vous convient, alors à vous d’en proposer un.</p>
           <p>Le cadre est posé, maintenant il ne vous reste plus qu'à retenir une chose :</p>
           <svg class="orange svg-size" viewBox="0 0 400 400"><use xlink:href="{{ site.baseurl }}/assets/images/symbol-defs.svg#rocket" /></svg>
@@ -183,7 +182,7 @@ title: La conférence web super humaine
 
 					<section class="white-section">
 						<div class="wrapper text-center">
-							<h3 class="regular-title-size uppercase">Trois moments prévus</h3>
+							<h3 class="regular-title-size uppercase">Trois temps forts</h3>
 							<div class="grid-3">
 								<section>
 									<h4 class="tiny-title-size"><time>Jeudi 26 mai</time><br> Veillée communautaire</h4>
