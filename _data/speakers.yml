@@ -20,7 +20,7 @@ chris:
 
 mylene:
   name: Mylène L'Orguilloux
-  bio: "Accroc à la couture, son patron préféré c'est encore celui du prochain vêtement qu'elle va designer."
+  bio: "<em>Accroc</em> à la couture, son patron préféré c'est encore celui du prochain vêtement qu'elle va designer."
   avatar: mylene
   location: Bordeaux
   twitter: MilanAvJC
@@ -105,7 +105,7 @@ boris:
 
 charles:
   name: Charles Pernet
-  bio: "Ancien photographe, formé à Ruby on Rails est aujourd'hui Teacher assistant au Wagon Bordeaux"
+  bio: "Ancien photographe formé à Ruby on Rails et aujourd'hui assistant enseignant au Wagon Bordeaux"
   location: Bordeaux
   country: France
   twitter: CharlesPernet
