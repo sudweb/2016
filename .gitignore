@@ -33,3 +33,5 @@ _site/
 
 # node-waf configuration
 .DS_Store
+
+Gemfile.lock
