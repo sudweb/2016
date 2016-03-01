@@ -20,7 +20,7 @@ jan:
 
 chris:
   name: Chris Lowis
-  bio: "Ingénieur chez FutureLearn"
+  bio: "Ingénieur et data scientist chez <a href=\"//www.futurelearn.com/\">FutureLearn</a>. Aime travailler avec les matières premières que ce soit des données, du bois ou de la farine."
   location: Londres
   country: United Kingdom
   twitter: chrislowis
@@ -37,7 +37,8 @@ mylene:
 
 olivier:
   name: Olivier Thereaux
-  bio: "Après avoir longtemps travaillé pour le W3C et parcouru le monde, Olivier dirige aujourd'hui un service de <a href=\"//www.bbc.co.uk/rd\">recherche et développement à la BBC</a>."
+  bio: "Après avoir travaillé pour le W3C, Olivier dirige aujourd'hui un service de <a href=\"//www.bbc.co.uk/rd\">recherche et développement à la BBC</a>."
+  avatar: olivier-thereaux
   location: Londres
   twitter: olivierthereaux
   website: //olivier.thereaux.net/
@@ -69,12 +70,11 @@ stefanie:
 
 stephanie:
   name: Stéphanie Troeth
-  bio: ""
+  bio: "Stratège UX, designer/chercheur. Jardinière urbaine, afficionada du slow food, polyglotte."
   location: Londres
   country: United Kingdom
   twitter: sniffles
   avatar: stephanie-troeth
-  website:
 
 # Lightning talks
 
@@ -123,7 +123,7 @@ charles:
 
 laurence:
   name: Laurence Wagner
-  bio: Créative, scientifique, geek, fan de photo et de vélos étranges, capillairement instable, allergique à la kryptonite. Dresseuse de petits dinosaures en plastique.
+  bio: "Créative, scientifique, geek, fan de photo et de vélos étranges, capillairement instable, allergique à la kryptonite."
   location: Metz
   country: France
   twitter: hellgy
@@ -140,7 +140,7 @@ marion:
 
 raphael:
   name: Raphael Yharrassary
-  bio: Ergonome, UX, Psychologue
+  bio: "Ergonome et psychologue de formation, pratique l'UX depuis le siècle dernier. Actuel président de l'association FLUPA."
   location: Bayonne
   country: France
   twitter: iergo
@@ -149,7 +149,7 @@ raphael:
 
 thomas:
   name: Thomas Gasc
-  bio: Développeur chez 1001 pharmas
+  bio: "Développeur backend chez 1001 Pharmacies, une chouette startup basée à Montpellier."
   location: Montpellier
   country: France
   twitter: methylbro
