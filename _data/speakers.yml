@@ -27,14 +27,6 @@ chris:
   avatar: chris-lowis
   website: http://blog.chrislowis.co.uk/
 
-ludivine:
-  name: Ludivine Probst
-  bio: "Ingénieur de données, Ludivine jongle avec le code, les données et les mathématiques quand elle ne participe pas à des projets comme <a href=\"//www.ladiesofcode.com/\">Ladies of Code</a>."
-  location: Paris
-  twitter: nivdul
-  avatar: ludivine-probst
-  website: //nivdul.wordpress.com/
-
 mylene:
   name: Mylène L'Orguilloux
   bio: "Accroc à la couture, son patron préféré c'est encore celui du prochain vêtement qu'elle va designer."
@@ -77,7 +69,7 @@ stefanie:
 
 stephanie:
   name: Stéphanie Troeth
-  bio: "UX Strategist"
+  bio: ""
   location: Londres
   country: United Kingdom
   twitter: sniffles
