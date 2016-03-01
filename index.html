@@ -62,7 +62,7 @@ title: La conférence web super humaine
 
           <div class="grid-2">
             {% assign conferences = site.talks | where: "type","conference" | sort: "start-time" %}
-            {% include loop-speaker.html %}
+            {% include speakers.html %}
             <!-- <a class="pres-link" href="#">
               <span>Le programme complet<br> c'est par ici</span>
             </a> -->
@@ -78,7 +78,7 @@ title: La conférence web super humaine
 
           <div class="grid-2">
             {% assign conferences = site.talks | where:"type","lt" %}
-            {% include loop-speaker.html %}
+            {% include speakers.html %}
           </div>
         </div>
       </section>
@@ -213,7 +213,7 @@ title: La conférence web super humaine
             {% for sponsortype in sponsortypes %}
             <section class="{{ sponsortype }}-partners">
               {% assign sponsors = site.data.sponsors | where:"level", sponsortype %}
-              {% include loop-sponsor.html %}
+              {% include sponsors.html %}
             </section>
             {% endfor %}
 					</div>
