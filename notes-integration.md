@@ -4,7 +4,7 @@
 
 J'ai d'abord pensé mettre tous les SVG en haut de la page HTML, déclarés en symboles, mais j'ai ensuite tenté de les insérer par ressource externe.
 
-L'idée était de voir si le `<use>` pouvait désormais fonctionner avec une ressource externe, et sélectionner un symbole comme ceci :
+L'idée était de voir si le `<use>` pouvait désormais fonctionner avec une ressource externe et sélectionner un symbole comme ceci :
 
 ```html
 <svg class="sw-logo">
@@ -14,7 +14,7 @@ L'idée était de voir si le `<use>` pouvait désormais fonctionner avec une res
 
 Et là ça marche ! \o/
 
-Ok, cool. Maintenant l'idée est de voir si je peux ne déclarer qu'une seule fois le symbole du logo, et changer ses couleurs en fonction du contexte, donc toucher au shadow DOM via CSS.
+Ok, cool. Maintenant l'idée est de voir si je peux ne déclarer qu'une seule fois le symbole du logo et changer ses couleurs en fonction du contexte, donc toucher au shadow DOM via CSS.
 
 Je tente :
 
@@ -53,7 +53,7 @@ La première a l’avantage de mettre en évidence les sélecteurs, mais rend di
 
 La méthode multiligne est de loin la plus répandue.
 
-La deuxième chose qui me défrise littéralement est qu’avec cette méthode, nos écrans devenus de plus en plus larges ne sont pas exploités : la feuille de style utilise pour ainsi dire les 50 premières colonnes de caractère, et c’est tout.
+La deuxième chose qui me défrise littéralement est qu’avec cette méthode, nos écrans devenus de plus en plus larges ne sont pas exploités : la feuille de style utilise pour ainsi dire les 50 premières colonnes de caractère et c’est tout.
 
 À noter que j’utilisais la méthode monoligne à mes débuts.
 
@@ -72,7 +72,7 @@ foo {
    }
 ```
 
-Ainsi, chaque règle ne fera que huit lignes au miximum (visibilité des sélecteurs), et exploite la largeur de l'écran.
+Ainsi, chaque règle ne fera que huit lignes au miximum (visibilité des sélecteurs) et exploite la largeur de l'écran.
 
 De plus, chaque déclaration est rangée dans un ordre logique, ce qui permet de les retrouver rapidement.
 
@@ -80,7 +80,7 @@ De plus, chaque déclaration est rangée dans un ordre logique, ce qui permet de
 
 Je ne voulais surtout pas d'une énième grille utilisant des flottants qui font ch***. C'est moche, ça pue, c'est dépassé.
 
-J'ai préféré tenter l'approche par flexbox, qui me semblait plus flexible (!), et suffisamment compatible (comparé à grid).
+J'ai préféré tenter l'approche par flexbox, qui me semblait plus flexible (!) et suffisamment compatible (comparé à grid).
 
 L'idée était donc d'avoir autant de colonnes qu'on veut, mais avec l'obligation de définir une largeur minimum, ce qui va fatalement définir le nombre maximum de colonne.
 
@@ -103,7 +103,7 @@ svg {
 
 Fourberie ! Je n'ai plus ensuite qu'à définir une `color` sur ce svg ou un de ces parents pour changer sa couleur.
 
-Concernant le dimensionnement, là c'était chaud ! Je voulais  pouvoir dimensionner la largeur d'un `<svg>`, et qu'il se dimensionne en hauteur tout seul en gardant sa proportion.
+Concernant le dimensionnement, là c'était chaud ! Je voulais  pouvoir dimensionner la largeur d'un `<svg>` et qu'il se dimensionne en hauteur tout seul en gardant sa proportion.
 
 Je vais passer le détail de mes tests, mais j'ai trouvé une solution pas trop moche en lisant [cet article de CSS-Tricks](https://css-tricks.com/scale-svg/). La solution que j'ai préférée est simplement de recopier la propriété `viewbox` du `<symbol>` sur le `<svg>`. Le navigateur (récent) gardera tout seul de ratio en fonction de la taille dimensionnée.
 
