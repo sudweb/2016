@@ -68,7 +68,7 @@ Pour plus d'information sur l'utilisation de Jekyll, reportez-vous à la [docume
 
 Pour toute demande, merci de [créer une issue](https://github.com/sudweb/2016/issues/new) sur GitHub.
 
-Si vous souhaitez nous aider, vous pouvez [copier](https://help.github.com/articles/fork-a-repo/) le dépôt, faire vos modifications dans une nouvelle branche, et [faire une demande de fusion](https://github.com/sudweb/2016/pulls).
+Si vous souhaitez nous aider, vous pouvez [copier](https://help.github.com/articles/fork-a-repo/) le dépôt, faire vos modifications dans une nouvelle branche et [faire une demande de fusion](https://github.com/sudweb/2016/pulls).
 
 Toute modification doit faire l'objet d'une [pull request](https://github.com/sudweb/2016/pulls) et doit passer les tests avant de pouvoir être fusionnée.
 
