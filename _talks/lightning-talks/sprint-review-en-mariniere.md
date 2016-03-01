@@ -5,5 +5,5 @@ speaker:
   - alexandre
 type: lt
 symbol: well
-start-time:
+start-time: 15:05
 ---

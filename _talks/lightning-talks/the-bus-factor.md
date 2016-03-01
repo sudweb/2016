@@ -6,5 +6,5 @@ speaker:
   - laurence
 type: lt
 symbol: expe
-start-time:
+start-time: 11:05
 ---

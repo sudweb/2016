@@ -6,4 +6,5 @@ speaker:
   - thomas
 type: lt
 symbol: educ
+start-time: 15:10
 ---

@@ -5,4 +5,5 @@ speaker:
   - antoine
 type: lt
 symbol: crea
+start-time: 15:15
 ---
