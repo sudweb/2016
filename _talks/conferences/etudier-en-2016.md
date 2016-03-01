@@ -2,14 +2,11 @@
 title: Être étudiant·e en 2016
 description: >-
   Qu'est ce que je veux faire ? Pourquoi ? Quelles sont mes priorités ?
-  Je dois faire des choix et construire un projet pro qui influenceront tout le reste de ma vie : c'est quoi le mieux, faire une thèse sur un thème qui me passionne, faire de la gestion de projet dans une grande boite, bosser dans un super cadre dans une startup ?…
-
-
-  Bref, on va apprendre la complexité d'être étudiant·e en 2016.
+  Je dois faire des choix et construire un projet pro qui influenceront tout le reste de ma vie&nbsp;: c'est quoi le mieux, faire une thèse sur un thème qui me passionne, faire de la gestion de projet dans une grande boîte, bosser dans un super cadre dans une startup… ?
 speaker:
   - roxane
 type: conference
 symbol: educ
-start-time: 11:00
+date: 2016-05-27 11:40:00 +0100
 display-order: 7
 ---

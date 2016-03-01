@@ -1,10 +1,11 @@
 ---
 title: "Les valeurs de LEGO™"
-description: "Une lettre à l'attention des parents retrouvée dans une vieille boîte LEGO™ de 1973. Que nous apprend-elle sur les valeurs de la firme Danoise ?"
-date: 2016-05-27 1O:40:00 +0100
+description: >-
+  En vidant le garde meuble familial cet hiver, je suis tombé sur un trésor : une boite de LEGO™ de 1973 en excellent état. À l'intérieur se trouvait encore, presque oublié, un petit fascicule pour sensibiliser les parents aux valeurs de la firme Danoise. Cela tombe bien car pour Noël j'ai reçu une boite de LEGO™ sous le sapin. De 1973 à 2016, voyons ce que sont devenues ces valeurs.
+date: 2016-05-27 10:40:00 +0100
 speaker:
   - thomas
 type: lt
 symbol: educ
-start-time: 15:10
+display-order: 6
 ---

@@ -3,7 +3,7 @@
 hannah:
   name: Hannah Wolfe
   bio:  >-
-    Hannah est cofondatrice et CTO de [Ghost](https://ghost.org), une plateforme de publication innovante à la fois libre et rentable, financée par le service payant Ghost(Pro)."
+    Hannah est cofondatrice et CTO de [Ghost](https://ghost.org), une plateforme de publication innovante à la fois libre et rentable, financée par le service payant Ghost(Pro).
   location: Northampton
   country: United Kingdom
   twitter: erisds
@@ -25,8 +25,7 @@ chris:
 mylene:
   name: Mylène L'Orguilloux
   bio: >-
-    *Accroc* à la couture, son patron préféré c'est encore celui du prochain
-    vêtement qu'elle va designer.
+    *Accroc* à la couture, son patron préféré c'est encore celui du prochain vêtement qu'elle va designer.
   avatar: mylene
   location: Bordeaux
   twitter: MilanAvJC
@@ -58,9 +57,8 @@ rachel:
 roxane:
   name: Roxane Debruyker
   bio: >-
-    Étudiante en sciences cognitives, Roxanne a beaucoup appris pendant
-    son stage chez [Ants](http://weareants.fr/), notamment sur
-    l'intelligence articielle et l'Internet des objets.
+    Étudiante en sciences cognitives, Roxanne est également
+    stagiaire chez [Ants](http://weareants.fr/).
   location: Bordeaux
   country: France
   twitter: dbr_roxane
@@ -91,8 +89,7 @@ stephanie:
 gaelle:
   name: Gaëlle Periat
   bio: >-
-    Sa devise c'est *la data c'est bon, mangez-en !*. Gaëlle voit la vie avec
-    beaucoup de couleurs, de joie et de positiviCSVme.
+    Sa devise c'est *la data c'est bon, mangez-en !*. Gaëlle voit la vie avec beaucoup de couleurs, de collants roses, de joie et de positivisme.
   location: Paris
   country: France
   twitter: GaellePeriat
@@ -116,6 +113,7 @@ antoine:
     au numérique. Antoine est aussi enseignant et participe à
     divers projets associatifs.
   avatar: antoine-fauchie
+  twitter: antoinentl
 
 basile:
   name: Basile Simon
@@ -129,8 +127,7 @@ bastien:
   name: Bastien Guerry
   bio: >-
     Après des études de philosophie et de sciences cognitives, Bastien
-    a contribué à de nombreux projets libres et est devenu
-    hacktiviste indépendant.
+    a contribué à de nombreux projets libres et est devenu hacktiviste indépendant.
   avatar: bastien-guerry
   twitter: bzg2
   website: //bzg.fr/
@@ -139,8 +136,7 @@ boris:
   name: Boris Schapira
   bio: >-
     Ingénieur de formation, consultant chez Clever Age. Boris accompagne
-    ses clients lors de missions de conseil, de gestion de projets,
-    de formation et parfois de développements.
+    ses clients avec pédagogie et bienveillance.
   location: Bordeaux
   country: France
   twitter: borisschapira
@@ -175,7 +171,7 @@ marion:
     Développeur Ruby on Rails et femme d'agriculteur.
   location:
   country: France
-  twitter:
+  twitter: MarionLambert07
   avatar: marion-lambert
 
 raphael:
