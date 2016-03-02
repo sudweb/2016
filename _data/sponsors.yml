@@ -4,6 +4,11 @@
   title: "L'Internet Professionnel"
   logo: alienor.png
   level: gold
+- name: Ekino
+  website: //www.ekino.com
+  title: "L'innovation digitale au service de votre business"
+  logo: ekino.png
+  level: gold
 
 #Silver
 - name: Jolicode
