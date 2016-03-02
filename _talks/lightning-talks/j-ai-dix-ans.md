@@ -4,7 +4,7 @@ description: >-
   Les enfants créent en permanence. À dix ans, certains écrivent des poèmes, jouent du piano et programment des jeux…
 
 
-  Comment faire arivé à l'âge adulte pour garder son âme d'enfant et continur à écrire, jouer du piano et programmer ?
+  Comment faire une fois arrivé à l'âge adulte pour garder son âme d'enfant et continuer à écrire, jouer du piano et programmer ?
 speaker:
   - bastien
 type: lt
