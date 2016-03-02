@@ -1,4 +1,6 @@
 # Primary navigation links
 primary:
+  - title: "Programme"
+    url: "/"
   - title: "Inscription"
     url: "/inscription/"
