@@ -1,4 +1,9 @@
 # Gold
+- name: Région Aquitaine Limousin Poitou-Charentes
+  website: //laregion-alpc.fr/
+  title: ""
+  logo: region-alpc.png
+  level: gold
 - name: Alienor
   website: //www.alienor.net/
   title: "L'Internet Professionnel"
