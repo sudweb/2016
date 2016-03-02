@@ -1,18 +1,7 @@
 language: ruby
 cache: bundler
 sudo: false
-rvm:
-- 2.1
-matrix:
-    include:
-        - rvm: 2.1
-          env: JEKYLL_VERSION=3.03
-    fast_finish: true
-
-# branch whitelist, only for GitHub Pages
-branches:
-    only:
-        - gh-pages
+rvm: 2.1
 
 # Assume bundler is being used, therefore
 # the `install` step will run `bundle install` by default.
