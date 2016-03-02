@@ -5,7 +5,7 @@
   </figure>
   <h4 class="pres-title tiny-title-size">{{ conference.title }}</h4>
   <p class="pres-desc">{{ conference.description | markdownify }}</p>
-  {% if conference.lang == "en" %}<p class="pres-desc"><em>Conférence en anglais</em></p>{% endif %}
+  {% if conference.lang == "en" %}<p class="pres-desc"><em>Conférence en anglais (non traduit)</em></p>{% endif %}
   <footer>
   {% for names in conference.speaker %}
     {% assign speaker = site.data.speakers[names] %}
