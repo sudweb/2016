@@ -247,13 +247,15 @@ title: La conférence web super humaine
 							</section>
 							<section>
 								<h2 class="tiny-title-size uppercase">Who you gonna call?</h2>
-								<form class="newsletter-form">
-									<label for="i1">Inscrivez-vous à la newsletter</label>
+								<form action="//sudweb.us2.list-manage.com/subscribe/post?u=af19b58cf514c01eca3f7652e&amp;id=b579f5b507" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="newsletter-form validate" target="_blank" novalidate>
+									<label for="mce-EMAIL">Inscrivez-vous à la newsletter</label>
 									<input type="text" id="i2" name="name">
 									<div class="row">
-										<input type="email" id="i1" name="email">
-										<button type="submit" class="button uppercase">Ok</button>
-									</div>
+										<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="adresse mail" required>
+								    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+								    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_af19b58cf514c01eca3f7652e_b579f5b507" tabindex="-1" value=""></div>
+								    <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="button uppercase">ok</button>
+								    </div>
 								</form>
 								<ul class="social-links">
 									{% for social in site.data.social %}
