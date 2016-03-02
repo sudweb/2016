@@ -17,11 +17,11 @@
   <li>
       {% if sponsor.level != "bronze" %}
       <figure>
-          <a href="{{ sponsor.url }}" title=" {{ sponsor.title }}"><img src="{{ site.baseurl}}/assets/images/2016/partenaires/{{ sponsor.logo }}" alt="{{ sponsor.name }}"></a>
+          <a href="{{ sponsor.website }}" title=" {{ sponsor.title }}"><img src="{{ site.baseurl}}/assets/images/2016/partenaires/{{ sponsor.logo }}" alt="{{ sponsor.name }}"></a>
           <figcation class="visuallyhidden">{{ sponsor.name }}</figcation>
       </figure>
       {% elsif sponsor.level == "bronze" %}
-        <a href="{{ sponsor.url }}" title="{{ sponsor.title }}">{{ sponsor.name }}</a>
+        <a href="{{ sponsor.website }}" title="{{ sponsor.title }}">{{ sponsor.name }}</a>
       {% endif %}
   </li>
   {% endfor %}
