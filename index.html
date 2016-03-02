@@ -33,7 +33,7 @@ title: La conférence web super humaine
 
 
 <main>
-
+  
   <nav class="schedule-nav">
     <div class="wrapper container">
       <a href="#vendredi">
@@ -211,16 +211,5 @@ title: La conférence web super humaine
 					<!-- nothing here! -->
 				</div>
 
-				<article class="white-section">
-					<div class="wrapper text-center">
-						<h2 class="great-title-size red uppercase">Nos super partenaires</h2>
-            {% assign sponsortypes = "gold|silver|bronze" | split: "|" %}
-            {% for sponsortype in sponsortypes %}
-            <section class="{{ sponsortype }}-partners">
-              {% assign sponsors = site.data.sponsors | where:"level", sponsortype %}
-              {% include sponsors.html %}
-            </section>
-            {% endfor %}
-					</div>
-				</article>
+        {% include sponsors.html %}
 </main>

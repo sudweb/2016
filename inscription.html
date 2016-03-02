@@ -15,6 +15,7 @@ permalink: /inscription/
 </header>
 
 <main>
+
   <article>
     <section class="white-section">
       <div class="wrapper text-center">
@@ -121,12 +122,15 @@ permalink: /inscription/
     </section>
     <section class="white-section">
       <div class="wrapper text-center">
-        <svg class="orange svg-size" viewBox="0 0 400 400"><use xlink:href="{{ site.baseurl }}/assets/images/symbol-defs.svg#rocket" /></svg>
+        <svg class="orange svg-size" viewbox="0 0 400 400"><use xlink:href="{{site.baseurl}}/assets/images/symbol-defs.svg#rocket" /></svg>
         <p class="h-like tiny-title-size">En route vers Bordeaux !</p>
-        <div>
         <div class="text-center">
-            <a class="cta button-type1" href="#billetterie">Je prends mes places !</a>
+          <a class="cta button-type1" href="#billetterie">Je prends mes places !</a>
         </div>
-        </section>
-      </article>
-    </main>
+      </div>
+    </section>
+
+  </article>
+
+  {% include sponsors.html %}
+</main>

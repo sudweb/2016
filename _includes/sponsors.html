@@ -1,28 +1,12 @@
-<h3 class="partners-title small-title-size uppercase {{ sponsortype }}">{% if sponsortype == 'gold' %}Or{% endif %}{% if sponsortype == 'silver' %}Argent{% endif %}{% if sponsortype == 'bronze' %}Bronze{% endif %}</h3>
-<div class="partners-hr">
-  <div>
-    <svg class="sw-logo {{ sponsortype }}" viewBox="0 0 500 276.37">
-      <title>Logo SudWeb</title>
-      <use id="sw-hands" xlink:href="{{ site.baseurl }}/assets/images/symbol-defs.svg#sw-hands" />
-      <use id="sw-hands-shadows" xlink:href="{{ site.baseurl }}/assets/images/symbol-defs.svg#sw-hands-shadows" />
-      <use id="sw-heart" xlink:href="{{ site.baseurl }}/assets/images/symbol-defs.svg#sw-heart" />
-      <use id="sw-heart-top" xlink:href="{{ site.baseurl }}/assets/images/symbol-defs.svg#sw-heart-top" />
-      <use id="sw-wave-shadow" xlink:href="{{ site.baseurl }}/assets/images/symbol-defs.svg#sw-wave-shadow" />
-      <use id="sw-wave" xlink:href="{{ site.baseurl }}/assets/images/symbol-defs.svg#sw-wave" />
-    </svg>
+<article class="white-section">
+  <div class="wrapper text-center">
+    <h2 class="great-title-size red uppercase">Nos super partenaires</h2>
+    {% assign sponsortypes = "gold|silver|bronze" | split: "|" %}
+    {% for sponsortype in sponsortypes %}
+    <section class="{{ sponsortype }}-partners">
+      {% assign sponsors = site.data.sponsors | where:"level", sponsortype %}
+      {% include sponsors_loop.html %}
+    </section>
+    {% endfor %}
   </div>
-</div>
-<ul class="grid-4">
-  {% for sponsor in sponsors %}
-  <li>
-      {% if sponsor.level != "bronze" %}
-      <figure>
-          <a href="{{ sponsor.website }}" title=" {{ sponsor.title }}"><img src="{{ site.baseurl}}/assets/images/2016/partenaires/{{ sponsor.logo }}" alt="{{ sponsor.name }}"></a>
-          <figcation class="visuallyhidden">{{ sponsor.name }}</figcation>
-      </figure>
-      {% elsif sponsor.level == "bronze" %}
-        <a href="{{ sponsor.website }}" title="{{ sponsor.title }}">{{ sponsor.name }}</a>
-      {% endif %}
-  </li>
-  {% endfor %}
-</ul>
+</article>
