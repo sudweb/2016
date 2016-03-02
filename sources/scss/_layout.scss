@@ -27,6 +27,7 @@
 		}
 	}
 	.logo {
+		padding: .25em 0;
 		&:hover,
 		&:focus {
 			animation: heart-beat 1s infinite; transition-timing-function: $easeInOutCubic;
@@ -38,11 +39,18 @@
 }
 
 .page-header {
-	padding: 20% 0 5%;
-	background: $header-bg no-repeat center bottom / cover url(../img/assets/hero-small.svg);
+	padding: 5% 0 30%;
+	background: $header-bg no-repeat right bottom / contain url(../img/assets/hero-small.svg);
 	color: $header-color;
+	@media (min-width: $media-break-point) {
+		padding: 20% 0 5%;
+		background: $header-bg no-repeat center bottom / cover url(../img/assets/hero-small.svg);
+	}
 	.content {
-		width: 60%;
+		width: auto;
+		@media (min-width: $media-break-point) {
+			width: 60%;
+		}
 	}
 	.title {
 		margin: 0;
@@ -54,3 +62,83 @@
 	}
 }
 
+.page-footer {
+	padding: 2.5% 0;
+	background: $darkgrey;
+	color: $alternate-color;
+	ul {
+		@extend %ul-reset;
+	}
+	li, label, input, button {
+		font-size: $small-font-size;
+	}
+	li, label, .row {
+		margin: .5em 0;
+	}
+	nav a {
+		color: $yellow; text-decoration: none;
+		&:hover, &:focus {
+			text-decoration: underline;
+		}
+	}
+	abbr {
+		text-decoration: none;
+	}
+	label {
+		display: block;
+		color: $yellow;
+		cursor: pointer;
+	}
+	.row {
+		display: flex;
+		flex-flow: row no-wrap; align-items: stretch;
+	}
+	[id='mce-EMAIL'] { // From MailChimp
+		flex: 1; margin: 0;
+		border-radius: $button-default-radius 0 0 $button-default-radius;
+	}
+	button {
+		border-radius: 0 $button-default-radius $button-default-radius 0;
+	}
+	.social-links {
+		display: flex; margin: 2em 0;
+		flex-flow: row nowrap; justify-content: space-between; align-items: center;
+		& > * {
+			display: block; margin: 0 5%;
+			flex: 0 1 4em;
+			font-size: 1em;
+			&:first-child {
+				margin-left: 0;
+			}
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+		a {
+			position: relative; display: block; padding: 0 0 100% 0; overflow: hidden;
+		}
+		svg {
+			position: absolute; top: 0; left: 0; right: 0; bottom: 0; width: 100%; height: 100%; padding: 15%; box-sizing: border-box;
+		}
+	}
+}
+
+.page-ground {
+	padding: 2% 0;
+	background: $white;
+	font-family: $title-font-family;
+	p {
+		margin: 0;
+		font-size: $tiny-title-size;
+	}
+	[class*='button'] {
+		padding: .25em;
+		font-size: 1em; font-weight: normal;
+	}
+	.pffff {
+		color: inherit; text-decoration: none;
+		&:hover, &:focus {
+			text-decoration: underline;
+		}
+	}
+}
