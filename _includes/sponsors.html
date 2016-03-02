@@ -1,4 +1,4 @@
-<h3 class="partners-title small-title-size uppercase {{ sponsortype }}">{{ sponsortype }}</h3>
+<h3 class="partners-title small-title-size uppercase {{ sponsortype }}">{% if sponsortype == 'gold' %}Or{% endif %}{% if sponsortype == 'silver' %}Argent{% endif %}{% if sponsortype == 'bronze' %}Bronze{% endif %}</h3>
 <div class="partners-hr">
   <div>
     <svg class="sw-logo {{ sponsortype }}" viewBox="0 0 500 276.37">
