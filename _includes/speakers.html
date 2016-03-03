@@ -4,8 +4,12 @@
     <svg><use id="sw-hands" xlink:href="{{ site.baseurl }}/assets/images/symbol-defs.svg#{{conference.symbol}}" /></svg>
   </figure>
   <h4 class="pres-title tiny-title-size">{{ conference.title }}</h4>
-  <div class="pres-desc">{{ conference.description | markdownify }}</div>
-  {% if conference.lang == "en" %}<p class="pres-desc"><em>Conférence en anglais (non traduit)</em></p>{% endif %}
+  <div class="pres-desc">
+    {{ conference.description | markdownify }}
+    {% if conference.lang == "en" %}
+      <p><em>Conférence en anglais (non traduit)</em></p>
+    {% endif %}
+  </div>
   <footer>
   {% for names in conference.speaker %}
     {% assign speaker = site.data.speakers[names] %}
