@@ -1,10 +1,10 @@
 {% if site.analytics and page.analytics != false %}
 <script>
-    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-    function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-    e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-    e.src='https://www.google-analytics.com/analytics.js';
-    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-    ga('create','{{ site.analytics.google.tracking_id }}','auto');ga('send','pageview');
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', '{{ site.analytics.google.tracking_id }}', 'auto');
+ga('require', 'autotrack');
+ga('send', 'pageview');
 </script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+<script async src="{{site.baseurl}}/assets/js/vendor/autotrack.js"></script>
 {% endif %}
