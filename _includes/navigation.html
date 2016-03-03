@@ -1,6 +1,6 @@
 <nav class="main-nav">
   <div class="wrapper">
-    <a class="logo" href="{{ site.baseurl }}/" title="Accueil">
+    <a class="logo" href="{{ site.baseurl }}/" title="Accueil" data-event-category="cta" data-event-action="click" data-event-label="navigation-logo">
       <svg class="sw-logo redbg" viewBox="0 0 500 276.37">
         <title>Sud Web</title>
         <use id="sw-hands" xlink:href="{{site.baseurl}}/assets/images/symbol-defs.svg#sw-hands" />
@@ -16,7 +16,7 @@
     {% if page.url contains link.url %}
       {% assign class = 'is--active' %}
     {% endif %}
-    <a href="{{ site.baseurl }}{{ link.url }}" class="{{ class }}">{{ link.title }}</a>
+    <a href="{{ site.baseurl }}{{ link.url }}" class="{{ class }}" data-event-category="cta" data-event-action="click" data-event-label="navigation-{{ link.title }}">{{ link.title }}</a>
     {% endfor %}
   </div>
 </nav>
