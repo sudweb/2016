@@ -1,7 +1,7 @@
 ---
 title: Zero waste
 description: >-
-  L'industrie textile jette au minimum 15% de matières premières à la sortie des usines. La faute aux… courbes des patrons. Pourquoi ?
+  L’industrie textile jette au minimum 15% de matières premières à la sortie des usines. La faute aux… courbes des patrons. Pourquoi ?
 
 
   Entre révolution du *Do It Yourself* et décloisonnement des silos,
