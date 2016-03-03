@@ -14,8 +14,10 @@
         <img src="{{ site.baseurl}}/assets/images/2016/orateurs/{{ speaker.avatar }}.jpg" alt="{{ speaker.name }}">
       </figure>
       <h5 class="author-name default-size">
-        {% if speaker.twitter %}
-           <a href="//twitter.com/{{speaker.twitter}}">{{ speaker.name }}</a>
+        {% if speaker.website %}
+           <a href="{{speaker.website}}">{{ speaker.name }}</a>
+        {% elsif speaker.twitter %}
+            <a href="//twitter.com/{{speaker.twitter}}">{{ speaker.name }}</a>
         {% else %}
             {{ speaker.name }}
         {% endif %}
