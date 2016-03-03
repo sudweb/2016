@@ -1,3 +1,7 @@
+/*  ==========================================================================
+   SCSS variables
+    ========================================================================== */
+
 // Colors
 
 $darkred                : #bc3630;
@@ -78,8 +82,8 @@ $bold-font-weight       : 700;
 
 // Fonts
 
-$default-font-family    : 'Roboto', Geneva, 'Lucida Console', sans-serif;
-$title-font-family      : 'Squada One', 'Oswald', Arial, sans-serif;
+$default-font-family    : 'Roboto', verdana, arial, sans-serif;
+$title-font-family      : 'Squada One', arial, sans-serif;
 
 
 // Grid
@@ -138,4 +142,4 @@ $default-timing-function: cubic-bezier(unquote($easeOutBack));
 
 $button-default-radius  : .25em;
 $section-margin         : 5%;
-$svg-size               : 8em;
+$svg-size               : 7em;

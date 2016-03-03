@@ -1,4 +1,6 @@
-// Sud Web logo
+/* ==========================================================================
+   SudWeb logo specifics
+   ========================================================================== */
 
 .sw-logo {
 	&.regular {
@@ -34,25 +36,25 @@
 		[id='sw-wave']          { fill: $yellow; }
 	}
 	&.gold {
-		[id='sw-hands']         { fill: $yellow; }
+		[id='sw-hands']         { fill: $gold; }
 		[id='sw-hands-shadows'] { fill: $orange; }
-		[id='sw-heart']         { fill: $yellow; }
+		[id='sw-heart']         { fill: $gold; }
 		[id='sw-heart-top']     { fill: $orange; }
 		[id='sw-wave-shadow']   { fill: $orange; }
 		[id='sw-wave']          { fill: $white; }
 	}
 	&.silver {
-		[id='sw-hands']         { fill: $lightgrey; }
+		[id='sw-hands']         { fill: $silver; }
 		[id='sw-hands-shadows'] { fill: $darkgrey; }
-		[id='sw-heart']         { fill: $lightgrey; }
+		[id='sw-heart']         { fill: $silver; }
 		[id='sw-heart-top']     { fill: $darkgrey; }
 		[id='sw-wave-shadow']   { fill: $darkgrey; }
 		[id='sw-wave']          { fill: $white; }
 	}
 	&.bronze {
-		[id='sw-hands']         { fill: $darkred; }
+		[id='sw-hands']         { fill: $bronze; }
 		[id='sw-hands-shadows'] { fill: $darkgrey; }
-		[id='sw-heart']         { fill: $darkred; }
+		[id='sw-heart']         { fill: $bronze; }
 		[id='sw-heart-top']     { fill: $darkgrey; }
 		[id='sw-wave-shadow']   { fill: $darkgrey; }
 		[id='sw-wave']          { fill: $white; }

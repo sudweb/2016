@@ -1,4 +1,6 @@
-// Main layout
+/* ==========================================================================
+   Main layout
+   ========================================================================== */
 
 .main-nav {
 	background: $nav-bg;
@@ -47,7 +49,7 @@
 	.content {
 		width: auto;
 		@media (min-width: $media-break-point) {
-			width: 65%;
+			width: 60%;
 		}
 	}
 	.title {
@@ -91,12 +93,9 @@
 		display: flex;
 		flex-flow: row no-wrap; align-items: stretch;
 	}
-	[id='mce-EMAIL'] {
+	[id='mce-EMAIL'] { // From MailChimp
 		flex: 1; margin: 0;
 		border-radius: $button-default-radius 0 0 $button-default-radius;
-	}
-	[id='i2'] {
-		@extend .visuallyhidden;
 	}
 	button {
 		border-radius: 0 $button-default-radius $button-default-radius 0;
