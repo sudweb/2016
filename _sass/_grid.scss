@@ -1,0 +1,23 @@
+
+.wrapper {
+	max-width: $grid-width; margin-left: auto; margin-right: auto; padding-left: $grid-goetter / 2; padding-right: $grid-goetter / 2; box-sizing: border-box;
+}
+
+.grid {
+	display: flex; margin-left: -$grid-goetter; /* margin-right: -$grid-goetter; */ padding: 0;
+	flex-flow: row wrap;
+	list-style: none; /* if list container */
+	& > * {
+		box-sizing: border-box; margin-top: $grid-goetter; margin-left: $grid-goetter; /* margin-right: $grid-goetter; */
+		flex: 1 0 $grid-width / ($grid-max-col-number + 1);
+	}
+}
+
+@for $i from 2 through $grid-max-col-number {
+	.grid-#{$i} {
+		@extend .grid;
+		& > * {
+			flex-basis: ($grid-width / ($i + 1));
+		}
+	}
+}

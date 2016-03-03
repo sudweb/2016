@@ -1,33 +1,12 @@
-<section class="sponsors">
-  <h2>Merci</h2>
-    <ul>
-        {% assign sponsors = site.data.sponsors | where: "level","gold" %}
-        {% for sponsor in sponsors %}
-        <li>
-          <a href="{{ sponsor.website }}">
-            <img src="{{ site.baseurl }}/images/2016/partenaires/{{ sponsor.logo }}" width="300" alt="{{ sponsor.name }}">
-          </a>
-        </li>
-        {% endfor %}
-    </ul>
-    <ul>
-        {% assign sponsors = site.data.sponsors | where: "level","silver" %}
-        {% for sponsor in sponsors %}
-        <li>
-          <a href="{{ sponsor.website }}" title="{{ sponsor.title }}">
-            <img src="{{ site.baseurl }}/images/2016/partenaires/{{ sponsor.logo }}" width="150" alt="{{ sponsor.name }}">
-          </a>
-        </li>
-        {% endfor %}
-    </ul>
-    <ul>
-        {% assign sponsors = site.data.sponsors | where: "level","bronze" %}
-        {% for sponsor in sponsors %}
-        <li>
-          <a href="{{ sponsor.website }}" title="{{ sponsor.title }}">{{ sponsor.name }}</a>
-        </li>
-        {% endfor %}
-    </ul>
-    <p>Nous avons besoin de vous</p>
-    <p><a href="{{ site.baseurl }}/files/dossier-de-partenariat-sudweb-2016.pdf" type="button">Devenez partenaire</a></p>
-</section>
+<article class="white-section">
+  <div class="wrapper text-center">
+    <h2 class="great-title-size red uppercase">Nos super partenaires</h2>
+    {% assign sponsortypes = "gold|silver|bronze" | split: "|" %}
+    {% for sponsortype in sponsortypes %}
+    <section class="{{ sponsortype }}-partners">
+      {% assign sponsors = site.data.sponsors | where:"level", sponsortype %}
+      {% include sponsors_loop.html %}
+    </section>
+    {% endfor %}
+  </div>
+</article>

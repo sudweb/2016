@@ -1,0 +1,9 @@
+input, textarea, select {
+	display: inline-block; margin: 1em 0; padding: .5em; box-sizing: border-box;
+	background: $white; box-shadow: 0 .15em 0 darken($white, 30%); outline: 0;
+	border-radius: $button-default-radius; border: 0;
+	&:focus {
+		transform: translateY(.15em);
+		box-shadow: 0 0 0 darken($white, 30%);
+	}
+}

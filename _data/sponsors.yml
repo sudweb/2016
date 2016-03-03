@@ -1,8 +1,18 @@
 # Gold
+- name: Région Aquitaine Limousin Poitou-Charentes
+  website: //laregion-alpc.fr/
+  title: ""
+  logo: region-alpc.png
+  level: gold
 - name: Alienor
   website: //www.alienor.net/
   title: "L'Internet Professionnel"
   logo: alienor.png
+  level: gold
+- name: Ekino
+  website: //www.ekino.com
+  title: "L'innovation digitale au service de votre business"
+  logo: ekino.png
   level: gold
 
 #Silver

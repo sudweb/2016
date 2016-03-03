@@ -1,0 +1,31 @@
+/* ==========================================================================
+   Buttons classes
+   ========================================================================== */
+
+%button {
+	display: inline-block; margin: 1em 0; padding: .5em 1.5em;
+	border-radius: .25em; border: 0;
+	font-size: $defaut-font-size; font-weight: $bold-font-weight; text-decoration: none;
+	&.cta {
+		margin: 1em 0;
+	}
+}
+
+@each $button in $buttons {
+	$name: map-get($button, 'name');
+	$background: map-get($button, 'background');
+	$color: map-get($button, 'color');
+
+	.button-#{$name} {
+		@extend %button;
+		box-shadow: 0 .15em 0 darken($background, 10%);
+		background: $background;
+		color: $color;
+		&:hover,
+		&:focus {
+			transform: translateY(.15em);
+			box-shadow: 0 0 0 darken($background, 10%);
+			background: darken($background, 5%);
+		}
+	}
+}

@@ -1,14 +1,57 @@
-// Elements
+// Base styles: opinionated defaults
 
-h2,
-h3 {
-  color: $red;
+html {
+	font-size: $small-media-font-size;
+	@media (min-width: $media-break-point) {
+		font-size: $large-media-font-size;
+	}
 }
 
-article {
-  padding: $base-spacing;
+html, input, textarea, select {
+	font-family: $default-font-family; line-height: $default-line-height; font-weight: $default-font-weight; color: $default-color;
 }
 
-a:hover {
-  text-decoration: underline;
+::-moz-selection {
+    background: $selection-color;
+    text-shadow: none;
+}
+::selection {
+    background: $selection-color;
+    text-shadow: none;
+}
+
+audio, canvas, iframe, img, svg, video {
+    vertical-align: middle;
+}
+
+textarea {
+    resize: vertical;
+}
+
+p, li {
+	font-size: $defaut-font-size;
+}
+
+a, button, input, textarea, select {
+	transition: $default-delay $default-timing-function;
+}
+
+a {
+	color: $red; text-decoration: underline;
+	&:hover, &:focus {
+		text-decoration: none;
+	}
+}
+
+img, svg {
+	width: auto; max-width: 100%;
+}
+
+svg {
+	fill: currentColor;
+}
+
+%ul-reset {
+	margin: 0; padding: 0;
+	list-style: none;
 }

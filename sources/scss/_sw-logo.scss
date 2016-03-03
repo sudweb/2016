@@ -1,0 +1,62 @@
+/* ==========================================================================
+   SudWeb logo specifics
+   ========================================================================== */
+
+.sw-logo {
+	&.regular {
+		[id='sw-hands']         { fill: $yellow; }
+		[id='sw-hands-shadows'] { fill: $orange; }
+		[id='sw-heart']         { fill: $red; }
+		[id='sw-heart-top']     { fill: $darkred; }
+		[id='sw-wave-shadow']   { fill: $darkred; }
+		[id='sw-wave']          { fill: $white; }
+	}
+	&.greyscale {
+		[id='sw-hands']         { fill: $lightgrey; }
+		[id='sw-hands-shadows'] { fill: $darkgrey; }
+		[id='sw-heart']         { fill: $lightgrey; }
+		[id='sw-heart-top']     { fill: $darkgrey; }
+		[id='sw-wave-shadow']   { fill: $darkgrey; }
+		[id='sw-wave']          { fill: $white; }
+	}
+	&.redbg {
+		[id='sw-hands']         { fill: $white; }
+		[id='sw-hands-shadows'] { fill: $darkred; }
+		[id='sw-heart']         { fill: $white; }
+		[id='sw-heart-top']     { fill: $darkred; }
+		[id='sw-wave-shadow']   { fill: $darkred; }
+		[id='sw-wave']          { fill: $red; }
+	}
+	&.yellowbg {
+		[id='sw-hands']         { fill: $white; }
+		[id='sw-hands-shadows'] { fill: $orange; }
+		[id='sw-heart']         { fill: $white; }
+		[id='sw-heart-top']     { fill: $orange; }
+		[id='sw-wave-shadow']   { fill: $orange; }
+		[id='sw-wave']          { fill: $yellow; }
+	}
+	&.gold {
+		[id='sw-hands']         { fill: $gold; }
+		[id='sw-hands-shadows'] { fill: $orange; }
+		[id='sw-heart']         { fill: $gold; }
+		[id='sw-heart-top']     { fill: $orange; }
+		[id='sw-wave-shadow']   { fill: $orange; }
+		[id='sw-wave']          { fill: $white; }
+	}
+	&.silver {
+		[id='sw-hands']         { fill: $silver; }
+		[id='sw-hands-shadows'] { fill: $darkgrey; }
+		[id='sw-heart']         { fill: $silver; }
+		[id='sw-heart-top']     { fill: $darkgrey; }
+		[id='sw-wave-shadow']   { fill: $darkgrey; }
+		[id='sw-wave']          { fill: $white; }
+	}
+	&.bronze {
+		[id='sw-hands']         { fill: $bronze; }
+		[id='sw-hands-shadows'] { fill: $darkgrey; }
+		[id='sw-heart']         { fill: $bronze; }
+		[id='sw-heart-top']     { fill: $darkgrey; }
+		[id='sw-wave-shadow']   { fill: $darkgrey; }
+		[id='sw-wave']          { fill: $white; }
+	}
+}

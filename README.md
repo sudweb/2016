@@ -59,11 +59,16 @@ Le site est maintenant accessible en local à l'adresse http://0.0.0.0:4000/2016
 
 Pour plus d'information sur l'utilisation de Jekyll, reportez-vous à la [documentation officielle](http://jekyllrb.com/docs/home/).
 
+## Styleguide et notes d'intégration
+
+* [Styleguide](http://sudweb.fr/2016/styleguide/)
+* [Notes d'intégration]((http://sudweb.fr/2016/notes-integration/)) de @Twikito
+
 ## Contribution
 
 Pour toute demande, merci de [créer une issue](https://github.com/sudweb/2016/issues/new) sur GitHub.
 
-Si vous souhaitez nous aider, vous pouvez [copier](https://help.github.com/articles/fork-a-repo/) le dépôt, faire vos modifications dans une nouvelle branche, et [faire une demande de fusion](https://github.com/sudweb/2016/pulls).
+Si vous souhaitez nous aider, vous pouvez [copier](https://help.github.com/articles/fork-a-repo/) le dépôt, faire vos modifications dans une nouvelle branche et [faire une demande de fusion](https://github.com/sudweb/2016/pulls).
 
 Toute modification doit faire l'objet d'une [pull request](https://github.com/sudweb/2016/pulls) et doit passer les tests avant de pouvoir être fusionnée.
 
@@ -73,6 +78,9 @@ Avant de soumettre votre pull request, lancez le script de test d'intégration c
 
 ```bash
 $ script/cibuild
+Running ["ScriptCheck", "LinkCheck", "ImageCheck"] on ./_site on *.html...
+
+HTML-Proofer finished successfully.
 ```
 
 ## Licence

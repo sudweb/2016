@@ -4,9 +4,10 @@ title: Publication prochaine du programme
 description: Publication du programme et ouverture des inscription à partir du 15 février
 image: images/oratorgate.jpg
 date: 2015-02-07 20:15:39 +0100
+published: false
 ---
 
-![Construction du programme en équipe à Bordeaux]({{ site.baseurl }}/images/oratorgate.jpg)
+![Construction du programme en équipe à Bordeaux]({{ site.baseurl }}/assets/images/oratorgate.jpg)
 
 L'appel à orateurs est maintenant terminé. Nous avons reçu pas moins de 92 propositions soit près de **deux fois plus que l'année précédente**. Nous tenons à remercier celles et ceux qui ont proposé un sujet. Vous avez ainsi contribué à ce que cette édition bordelaise soit du meilleur cru.
 

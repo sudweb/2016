@@ -9,7 +9,7 @@ published: false
 
 Nous effectuons nous-même la curation des conférences de 20 minutes afin de construire une journée unique, cohérente et pleine de surprises.
 
-Les conférences courtes peuvent être tout aussi enrichissantes, et donnent du rythme à la journée.
+Les conférences courtes peuvent être tout aussi enrichissantes et donnent du rythme à la journée.
 Nous comptons sur vous pour étonner les participants.
 
 Vous avez jusqu'au 5 février, minuit.

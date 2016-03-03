@@ -1,0 +1,16 @@
+<article class="component">
+
+  <header class="component__header">
+    <h2 class="component__title">{{ entry.title }}</h2>
+    <p class="component__sass">Sass file: {{ entry.scss }}</p>
+  </header>
+  <div class="component__body">
+    <div class="component__display">
+      {{ entry.content }}
+    </div>
+    <div class="component__source">
+      {% highlight html %}{{ entry.content }}{% endhighlight %}
+    </div>
+  </div>
+
+</article>

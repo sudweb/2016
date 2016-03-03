@@ -1,15 +1,215 @@
 ---
-layout: default
-title: La conférence web à dimension humaine
+layout: main
+title: La conférence web super humaine
 ---
 
-<section class="posts">
-  {% for post in paginator.posts limit:1 %}
-  <article class="post">
-    <h2 class="post-title">
-      {{ post.title }}
-    </h2>
-    {{ post.content }}
-  </article>
-  {% endfor %}
-</section>
+<header class="page-header">
+  <div class="wrapper">
+    <div class="content">
+      <h1 class="title">Partageons nos super-pouvoirs</h1>
+      <p class="sstitle"><em>Sud Web</em> est <em>la</em> conférence itinérante des travailleurs du web pour apprendre, comprendre et partager nos expériences.</p>
+    </div>
+  </div>
+</header>
+
+<div class="cta-zone-1 section-margin">
+		<div class="wrapper">
+			<div class="grid-2 text-center">
+				<section>
+					<h2 class="cta-title">Deux journées</h2>
+					<p>Une journée de conférences et une journée d'élaboratoires pour sortir de sa zone de confort en&nbsp;toute&nbsp;sécurité.</p>
+				</section>
+				<section>
+					<h2 class="cta-title">Deux lieux</h2>
+					<p>En plein cœur de Bordeaux et adaptés à l'esprit de chaque journée : du confort pour les conférences,&nbsp;de l'espace pour&nbsp;les&nbsp;élaboratoires.</p>
+					<!-- <a class="cta button-type1" href="#">Repérez les lieux</a> -->
+				</section>
+				<div class="cta1">
+					<a class="cta button-type1" href="{{ site.baseurl }}/inscription/#billetterie">Je m'inscris</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+<main>
+  
+  <nav class="schedule-nav">
+    <div class="wrapper container">
+      <a href="#vendredi">
+        <time datetime="2016-05-27T09:00+1//2016-05-27T18:00+1">Vendredi 27 mai</time>
+        Les conférences</a>
+      <a href="#samedi">
+        <time datetime="2016-05-27T09:00+1//2016-05-27T18:00+1">Samedi 28 mai</time>
+        Les élaboratoires</a>
+      <a href="#after">
+        Les soirées
+      </a>
+    </div>
+  </nav>
+
+  <!-- VENDREDI -->
+    <article id="vendredi">
+      <!-- INTRO -->
+      <header class="white-section">
+        <div class="wrapper text-center">
+          <h2 class="great-title-size red uppercase">Vendredi,&nbsp;faire le plein d'inspiration</h2>
+          <p>
+						Des retours d'expérience pour alimenter nos réflexions, découvrir de nouveaux horizons et mieux comprendre le sens de nos métiers.
+					</p>
+          <div class="text-center">
+            <a class="cta button-type1" href="{{ site.baseurl }}/inscription/#billetterie">Je m'inscris</a>
+          </div>
+        </div>
+      </header>
+
+      <!-- CONFERENCES -->
+      <section class="yellow-section">
+        <div class="wrapper text-center">
+          <h3 class="conf-title regular-title-size uppercase">8 conférences</h3>
+          <p>Une sélection unique et variée qui devrait vous parler.</p>
+
+          <div class="grid-2">
+            {% assign conferences = site.talks | where: "type","conference" | sort: "display-order" %}
+            {% include speakers.html %}
+            <!-- <a class="pres-link" href="#">
+              <span>Le programme complet<br> c'est par ici</span>
+            </a> -->
+          </div>
+        </div>
+      </section>
+
+      <!-- LIGHTNING TALKS -->
+      <section class="darkgrey-section">
+        <div class="wrapper text-center">
+          <h3 class="conf-title regular-title-size uppercase">10 lightning talks</h3>
+          <p>Des conférences de 5 minutes pour donner du rythme.</p>
+
+          <div class="grid-2">
+            {% assign conferences = site.talks | where:"type","lt" | sort: "display-order" %}
+            {% include speakers.html %}
+          </div>
+        </div>
+      </section>
+
+      <section class="orange-section">
+        <div class="wrapper text-center">
+          <h3 class="onemorething-title regular-title-size uppercase">De loooongues pauses</h3>
+					<p>Les entractes durent 30 minutes et la pause déjeuner dure 2 heures.</p>
+					<p>
+						C'est le temps idéal pour se reposer, prendre le temps de rencontrer de nouvelles têtes
+						et de tailler une bavette entre potes (<em>valable également pour les végétariens</em>).
+					</p>
+          <!-- <div class="text-center">
+            <a class="cta button-type4" href="#">Découvrez le programme complet</a>
+          </div> -->
+        </div>
+      </section>
+    </article>
+
+    <!-- SAMEDI -->
+    <article id="samedi">
+      <header class="white-section">
+        <div class="wrapper text-center">
+          <h2 class="great-title-size red uppercase">Samedi,&nbsp;place à l'action&nbsp;!</h2>
+					<div class="grid-3 text-center">
+            <div>
+              <svg class="svg-size" viewBox="0 0 400 400"><use xlink:href="{{ site.baseurl }}/assets/images/symbol-defs.svg#clap" /></svg>
+              <p><strong>Une journée auto-organisée</strong> dont vous êtes les principaux acteurs.</p>
+            </div>
+            <div>
+              <svg class="svg-size" viewBox="0 0 400 400"><use xlink:href="{{ site.baseurl }}/assets/images/symbol-defs.svg#move" /></svg>
+              <p><strong>Vous êtes libres</strong> de passer d’une session à l’autre à tout moment.</p>
+            </div>
+            <div>
+              <svg class="svg-size" viewBox="0 0 400 400"><use xlink:href="{{ site.baseurl }}/assets/images/symbol-defs.svg#write" /></svg>
+              <p><strong>Vous soumettez des sujets</strong> sur lesquels vous réfléchissez avec les autres participants.</p>
+            </div>
+          </div>
+
+          <div class="text-center">
+            <a class="cta button-type1" href="{{ site.baseurl }}/inscription/#billetterie">Je participe&nbsp;!</a>
+          </div>
+        </div>
+      </header>
+
+      <section class="orange-section">
+        <div class="wrapper text-center">
+          <h3 class="regular-title-size uppercase">Quatre principes et une loi</h3>
+          <div class="grid-4 text-center">
+            <div>
+              <svg class="white svg-size" viewBox="0 0 400 400"><use xlink:href="{{ site.baseurl }}/assets/images/symbol-defs.svg#people" /></svg>
+              <p class="h-like tiny-title-size">Les personnes présentes sont les bonnes personnes</p>
+            </div>
+            <div>
+              <svg class="white svg-size" viewBox="0 0 400 400"><use xlink:href="{{ site.baseurl }}/assets/images/symbol-defs.svg#thumb" /></svg>
+              <p class="h-like tiny-title-size">Il arrive ce qui pouvait arriver de mieux</p>
+            </div>
+            <div>
+              <svg class="white svg-size" viewBox="0 0 400 400"><use xlink:href="{{ site.baseurl }}/assets/images/symbol-defs.svg#clock" /></svg>
+              <p class="h-like tiny-title-size">&Ccedil;a commence quand ça commence</p>
+            </div>
+            <div>
+              <svg class="white svg-size" viewBox="0 0 400 400"><use xlink:href="{{ site.baseurl }}/assets/images/symbol-defs.svg#stop" /></svg>
+              <p class="h-like tiny-title-size">&Ccedil;a finit quand c’est fini</p>
+            </div>
+          </div>
+				</div>
+			</section>
+
+			<section class="white-section">
+				<div class="wrapper text-center">
+          <p>Partons sur des bases saines : c’est vous qui contribuez et qui construisez cette journée afin d'en retirer le maximum. Si aucun des sujets proposés ne vous convient, alors à vous d’en proposer un.</p>
+          <p>Le cadre est posé, maintenant il ne vous reste plus qu'à retenir une chose :</p>
+          <svg class="orange svg-size" viewBox="0 0 400 400"><use xlink:href="{{ site.baseurl }}/assets/images/symbol-defs.svg#rocket" /></svg>
+          <p class="h-like tiny-title-size">La loi des deux pieds</p>
+          <p>&Agrave; partir du moment où vous n’êtes plus en train d’apprendre ni de contribuer, vous êtes libres à tout moment  de changer de session. Allez et venez autant que vous le voulez.</p>
+        </div>
+      </section>
+    </article>
+
+		<div class="after-banner">
+					<!-- nothing here! -->
+				</div>
+
+				<article id="after">
+
+					<!-- INTRO -->
+					<header class="white-section">
+						<div class="wrapper text-center">
+							<h2 class="great-title-size red uppercase">Après l'effort, le réconfort</h2>
+								<p>Afin de prolonger les discussions et passer un bon moment, les super-héros se retrouvent autour d’un verre et d'une bonne table. Vous pouvez vous joindre à eux, même si vous n'étiez pas présent pendant les conférences.</p>
+							<div class="text-center">
+								<a class="cta button-type1" href="{{ site.baseurl }}/inscription/#billetterie">Je viens juste à la soirée communautaire</a>
+							</div>
+						</div>
+					</header>
+
+					<section class="white-section">
+						<div class="wrapper text-center">
+							<h3 class="regular-title-size uppercase">Trois temps forts</h3>
+							<div class="grid-3">
+								<section>
+									<h4 class="tiny-title-size"><time>Jeudi 26 mai</time><br> Veillée communautaire</h4>
+									<p>Première rencontre informelle avant les conférences du lendemain.</p>
+								</section>
+								<section>
+									<h4 class="tiny-title-size"><time>Vendredi 27 mai</time><br> Soirée communautaire</h4>
+									<p>Pour prolonger les échanges après les conférences dans un lieu sympa. Inclus dans le pass, mais ouverte à tout le monde.</p>
+								</section>
+								<section>
+									<h4 class="tiny-title-size"><time>Dimanche 29 mai</time><br> L’after</h4>
+									<p>Encore sur place ? Profitez du dimanche pour flâner dans les rues de Bordeaux ou pourquoi pas en bord de plage à l'océan !</p>
+								</section>
+							</div>
+						</div>
+					</section>
+
+				</article>
+
+				<div class="food-banner">
+					<!-- nothing here! -->
+				</div>
+
+        {% include sponsors.html %}
+</main>

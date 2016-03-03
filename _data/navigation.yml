@@ -1,12 +1,6 @@
-
 # Primary navigation links
-
 primary:
   - title: "Programme"
-    url: /programme/
-  - title: "Orateurs"
-    url: /orateurs/
-  - title: "Lieux"
-    url: /lieux/
+    url: "/"
   - title: "Inscription"
-    url: /inscription/
+    url: "/inscription/"

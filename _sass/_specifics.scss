@@ -1,0 +1,219 @@
+
+[class*='title']:first-child {
+	margin-top: 0;
+}
+
+.section-margin, .white-section, .yellow-section, .orange-section, .darkgrey-section {
+	padding-top: $section-margin; padding-bottom: $section-margin;
+}
+
+.white-section {
+	background-color: $white;
+	color: $default-color;
+}
+.yellow-section {
+	background-color: $yellow;
+	color: $alternate-color;
+}
+.orange-section {
+	background-color: $orange;
+	color: $alternate-color;
+}
+.darkgrey-section {
+	background-color: $darkgrey;
+	color: $alternate-color;
+}
+
+.svg-size {
+	max-width: $svg-size;
+}
+
+[class*='banner'] {
+	padding: 15% 0;
+	background: center / cover no-repeat fixed;
+}
+.after-banner {
+	background-image: url(../images/soiree.jpg);
+}
+.food-banner {
+	background-image: url(../images/baba.jpg);
+}
+.talk-banner {
+	background-image: url(../images/beatrice.jpg);
+}
+.hug-banner {
+	background-image: url(../images/hug.jpg);
+}
+
+// Page programme
+
+.cta-zone-1 {
+	position: relative;
+	background: center / cover no-repeat url(../images/2016/bordeaux01.jpg);
+	&::before {
+		position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: 0;
+		background: rgba(white, .85);
+		content: '';
+	}
+	& > * {
+		position: relative; z-index: 1;
+	}
+	@media (max-width: $media-break-point) {
+		.text1 {
+			order: 1;
+		}
+		.text2 {
+			order: 3;
+		}
+		.cta1 {
+			order: 2;
+		}
+		.cta2 {
+			order: 4;
+		}
+	}
+	.cta-title {
+		font-size: $small-title-size;
+	}
+}
+
+.schedule-nav {
+	background: $darkgrey;
+	& > * {
+		display: flex; padding: -1px 0; overflow: hidden;
+		flex-flow: row wrap; justify-content: center;
+	}
+	a {
+		display: block; margin: -1px; padding: .5em;
+		flex: 1 0 auto;
+		border: 2px solid lighten($darkgrey, 20%);
+		font: $tiny-title-size $title-font-family; color: $alternate-color; text-align: center; text-decoration: none;
+		&:hover,
+		&:focus {
+			background: lighten($darkgrey, 10%);
+		}
+	}
+	time {
+		display: block;
+	}
+}
+
+.pres-item {
+	padding: 2em;
+	border-radius: .5em;
+	background: $white;
+	color: $darkgrey; text-align: left;
+	.pres-type {
+		display: block; float: left; width: 1em * $default-line-height; height: 1em * $default-line-height; margin: 0 .25em 0 0; padding: .3em; box-sizing: border-box;
+		border-radius: 50%;
+		background: $orange;
+		font-size: $tiny-title-size; text-align: center;
+		svg {
+			display: block; width: 100%; height: 100%;
+			fill: $white;
+		}
+	}
+	.pres-title {
+		margin: 0;
+	}
+	.pres-desc {
+		font-size: $small-font-size;
+
+    p {
+      font-size: inherit;
+    }
+	}
+	.pres-author {
+		margin-top: 1em;
+	}
+	.author-img {
+		float: left; margin: .5em 1em 0 0; width: 6.5em;
+	}
+	.author-name {
+		margin: 0;
+	}
+	.author-desc {
+		font-size: $tiny-font-size;
+
+    p {
+      margin: 0;
+      font-size: inherit;
+    }
+	}
+	a {
+		color: $orange; text-decoration: underline;
+		&:hover,
+		&:focus {
+			text-decoration: none;
+		}
+	}
+}
+
+.pres-link {
+	display: flex; padding: 1em;
+	border-radius: .5em;
+	background: $orange;
+	color: $alternate-color; text-align: center; text-decoration: none;
+	& > * {
+		max-width: 75%; margin: auto;
+		font: $great-font-size / 1 $title-font-family;
+	}
+	&:hover,
+	&:focus {
+		background: darken($orange, 5%);
+	}
+}
+
+%partners {
+	margin-bottom: 5%;
+	.partners-title {
+		margin-bottom: 0;
+	}
+	.partners-hr {
+		display: flex; margin-bottom: 5%;
+		flex-flow: row nowrap; justify-content: center; align-items: center;
+		&::before, &::after {
+			height: 1px;
+			flex: 1 1 auto;
+			background: $lightgrey;
+			content: '';
+		}
+		svg {
+			width: 8em; margin: 0 2em;
+		}
+	}
+	ul:not([class*='grid']) {
+		@extend %ul-reset;
+		li {
+			display: inline-block; margin: 0 .25em;
+		}
+	}
+	[class*='grid'] {
+		align-items: center;
+	}
+	img {
+		width: 100%;
+	}
+}
+
+.gold-partners {
+	@extend %partners;
+	figure {
+		margin: 2%;
+	}
+	img {
+		max-width: $grid-width / 2;
+	}
+}
+.silver-partners {
+	@extend %partners;
+	figure {
+		margin: 5% 15%;
+	}
+	img {
+		max-width: $grid-width / 4;
+	}
+}
+.bronze-partners {
+	@extend %partners;
+}
