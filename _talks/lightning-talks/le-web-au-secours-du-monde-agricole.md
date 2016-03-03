@@ -1,7 +1,7 @@
 ---
 title: Le web dans le monde agricole
 description: >-
-  À l'opposé des idées reçues sur le milieu, les agriculteurs d'aujourd'hui utilisent de nombreuses applications web pour faciliter leur quotidien. Il reste encore de nombreux besoins couvrir… développeurs <em>l'ageekculture</em> a besoin de vous !
+  À l'opposé des idées reçues sur le milieu, les agriculteurs d'aujourd'hui utilisent de nombreuses applications web pour faciliter leur quotidien. Il reste encore de nombreux besoins à couvrir… développeurs <em>l'ageekculture</em> a besoin de vous !
 speaker:
   - marion
 type: lt
