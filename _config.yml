@@ -7,7 +7,8 @@ logo: images/logo-sud-web.png
 locale: fr
 url: http://sudweb.fr
 baseurl: /2016
-twitter: SudWeb
+twitter:
+  username: SudWeb
 
 social:
   type: organization
