@@ -7,26 +7,13 @@ Site internet du cycle de conférences annuel Sud Web, dont la 6e édition aura 
 [http://sudweb.fr/2016](http://sudweb.fr/2016)
 
 ## Pré-requis
-Le site est géré via [Github Pages](https://pages.github.com/) et [Jekyll](http://jekyllrb.com/) et nécessite Ruby 2.1.x
+Le site est géré via [Github Pages](https://pages.github.com/) et [Jekyll](http://jekyllrb.com/) et nécessite Ruby 2.1.x (voir `.ruby-version`)
 
 Nous vous recommandons de gérer l'installation de Ruby via [rbenv](http://rbenv.org/).
 
 Sous Mac OS X, vous pouvez utiliser [Homebrew](http://brew.sh/) pour cela
 ```bash
 $ brew install rbenv ruby-build
-```
-Pour installer la version de Ruby nécéssaire au projet (fichier `.ruby-version`)
-```bash
-$ rbenv install
-```
-Pour définir ou changer la version utilisée localement pour l'application :
-```bash
-$ rbenv local 2.1.6
-```
-Pour vérifier la version de Ruby utilisée :
-```bash
-$ rbenv version
-ruby 2.1.6
 ```
 
 ## Installation
@@ -42,6 +29,10 @@ $ gem install bundler
 Pour installer toutes les dépendances du projet :
 ```bash
 $ bundle install
+```
+Pour installer la bonne version de Ruby
+```bash
+$ rbenv install
 ```
 
 ## Travailler en local
