@@ -15,11 +15,11 @@ Sous Mac OS X, vous pouvez utiliser [Homebrew](http://brew.sh/) pour cela
 ```bash
 $ brew install rbenv ruby-build
 ```
-Pour installer la version 2.1.6 de Ruby
+Pour installer la version de Ruby nécéssaire au projet (fichier `.ruby-version`)
 ```bash
-$ rbenv install 2.1.6
+$ rbenv install
 ```
-Pour définir la version utilisée localement pour l'application:
+Pour définir ou changer la version utilisée localement pour l'application :
 ```bash
 $ rbenv local 2.1.6
 ```
