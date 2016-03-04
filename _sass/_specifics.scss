@@ -34,12 +34,12 @@
 .schedule-nav {
 	background: $darkgrey;
 	& > * {
-		display: flex; padding: -1px 0; overflow: hidden;
-		flex-flow: row wrap; justify-content: center;
+		@include flexbox; /*display: flex;*/ padding: -1px 0; overflow: hidden;
+		@include flex-flow(row wrap); /*flex-flow: row wrap;*/ @include justify-content(center); /*justify-content: center;*/
 	}
 	a {
 		display: block; margin: -1px; padding: .5em;
-		flex: 1 0 auto;
+		@include flex(1 0 auto); /*flex: 1 0 auto;*/
 		border: 2px solid lighten($darkgrey, 20%);
 		font: $tiny-title-size $title-font-family; color: $alternate-color; text-align: center; text-decoration: none;
 		&:hover,

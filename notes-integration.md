@@ -1,10 +1,41 @@
 # Notes
 
+## Charte de codage CSS
+
+Basiquement, il existe deux méthode de codage CSS : en monoligne ou multiligne.
+
+La première a l’avantage de mettre en évidence les sélecteurs, mais rend difficilement lisible les déclarations ; la deuxième rend les déclarations facilement lisibles mais les sélecteurs deviennent très éloignés.
+
+La méthode multiligne est de loin la plus répandue.
+
+La deuxième chose qui me défrise littéralement est qu’avec cette méthode, nos écrans devenus de plus en plus larges ne sont pas exploités : la feuille de style utilise pour ainsi dire les 50 premières colonnes de caractère, et c’est tout.
+
+À noter que j’utilisais la méthode monoligne à mes débuts.
+
+La lecture du livre « CSS Maintenables » m’a permis d’établir une charte de codage qui, à mon sens, exploite l’avantage des deux méthodes et en apporte d’autres.
+
+```CSS
+foo {
+       line 1: box styles;
+       line 2: flex styles;
+       line 3: transform styles;
+       line 4: border styles;
+       line 5: background styles;
+       line 6: text styles;
+       line 7: other styles;
+       line 8: animation and transition styles;
+   }
+```
+
+Ainsi, chaque règle ne fera que huit lignes au miximum (visibilité des sélecteurs), et exploite la largeur de l'écran.
+
+De plus, chaque déclaration est rangée dans un ordre logique, ce qui permet de les retrouver rapidement.
+
 ## Le logo en SVG
 
 J'ai d'abord pensé mettre tous les SVG en haut de la page HTML, déclarés en symboles, mais j'ai ensuite tenté de les insérer par ressource externe.
 
-L'idée était de voir si le `<use>` pouvait désormais fonctionner avec une ressource externe et sélectionner un symbole comme ceci :
+L'idée était de voir si le `<use>` pouvait désormais fonctionner avec une ressource externe, et sélectionner un symbole comme ceci :
 
 ```html
 <svg class="sw-logo">
@@ -14,7 +45,7 @@ L'idée était de voir si le `<use>` pouvait désormais fonctionner avec une res
 
 Et là ça marche ! \o/
 
-Ok, cool. Maintenant l'idée est de voir si je peux ne déclarer qu'une seule fois le symbole du logo et changer ses couleurs en fonction du contexte, donc toucher au shadow DOM via CSS.
+Ok, cool. Maintenant l'idée est de voir si je peux ne déclarer qu'une seule fois le symbole du logo, et changer ses couleurs en fonction du contexte, donc toucher au shadow DOM via CSS.
 
 Je tente :
 
@@ -45,49 +76,6 @@ La meilleure solution que j'ai trouvée : insérer le viewbox côté HTML et dé
 
 Pas génial, mais ainsi lorsque les navigateurs seront prêts, il n'y aura qu'à remettre le code HTML plus haut. Pas besoin de toucher au SCSS, ni au symbole SVG.
 
-## Charte de codage CSS
-
-Basiquement, il existe deux méthode de codage CSS : en monoligne ou multiligne.
-
-La première a l’avantage de mettre en évidence les sélecteurs, mais rend difficilement lisible les déclarations ; la deuxième rend les déclarations facilement lisibles mais les sélecteurs deviennent très éloignés.
-
-La méthode multiligne est de loin la plus répandue.
-
-La deuxième chose qui me défrise littéralement est qu’avec cette méthode, nos écrans devenus de plus en plus larges ne sont pas exploités : la feuille de style utilise pour ainsi dire les 50 premières colonnes de caractère et c’est tout.
-
-À noter que j’utilisais la méthode monoligne à mes débuts.
-
-La lecture du livre « CSS Maintenables » m’a permis d’établir une charte de codage qui, à mon sens, exploite l’avantage des deux méthodes et en apporte d’autres.
-
-```CSS
-foo {
-       line 1: box styles;
-       line 2: flex styles;
-       line 3: transform styles;
-       line 4: border styles;
-       line 5: background styles;
-       line 6: text styles;
-       line 7: other styles;
-       line 8: animation and transition styles;
-   }
-```
-
-Ainsi, chaque règle ne fera que huit lignes au miximum (visibilité des sélecteurs) et exploite la largeur de l'écran.
-
-De plus, chaque déclaration est rangée dans un ordre logique, ce qui permet de les retrouver rapidement.
-
-## La grille CSS
-
-Je ne voulais surtout pas d'une énième grille utilisant des flottants qui font ch***. C'est moche, ça pue, c'est dépassé.
-
-J'ai préféré tenter l'approche par flexbox, qui me semblait plus flexible (!) et suffisamment compatible (comparé à grid).
-
-L'idée était donc d'avoir autant de colonnes qu'on veut, mais avec l'obligation de définir une largeur minimum, ce qui va fatalement définir le nombre maximum de colonne.
-
-Au vu des maquettes, j'ai défini la largeur maximum de la grille à 60em (équivalent à 960px), des gouttières à 1.25em (équivalent à 20px), <del>et une largeur minimum des colonnes à 15em, ce qui délimite le nombre de colonnes possible à trois</del> <ins>et je calcule la largeur des colonnes en divisant la largeur de la grille par le nombre de colonnes voulu + 1, mais sans y soustraire les gouttières, ce qui définit en fin de compte une largeur __minimum__ sous laquelle ne pas réduire</ins>.
-
-Le dimensionnement de ces colonnes étant défini par `flex-grow` et `flex-shrink`, identiques pour toutes les colonnes, elles seront donc aux mêmes dimensions, de manière fluide, jusqu'à la largeur minimum choisie, définie par `flex-basis`. Le tout en shorthand via `flex`.
-
 ## La gestion des SVG
 
 Comme précisé pour le logo en SVG, toutes les illustrations sont externalisées en `<symbol>` dans un fichier SVG séparé. L'idée est de profiter du cache navigateur et de n'avoir qu'un seul accès serveur.
@@ -103,12 +91,32 @@ svg {
 
 Fourberie ! Je n'ai plus ensuite qu'à définir une `color` sur ce svg ou un de ces parents pour changer sa couleur.
 
-Concernant le dimensionnement, là c'était chaud ! Je voulais  pouvoir dimensionner la largeur d'un `<svg>` et qu'il se dimensionne en hauteur tout seul en gardant sa proportion.
+Concernant le dimensionnement, là c'était chaud ! Je voulais  pouvoir dimensionner la largeur d'un `<svg>`, et qu'il se dimensionne en hauteur tout seul en gardant sa proportion.
 
 Je vais passer le détail de mes tests, mais j'ai trouvé une solution pas trop moche en lisant [cet article de CSS-Tricks](https://css-tricks.com/scale-svg/). La solution que j'ai préférée est simplement de recopier la propriété `viewbox` du `<symbol>` sur le `<svg>`. Le navigateur (récent) gardera tout seul de ratio en fonction de la taille dimensionnée.
+
+## La grille CSS
+
+Je ne voulais surtout pas d'une énième grille utilisant des flottants qui font ch***. C'est moche, ça pue, c'est dépassé.
+
+J'ai préféré tenter l'approche par flexbox, qui me semblait plus flexible (!), et suffisamment compatible (comparé à grid).
+
+L'idée était donc d'avoir autant de colonnes qu'on veut, mais avec l'obligation de définir une largeur minimum, ce qui va fatalement définir le nombre maximum de colonne.
+
+Au vu des maquettes, j'ai défini la largeur maximum de la grille à 60em (équivalent à 960px), des gouttières à 1.25em (équivalent à 20px), <del>et une largeur minimum des colonnes à 15em, ce qui délimite le nombre de colonnes possible à trois</del> <ins>et je calcule la largeur des colonnes en divisant la largeur de la grille par le nombre de colonnes voulu + 1, mais sans y soustraire les gouttières, ce qui définit en fin de compte une largeur __minimum__ sous laquelle ne pas réduire</ins>.
+
+Le dimensionnement de ces colonnes étant défini par `flex-grow` et `flex-shrink`, identiques pour toutes les colonnes, elles seront donc aux mêmes dimensions, de manière fluide, jusqu'à la largeur minimum choisie, définie par `flex-basis`. Le tout en shorthand via `flex`.
 
 ## La gestion responsive
 
 Puisque la grille est gérée par flexbox, une grande partie est déjà géree. Cependant, la taille de la police peut sembler très grande sur mobile.
 
 J'ai hésité à utilisé l'unité `wv` pour la taille de police&hellip; mais non. J'ai donc tout mis en `em`, je profite donc d'un héritage jusqu'au root `<html>`. C'est sur celui-ci que je diminue ou augmente la `font-size` en fonction de la largeur du média.
+
+## L'auto prefixage
+
+Malheureusement, puisque le site est hébergé sur GitHub, le plugin Autoprefixer de Jekyll est apparemment bloqué (d'après @DirtyF).
+
+Le plus gros problème que cela implique vient de l'utilisation de flexbox, notamment pour la grille, qui est pourtant [bien supporté](http://caniuse.com/flexbox). L'[issue #51](https://github.com/sudweb/2016/issues/51) montre qu'encore une fois c'est Safari qui fait chier.
+
+Donc pas le choix, j'ai du prefixer à la main via mixins. Merci d'ailleurs à @mastastealth pour [son aide](https://github.com/mastastealth/sass-flex-mixin/blob/master/_flexbox.scss). J'ai tout de même laisser les écritures valides en commentaires juste à côté de chaque include pour simplifier la future évolution.
