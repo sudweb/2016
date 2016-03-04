@@ -1,15 +1,18 @@
+/* ==========================================================================
+   CSS grid
+   ========================================================================== */
 
 .wrapper {
 	max-width: $grid-width; margin-left: auto; margin-right: auto; padding-left: $grid-goetter / 2; padding-right: $grid-goetter / 2; box-sizing: border-box;
 }
 
 .grid {
-	display: flex; margin-left: -$grid-goetter; /* margin-right: -$grid-goetter; */ padding: 0;
-	flex-flow: row wrap;
+	@include flexbox; /*display: flex;*/ margin-left: -$grid-goetter; padding: 0;
+	@include flex-flow(row wrap); /*flex-flow: row wrap;*/
 	list-style: none; /* if list container */
 	& > * {
-		box-sizing: border-box; margin-top: $grid-goetter; margin-left: $grid-goetter; /* margin-right: $grid-goetter; */
-		flex: 1 0 $grid-width / ($grid-max-col-number + 1);
+		box-sizing: border-box; margin-top: $grid-goetter; margin-left: $grid-goetter;
+		@include flex(1 0 $grid-width / ($grid-max-col-number + 1)); /*flex: 1 0 $grid-width / ($grid-max-col-number + 1);*/
 	}
 }
 
@@ -17,7 +20,7 @@
 	.grid-#{$i} {
 		@extend .grid;
 		& > * {
-			flex-basis: ($grid-width / ($i + 1));
+			@include flex-basis(($grid-width / ($i + 1))); /*flex-basis: ($grid-width / ($i + 1));*/
 		}
 	}
 }

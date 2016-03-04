@@ -1,4 +1,6 @@
-// Typography
+/* ==========================================================================
+   Typo classes
+   ========================================================================== */
 
 h1, h2, h3, h4, h5, h6, .h-like {
 	font-family: $title-font-family; font-weight: normal;
@@ -56,19 +58,19 @@ h1, h2, h3, h4, h5, h6, .h-like {
 	text-transform: uppercase;
 }
 
-.darkred, .bronze {
+.darkred {
 	color: $darkred;
 }
 .red {
 	color: $red;
 }
-.yellow, .gold {
+.yellow {
 	color: $yellow;
 }
 .orange {
 	color: $orange;
 }
-.lightgrey, .silver {
+.lightgrey {
 	color: $lightgrey;
 }
 .darkgrey {
@@ -76,4 +78,13 @@ h1, h2, h3, h4, h5, h6, .h-like {
 }
 .white {
 	color: $white;
+}
+.gold {
+	color: $gold;
+}
+.silver {
+	color: $silver;
+}
+.bronze {
+	color: $bronze;
 }

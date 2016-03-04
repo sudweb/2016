@@ -1,4 +1,6 @@
-// Main layout
+/* ==========================================================================
+   Main layout
+   ========================================================================== */
 
 .main-nav {
 	background: $nav-bg;
@@ -47,7 +49,7 @@
 	.content {
 		width: auto;
 		@media (min-width: $media-break-point) {
-			width: 65%;
+			width: 60%;
 		}
 	}
 	.title {
@@ -88,25 +90,22 @@
 		cursor: pointer;
 	}
 	.row {
-		display: flex;
-		flex-flow: row no-wrap; align-items: stretch;
+		@include flexbox; /*display: flex;*/
+		@include flex-flow(row nowrap); /*flex-flow: row nowrap;*/ @include align-items(stretch); /*align-items: stretch;*/
 	}
-	[id='mce-EMAIL'] {
-		flex: 1; margin: 0;
+	[id='mce-EMAIL'] { // From MailChimp
+		@include flex(1); /*flex: 1;*/ margin: 0;
 		border-radius: $button-default-radius 0 0 $button-default-radius;
-	}
-	[id='i2'] {
-		@extend .visuallyhidden;
 	}
 	button {
 		border-radius: 0 $button-default-radius $button-default-radius 0;
 	}
 	.social-links {
-		display: flex; margin: 2em 0;
-		flex-flow: row nowrap; justify-content: space-between; align-items: center;
+		@include flexbox; /*display: flex;*/ margin: 2em 0;
+		@include flex-flow(row nowrap); /*flex-flow: row nowrap;*/ @include justify-content(space-between); /* justify-content: space-between;*/ @include align-items(center); /* align-items: center;*/
 		& > * {
 			display: block; margin: 0 5%;
-			flex: 0 1 4em;
+			@include flex(0 1 4em); /*flex: 0 1 4em;*/
 			font-size: 1em;
 			&:first-child {
 				margin-left: 0;
