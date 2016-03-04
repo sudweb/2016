@@ -16,6 +16,18 @@ Sous Mac OS X, vous pouvez utiliser [Homebrew](http://brew.sh/) pour cela
 $ brew install rbenv ruby-build
 ```
 
+Sous Ubuntu, certaines librairies sont nécessaires :
+```bash
+sudo apt-get install -y libreadline-dev build-essential
+```
+Puis pour rbenv et ruby-build, préférer un installation par git :
+```bash
+$ git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+$ cd ~/.rbenv && src/configure && make -C src
+$ echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
+$ git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
+```
+
 ## Installation
 
 Si vous n'avez pas déjà cloné le dépot :
