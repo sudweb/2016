@@ -20,7 +20,7 @@ Sous Ubuntu, certaines librairies sont nécessaires :
 ```bash
 sudo apt-get install -y libreadline-dev build-essential
 ```
-Puis pour rbenv et ruby-build, préférer un installation par git :
+Puis pour rbenv et ruby-build, préférer une installation par git :
 ```bash
 $ git clone https://github.com/rbenv/rbenv.git ~/.rbenv
 $ cd ~/.rbenv && src/configure && make -C src
