@@ -53,7 +53,7 @@ Pour plus d'information sur l'utilisation de Jekyll, reportez-vous à la [docume
 ## Styleguide et notes d'intégration
 
 * [Styleguide](http://sudweb.fr/2016/styleguide/)
-* [Notes d'intégration]((http://sudweb.fr/2016/notes-integration/)) de @Twikito
+* [Notes d'intégration](notes-integration.md) de @Twikito
 
 ## Contribution
 
