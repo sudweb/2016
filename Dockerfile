@@ -26,4 +26,4 @@ ENV LANG C.UTF-8
 
 EXPOSE 4000
 
-ENTRYPOINT  cd /sudweb && bundle exec foreman start
+ENTRYPOINT  tail -n1 /etc/hosts && cd /sudweb && bundle exec foreman start
