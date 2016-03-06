@@ -50,6 +50,23 @@ Le site est maintenant accessible en local à l'adresse http://0.0.0.0:4000/2016
 
 Pour plus d'information sur l'utilisation de Jekyll, reportez-vous à la [documentation officielle](http://jekyllrb.com/docs/home/).
 
+### Aternative par Docker
+
+Plutôt que d'installer les outils en local, il est possible d'utiliser [Docker](http://www.docker.com/) pour créer un conteneur qui en disposera. Après avoir cloné le dépôt, depuis sa racine, utiliser les commandes suivantes :
+
+**Pour créer l'image :**
+```bash
+$ docker build -t sudweb2016 .
+```
+_(La création initiale de l'image peur durer plusieurs minutes)_
+
+**Pour lancer le conteneur :**
+```bash
+$ docker run --rm -p 4000:4000 -v $(pwd):/sudweb -ti sudweb
+```
+* Sous linux, Jekyll sera accessible sur http://localhost:4000/2016/.
+* Sous OSX, il faudra remplacer `localhost` par l'IP du Docker host.
+
 ## Styleguide et notes d'intégration
 
 * [Styleguide](http://sudweb.fr/2016/styleguide/)
