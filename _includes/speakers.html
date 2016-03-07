@@ -1,7 +1,7 @@
 {% for conference in conferences %}
   <section class="pres-item">
   <figure class="pres-type">
-    <svg><use id="sw-hands" xlink:href="{{ site.baseurl }}/assets/images/symbol-defs.svg#{{conference.symbol}}" /></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1"><use id="sw-hands" xlink:href="{{ site.baseurl }}/assets/images/symbol-defs.svg#{{conference.symbol}}" /></svg>
   </figure>
   <h4 class="pres-title tiny-title-size">{{ conference.title }}</h4>
   <div class="pres-desc">
