@@ -34,7 +34,7 @@
 		}
 	}
 	.sw-logo {
-		width: 7em; height: auto;
+		width: 7em; /*height: auto;*/ height: 3.875em;
 	}
 }
 
@@ -49,7 +49,7 @@
 	.content {
 		width: auto;
 		@media (min-width: $media-break-point) {
-			width: 60%;
+			width: 65%;
 		}
 	}
 	.title {

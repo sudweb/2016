@@ -93,7 +93,7 @@ Fourberie ! Je n'ai plus ensuite qu'à définir une `color` sur ce svg ou un de 
 
 Concernant le dimensionnement, là c'était chaud ! Je voulais  pouvoir dimensionner la largeur d'un `<svg>`, et qu'il se dimensionne en hauteur tout seul en gardant sa proportion.
 
-Je vais passer le détail de mes tests, mais j'ai trouvé une solution pas trop moche en lisant [cet article de CSS-Tricks](https://css-tricks.com/scale-svg/). La solution que j'ai préférée est simplement de recopier la propriété `viewbox` du `<symbol>` sur le `<svg>`. Le navigateur (récent) gardera tout seul de ratio en fonction de la taille dimensionnée.
+Je vais passer le détail de mes tests, mais j'ai trouvé une solution pas trop moche en lisant [cet article de CSS-Tricks](https://css-tricks.com/scale-svg/). La solution que j'ai préférée est simplement de recopier la propriété `viewbox` du `<symbol>` sur le `<svg>`. <del>Le navigateur (récent) gardera tout seul de ratio en fonction de la taille dimensionnée.</del> <ins>Malheureusement, encore une fois Safari iOS fait ch\*\*\* et oblige à définir également la hauteur, qui semble par défaut être égale à la hauteur du viewport. N'importe quoi ! -_-v</ins>
 
 ## La grille CSS
 
@@ -117,6 +117,6 @@ J'ai hésité à utilisé l'unité `wv` pour la taille de police&hellip; mais no
 
 Malheureusement, puisque le site est hébergé sur GitHub, le plugin Autoprefixer de Jekyll est apparemment bloqué (d'après @DirtyF).
 
-Le plus gros problème que cela implique vient de l'utilisation de flexbox, notamment pour la grille, qui est pourtant [bien supporté](http://caniuse.com/flexbox). L'[issue #51](https://github.com/sudweb/2016/issues/51) montre qu'encore une fois c'est Safari qui fait chier.
+Le plus gros problème que cela implique vient de l'utilisation de flexbox, notamment pour la grille, qui est pourtant [bien supporté](http://caniuse.com/flexbox). L'[issue #51](https://github.com/sudweb/2016/issues/51) montre qu'encore une fois c'est Safari qui fait ch\*\*\*.
 
 Donc pas le choix, j'ai du prefixer à la main via mixins. Merci d'ailleurs à @mastastealth pour [son aide](https://github.com/mastastealth/sass-flex-mixin/blob/master/_flexbox.scss). J'ai tout de même laisser les écritures valides en commentaires juste à côté de chaque include pour simplifier la future évolution.
