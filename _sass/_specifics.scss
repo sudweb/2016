@@ -2,22 +2,12 @@
    Specifics classes
    ========================================================================== */
 
-.after-banner {
-	background-image: url(../images/soiree.jpg);
-}
-.food-banner {
-	background-image: url(../images/dessert.jpg);
-}
-.talk-banner {
-	background-image: url(../images/beatrice.jpg);
-}
-.hug-banner {
-	background-image: url(../images/hug.jpg);
-}
-
 .cta-zone-1 {
 	position: relative;
 	background: center / cover no-repeat url(../images/2016/bordeaux01.jpg);
+	@media (min-width: $media-break-point) {
+		background-attachment: fixed;
+	}
 	&::before {
 		position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: 0;
 		background: rgba(white, .85);
@@ -50,26 +40,4 @@
 	time {
 		display: block;
 	}
-}
-
-.gold-partners {
-	@extend %partners;
-	figure {
-		margin: 2%;
-	}
-	img {
-		max-width: $grid-width / 2;
-	}
-}
-.silver-partners {
-	@extend %partners;
-	figure {
-		margin: 5% 15%;
-	}
-	img {
-		max-width: $grid-width / 4;
-	}
-}
-.bronze-partners {
-	@extend %partners;
 }

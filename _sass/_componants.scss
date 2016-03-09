@@ -36,7 +36,10 @@
 
 [class*='banner'] {
 	display: block; padding: 15% 0;
-	background: center / cover no-repeat fixed;
+	background: center / cover no-repeat;
+	@media (min-width: $media-break-point) {
+		background-attachment: fixed;
+	}
 }
 .after-banner {
 	background-image: url(../images/soiree.jpg);
