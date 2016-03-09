@@ -13,7 +13,7 @@
     </a>
     {% for link in site.data.navigation.primary %}
     {% assign class = nil %}
-    {% if page.url contains link.url %}
+    {% if page.url == link.url %}
       {% assign class = 'is--active' %}
     {% endif %}
     <a href="{{ site.baseurl }}{{ link.url }}" class="{{ class }}" data-event-category="cta" data-event-action="click" data-event-label="navigation-{{ link.title }}">{{ link.title }}</a>
