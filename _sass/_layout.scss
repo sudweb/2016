@@ -4,11 +4,13 @@
 
 .main-nav {
 	background: $nav-bg;
-	a {
+	
+	.logo,
+	.nav {
 		display: inline-block;
 		vertical-align: middle;
 	}
-	a:not(.logo) {
+	.nav {
 		position: relative; padding: 3%; overflow: hidden;
 		font: $tiny-title-size $title-font-family; color: $nav-color; text-decoration: none;
 		&::before {
@@ -18,8 +20,9 @@
 			content: ''; opacity: 0;
 			transition: $default-delay $default-timing-function;
 		}
-		&:hover,
-		&:focus {
+		&.is--active,
+		&:link:hover,
+		&:link:focus {
 			&::before {
 				transform: translateY(0) translateX(-50%) rotate(-45deg) skew(10deg,10deg);
 				opacity: 1;
