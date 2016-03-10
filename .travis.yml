@@ -2,14 +2,18 @@ language: ruby
 cache: bundler
 sudo: false
 rvm: 2.1
-
-# Assume bundler is being used, therefore
-# the `install` step will run `bundle install` by default.
 install:
-    - travis_retry script/bootstrap
-
+- travis_retry script/bootstrap
+before_script:
+- mkdir -p /tmp/bin
+- curl -SsL https://github.com/stedolan/jq/releases/download/jq-1.5/jq-linux64 > /tmp/bin/jq
+- chmod +x /tmp/bin/jq
+- export PATH=/tmp/bin:$PATH
+- script/gen-attendees
 script: script/cibuild
-
 env:
-    global:
-        - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
+  global:
+  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+  - secure: GYiknYn2W6KULUestRmdkfFRXEmJEyNkD/AXSVo2VhGVBs6fFSx5TnLrxCNAqPxSL9dvsWLNi6vy1IV81CY7uXEFrsGfqcTRBUTMQ6ksXevNxqRgvXGvwfdAP+UCVMpnaaH+fJpwLrD9NgYKSKcHSQxaUiSxJBF8EfbB040ZUdfAt9nvQLH9VfDSh3d7Mxxb8L2qgkp4JYhW260I8Ojx804pgNP2CxLjHfJwX1xhNt1VJ+GJKSA8e+/fKL1OXiTeIE+FdGs/YJiqAbo0/xtQvDMWrDMIUxYNo1BbbccPA1ljhj9i52bwYpzJWCj2q7xf2c/nFEwsvgm9Bs/kKdn+KUVqEcUjyW2oA+7L+qrU3JDfIE+RslE6koLNicDVZg/EhCC9nw6yFvfWrRzJ9+cjr2QXY4AmhLhTyuGuxN3i5mpUlZ2WjwT0KQ03DPss/pTsk89qDXfbu+0xc8iUSxfGjCV0zqNHoEe34Lx7ll4CqRvhbbr18iXTSuUgevQv+pRS255WIzbXiVUv2T9H+8awQQ0J5/owK2Nt1iabPnhJHqfxTTK6Lf9PojJj2ZOtoBdFNrsuneU8o2T2qoEl0gpklyEzQIaQWF+hQVTVKJ2xMaKT800lqIht6gM/40YC7gOzktNKt23jKyF6kCDAi5wMPnBNeVa1+9TFDEC1ETxyMls=
+  - secure: N99kZD0GiDjRdlPYBhz6qF+8cmapmG4QX9ZSuhdCMD6Dm3WoMkDOrUxQcCvTsfU21jQwQlZw4Jzh9D6PMLw5uG9+Ncn66417jak4JB5O45tm7AWGJjMUHvitOrMJ8D2nxmggnHd9VKSEHdOlH5W46AEKbjbbY4GNWn8wkYRG2xc0EhHgqy6OVId8sFrJTjEUOkH5aGPL7HLya/hm4uMiKa9rdn1KvRwDE3teJ7e02bqnNymtWD3rMjNEL3PSQhHxx2nmFcYqSLSwe4/Gmzrubm2lCEkRrezioX98+M1PqBJRdExz3jgVnj9C0c651QTizMNaM7x6XuVyKTKbqmmHgfrMAEL1/L4HxBVk/SRNl44J716x8aS9mgXn6M2GKjRZRqd1io0z2fjseAJb/NJBK9fyZWdFzqufnjAXhZOu2VmzCy9dw8Vxu23aWsynkQkjTzQXl0znWS1pypPfZnuNQLgxjCjonDGCCLVsTYEL+HnhRiK13mQ6muLoOS/qreV3e5RxIp6N4XREe5SHv4Wu/RJ5WSh/Je/ugU+UbNvBEXXB0857rdsXvph7tvK7USIM32ERqbFMktmaRAg4CQHvnLktDp+EhG3f+rViJovkUmWKXRIw9Hvz2rikVSjDczHQz6qytmNtTn0K1kxtOOUDkmz+6NybqjxbhAvrES2K9Uo=
+  - WEEZEVENT_EVENT_ID=148916

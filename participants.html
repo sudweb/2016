@@ -1,0 +1,70 @@
+---
+layout: main
+title: Participants
+description: "Celles et ceux qui viennent à Sud Web — et ils le valent bien !"
+image: /assets/images/twittercard.jpg
+permalink: /participants/
+---
+
+<header class="page-header">
+  <div class="wrapper">
+    <div class="content">
+      <h1 class="title">Participant·es</h1>
+      <p class="sstitle">Elles ne le savent pas encore mais ces personnes disposent toutes d'un super-pouvoir&nbsp;!</p>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <article>
+    <section class="white-section">
+      <div class="grid-4 text-center">
+        {% assign attendees = site.data.attendees | sort: "date" | reverse %}
+        {% for attendee in attendees %}
+        {% if attendee.ticket_type == '701385'%}{% continue %}{% endif %}
+        <div>
+          {% assign name = attendee.name | | split:" " %}
+          {{ name[0] | capitalize }} {{ name[1] | capitalize }}
+          {% if attendee.twitter %}
+          <br> <a href="https://twitter.com/{{ attendee.twitter }}">@{{ attendee.twitter }}</a>
+          {% endif %}
+        </div>
+        {% endfor %}
+      </div>
+    </section>
+  </article>
+
+  <div class="hug-banner">
+    <!-- nothing here! -->
+  </div>
+
+  <article>
+    <section class="white-section">
+      <div class="wrapper text-center">
+        <h3 class="regular-title-size red uppercase">Tu veux les rejoindre ?</h3>
+        <p>Choisis ta formule et joins-toi à la communauté Sud Web !</p>
+        <div class="grid-3">
+          <section>
+            <h4 class="tiny-title-size">Pass 2 jours</h4>
+            <p>Vivez l'expérience Sud Web à fond du vendredi&nbsp;au samedi&nbsp;!</p>
+          </section>
+          <section>
+            <h4 class="tiny-title-size">Pass 1 jour</h4>
+            <p>Vous venez le vendredi ou le samedi,&nbsp;au&nbsp;choix.</p>
+          </section>
+          <section>
+            <h4 class="tiny-title-size">Soirée communautaire</h4>
+            <p>Vous pouvez aussi juste passer nous voir vendredi soir après les confs.</p>
+          </section>
+        </div>
+
+        <div class="text-center">
+          <a class="cta button-type1" href="{{ site.baseurl }}/inscription/#pass-deux-jours" data-event-category="cta" data-event-action="click" data-event-label="inscription-details-tarifs">Détails des tarifs</a>
+        </div>
+      </div>
+    </section>
+  </article>
+
+  {% include sponsors.html %}
+</main>

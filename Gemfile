@@ -12,7 +12,7 @@ group :development do
 end
 
 group :test do
-    gem 'rake'
+    gem 'rake', '~> 11.0.0'
     gem 'jekyll', versions['jekyll']
-    gem 'html-proofer'
+    gem 'html-proofer', '~> 3.0.0'
 end
