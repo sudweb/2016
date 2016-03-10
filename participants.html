@@ -10,7 +10,7 @@ permalink: /participants/
   <div class="wrapper">
     <div class="content">
       <h1 class="title">Participant·es</h1>
-      <p class="sstitle">Elles ne le savent pas encore mais ces personnes disposent toutes d'un super-pouvoir !</p>
+      <p class="sstitle">Elles ne le savent pas encore mais ces personnes disposent toutes d'un super-pouvoir&nbsp;!</p>
     </div>
   </div>
 </header>
@@ -24,7 +24,8 @@ permalink: /participants/
         {% for attendee in attendees %}
         {% if attendee.ticket_type == '701385'%}{% continue %}{% endif %}
         <div>
-          {{ attendee.name }}
+          {% assign name = attendee.name | | split:" " %}
+          {{ name[0] | capitalize }} {{ name[1] | capitalize }}
           {% if attendee.twitter %}
           <br> <a href="https://twitter.com/{{ attendee.twitter }}">@{{ attendee.twitter }}</a>
           {% endif %}
