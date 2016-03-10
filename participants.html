@@ -20,7 +20,7 @@ permalink: /participants/
   <article>
     <section class="white-section">
       <div class="grid-4 text-center">
-        {% assign attendees = site.data.attendees | sort: "date" | reverse %}
+        {% assign attendees = site.data.attendees | sort: "date" | reverse | uniq: "name" %}
         {% for attendee in attendees %}
         {% if attendee.ticket_type == '701385'%}{% continue %}{% endif %}
         <div>
