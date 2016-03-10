@@ -147,11 +147,11 @@ PLATFORMS
 DEPENDENCIES
   foreman
   github-pages (= 57)
-  html-proofer
+  html-proofer (~> 3.0.0)
   jekyll (= 3.0.3)
   json
   octopress-autoprefixer
-  rake
+  rake (~> 11.0.0)
 
 BUNDLED WITH
    1.11.2
