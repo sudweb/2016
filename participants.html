@@ -20,12 +20,12 @@ permalink: /participants/
   <article>
     <section class="white-section">
       <div class="grid-4 text-center">
-        {% assign attendees = site.data.attendees | sort: "date" | reverse %}
+        {% assign attendees = site.data.attendees | sort: "name" %}
         {% for attendee in attendees %}
-        {% if attendee.ticket_type == '701385'%}{% continue %}{% endif %}
+        {% if attendee.ticket_type == '667250'%}{% continue %}{% endif %}
         <div>
           {% assign name = attendee.name | | split:" " %}
-          {{ name[0] | capitalize }} {{ name[1] | capitalize }}
+          {{ name[0] | capitalize }} {{ name[1] | capitalize }} {{ name[2] | capitalize }}
           {% if attendee.twitter %}
           <br> <a href="https://twitter.com/{{ attendee.twitter }}">@{{ attendee.twitter }}</a>
           {% endif %}

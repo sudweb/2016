@@ -358,13 +358,6 @@
   },
   {
     "ticket_type": "667247",
-    "date": "2016-03-08T13:54:05Z",
-    "name": "Benjamin MARGUIN",
-    "twitter": "mab_",
-    "code_postal": "31300"
-  },
-  {
-    "ticket_type": "667247",
     "date": "2016-03-10T11:45:34Z",
     "name": "Noémie RIVIèRE",
     "twitter": null,
@@ -435,48 +428,6 @@
   },
   {
     "ticket_type": "667248",
-    "date": "2016-03-07T11:37:11Z",
-    "name": "Arnaud LEMAIRE",
-    "twitter": "lilobase",
-    "code_postal": "68230"
-  },
-  {
-    "ticket_type": "667250",
-    "date": "2016-03-03T09:50:41Z",
-    "name": "Benjamin MARGUIN",
-    "twitter": "mab_",
-    "code_postal": "31300"
-  },
-  {
-    "ticket_type": "667250",
-    "date": "2016-03-03T09:52:56Z",
-    "name": "Langlois STéPHANE",
-    "twitter": "langlois_s",
-    "code_postal": "34000"
-  },
-  {
-    "ticket_type": "667250",
-    "date": "2016-03-03T10:02:48Z",
-    "name": "Maïtané LENOIR",
-    "twitter": "maiwann",
-    "code_postal": null
-  },
-  {
-    "ticket_type": "667250",
-    "date": "2016-03-03T10:34:51Z",
-    "name": "Rémi HUGUET",
-    "twitter": "RemiHuguet",
-    "code_postal": "33640"
-  },
-  {
-    "ticket_type": "667250",
-    "date": "2016-03-03T17:30:17Z",
-    "name": "Laurie AMIOT",
-    "twitter": "LaurieAmiot",
-    "code_postal": "33150"
-  },
-  {
-    "ticket_type": "667250",
     "date": "2016-03-07T11:37:11Z",
     "name": "Arnaud LEMAIRE",
     "twitter": "lilobase",
