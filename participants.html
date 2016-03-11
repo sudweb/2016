@@ -21,8 +21,11 @@ permalink: /participants/
     <section class="white-section">
       <div class="grid-4 text-center">
         {% assign attendees = site.data.attendees | sort: "name" | uniq: "name" %}
-        {% assign default-avatar = "/assets/images/default-avatar.png" | uri_escape %}
-        {% assign super-woman = "/assets/images/super-woman.png" | uri_escape %}
+        {% assign default-avatar = "/assets/images/default-avatar.png" | cgi_escape %}
+        {% assign super-woman = "/assets/images/super-woman.png" | cgi_escape %}
+
+        {{ super-woman }}
+
         {% for attendee in attendees %}
         {% comment %}
         Display speakers amongst the attendees
@@ -34,9 +37,9 @@ permalink: /participants/
         <div class="attendee {% if attendee.ticket_type == '667251' %} golden-ticket{% endif %}">
           {% if attendee.title == 'Mme' %}
           {% comment %}
-          TODO : Escape URLs to be able to use these URLs instead
-          {{ super-woman | prepend: site.baseurl | prepend: site.url | uri_escape }}
-          {{ default-avatar | prepend: site.baseurl | prepend: site.url | uri_escape }}
+          COULD : Use these URLs instead when we have a super-woman avatar
+          {{ "super-woman" | prepend: site.baseurl | prepend: site.url | cgi_escape }}
+          {{ default-avatar | prepend: site.baseurl | prepend: site.url | cgi_escape }}
           {% endcomment %}
           <img class="attendee-avatar" src="https://secure.gravatar.com/avatar/{{ attendee.email }}?d=http%3A%2F%2Fsudweb.fr%2Fdefault-avatar.png" alt="">
           {% else %}
