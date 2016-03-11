@@ -20,15 +20,32 @@ permalink: /participants/
   <article>
     <section class="white-section">
       <div class="grid-4 text-center">
-	{% assign attendees = site.data.attendees | sort: "name" | uniq: "name" %}
-  {% assign default-avatar = "/assets/images/default-avatar.png" %}
-	{% for attendee in attendees %}
-	{% comment %}{% if attendee.ticket_type == '701385' %}{% continue %}{% endif %} {% endcomment %}
-	<div class="attendee {% if attendee.title == 'Mme' %}super-woman{% endif %}{% if attendee.ticket_type == '667251' %} golden-ticket{% endif %}">
-	  <img class="attendee-avatar" src="https://secure.gravatar.com/avatar/{{ attendee.email }}?d={{ site.url | uri_escape }}{{ site.baseurl | uri_escape }}{{ default-avatar | uri_escape }}" alt=""><br>
-	  {% assign name = attendee.name | | split:" " %}
-	  <span class="attendee-name">{{ name[0] | capitalize }} {{ name[1] | capitalize }} {{ name[2] | capitalize }}</span>
-	  {% if attendee.twitter %}
+        {% assign attendees = site.data.attendees | sort: "name" | uniq: "name" %}
+        {% assign default-avatar = "/assets/images/default-avatar.png" | uri_escape %}
+        {% assign super-woman = "/assets/images/super-woman.png" | uri_escape %}
+        {% for attendee in attendees %}
+        {% comment %}
+        Display speakers amongst the attendees
+        {% if attendee.ticket_type == '701385' %}
+          {% continue %}
+        {% endif %}
+        {% endcomment %}
+
+        <div class="attendee {% if attendee.ticket_type == '667251' %} golden-ticket{% endif %}">
+          {% if attendee.title == 'Mme' %}
+          {% comment %}
+          TODO : Escape URLs to be able to use these URLs instead
+          {{ super-woman | prepend: site.baseurl | prepend: site.url | uri_escape }}
+          {{ default-avatar | prepend: site.baseurl | prepend: site.url | uri_escape }}
+          {% endcomment %}
+          <img class="attendee-avatar" src="https://secure.gravatar.com/avatar/{{ attendee.email }}?d=http%3A%2F%2Fsudweb.fr%2Fdefault-avatar.png" alt="">
+          {% else %}
+          <img class="attendee-avatar" src="https://secure.gravatar.com/avatar/{{ attendee.email }}?d=http%3A%2F%2Fsudweb.fr%2Fdefault-avatar.png" alt="">
+          {% endif %}
+          <br>
+          {% assign name = attendee.name | | split:" " %}
+          <span class="attendee-name">{{ name[0] | capitalize }} {{ name[1] | capitalize }} {{ name[2] | capitalize }}</span>
+          {% if attendee.twitter %}
           <br> <a href="https://twitter.com/{{ attendee.twitter }}">@{{ attendee.twitter }}</a>
           {% endif %}
         </div>
