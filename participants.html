@@ -22,7 +22,7 @@ permalink: /participants/
       <div class="grid-4 text-center">
         {% assign attendees = site.data.attendees | sort: "name" | uniq: "name" %}
         {% for attendee in attendees %}
-        {% if attendee.ticket_type == '667250'%}{% continue %}{% endif %}
+	{% if attendee.ticket_type == '701385' %}{% continue %}{% endif %}
         <div>
           {% assign name = attendee.name | | split:" " %}
           {{ name[0] | capitalize }} {{ name[1] | capitalize }} {{ name[2] | capitalize }}
