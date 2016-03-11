@@ -22,9 +22,9 @@ permalink: /participants/
       <div class="grid-4 text-center">
 	{% assign attendees = site.data.attendees | sort: "name" | uniq: "name" %}
 	{% for attendee in attendees %}
-	{% if attendee.ticket_type == '701385' %}{% continue %}{% endif %}
-	<div class="{% if attendee.ticket_type == '667251' %}attendee--golden-ticket{% endif %}">
-	  <img src="https://secure.gravatar.com/avatar/{{ attendee.email }}" alt=""> <br>
+	{% comment %}{% if attendee.ticket_type == '701385' %}{% continue %}{% endif %} {% endcomment %}
+	<div class="attendee {% if attendee.title == 'Mme' %}super-woman{% endif %}{% if attendee.ticket_type == '667251' %} golden-ticket{% endif %}">
+	  <img class="attendee-avatar" src="https://secure.gravatar.com/avatar/{{ attendee.email }}" alt=""> <br>
 	  {% assign name = attendee.name | | split:" " %}
 	  {{ name[0] | capitalize }} {{ name[1] | capitalize }} {{ name[2] | capitalize }}
 	  {% if attendee.twitter %}
