@@ -20,13 +20,14 @@ permalink: /participants/
   <article>
     <section class="white-section">
       <div class="grid-4 text-center">
-        {% assign attendees = site.data.attendees | sort: "name" | uniq: "name" %}
-        {% for attendee in attendees %}
+	{% assign attendees = site.data.attendees | sort: "name" | uniq: "name" %}
+	{% for attendee in attendees %}
 	{% if attendee.ticket_type == '701385' %}{% continue %}{% endif %}
-        <div>
-          {% assign name = attendee.name | | split:" " %}
-          {{ name[0] | capitalize }} {{ name[1] | capitalize }} {{ name[2] | capitalize }}
-          {% if attendee.twitter %}
+	<div class="{% if attendee.ticket_type == '667251' %}attendee--golden-ticket{% endif %}">
+	  <img src="https://secure.gravatar.com/avatar/{{ attendee.email }}" alt=""> <br>
+	  {% assign name = attendee.name | | split:" " %}
+	  {{ name[0] | capitalize }} {{ name[1] | capitalize }} {{ name[2] | capitalize }}
+	  {% if attendee.twitter %}
           <br> <a href="https://twitter.com/{{ attendee.twitter }}">@{{ attendee.twitter }}</a>
           {% endif %}
         </div>
