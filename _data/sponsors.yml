@@ -4,16 +4,16 @@
   title: "L'innovation digitale au service de votre business"
   logo: ekino.svg
   level: gold
-- name: Région Aquitaine Limousin Poitou-Charentes
-  website: //laregion-alpc.fr/
-  title: ""
-  logo: region-alpc.svg
-  level: gold
 - name: Alienor
   website: //www.alienor.net/
   title: "Agence web sur Bordeaux : création de sites web, webmarketing et hébergement"
   logo: alienor.svg
   level: gold
+- name: Région Aquitaine Limousin Poitou-Charentes
+  website: //laregion-alpc.fr/
+  title: ""
+  logo: region-alpc.svg
+  level: gold  
 
 #Silver
 - name: Jolicode
