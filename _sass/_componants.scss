@@ -8,6 +8,9 @@
 
 .svg-size {
 	max-width: $svg-size; max-height: $svg-size;
+	@media (min-width: $media-break-point) {
+		max-width: $svg-size * 1.125; max-height: $svg-size * 1.125;
+	}
 }
 
 
@@ -53,8 +56,17 @@
 .hug-banner {
 	background-image: url(../images/hug.jpg);
 }
-.place-banner {
+.first-place-banner {
 	background-image: url(../images/2016/cinema.jpg);
+}
+.first-map-banner {
+	background-image: url(../images/2016/map-cinema.png);
+}
+.second-place-banner {
+	background-image: url(../images/2016/epitech.jpg);
+}
+.second-map-banner {
+	background-image: url(../images/2016/map-epitech.png);
 }
 
 
