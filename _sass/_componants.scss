@@ -120,7 +120,12 @@
 
 .attendee {
 	.attendee-avatar {
+		width: 5em;
+		margin-bottom: 1em;
 		border-radius: 50%;
+	}
+	.attendee-name {
+		font-weight: 700;
 	}
 	&.super-woman {
 
