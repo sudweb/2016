@@ -4,12 +4,13 @@ curl -Ss -X GET -G \
   -d "id_event[]=$WEEZEVENT_EVENT_ID" \
   -d access_token=$WEEZEVENT_ACCESS_TOKEN \
   -d api_key=$WEEZEVENT_API_KEY \
+  -d include_unpaid=true \
   https://api.weezevent.com/participants \
   | jq -f -r script/gen-attendees.jq \
   | while read line; do \
       EMAIL=$(echo $line | grep -E -o "\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,6}\b") ; \
       if [ $EMAIL ]; then \
-	echo "$line" | sed "s/$EMAIL/$(md5 -q -s $EMAIL)/" ; \
+	     echo "$line" | sed "s/$EMAIL/$(md5 -q -s $EMAIL)/" ; \
       else echo "$line"; fi ; \
     done \
   > _data/attendees.json
