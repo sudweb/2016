@@ -26,13 +26,14 @@ GEM
     foreman (0.78.0)
       thor (~> 0.19.1)
     gemoji (2.1.0)
-    github-pages (58)
+    github-pages (59)
       RedCloth (= 4.2.9)
       github-pages-health-check (= 1.1.0)
       jekyll (= 3.0.3)
       jekyll-coffeescript (= 1.0.1)
       jekyll-feed (= 0.4.0)
       jekyll-gist (= 1.4.0)
+      jekyll-github-metadata (= 1.8.0)
       jekyll-mentions (= 1.0.1)
       jekyll-paginate (= 1.1.0)
       jekyll-redirect-from (= 0.9.1)
@@ -81,6 +82,8 @@ GEM
     jekyll-feed (0.4.0)
     jekyll-gist (1.4.0)
       octokit (~> 4.2)
+    jekyll-github-metadata (1.8.0)
+      octokit (~> 4.0)
     jekyll-mentions (1.0.1)
       html-pipeline (~> 2.3)
       jekyll (~> 3.0)
@@ -146,7 +149,7 @@ PLATFORMS
 
 DEPENDENCIES
   foreman
-  github-pages (= 58)
+  github-pages (= 59)
   html-proofer (~> 3.0.0)
   jekyll (= 3.0.3)
   json
