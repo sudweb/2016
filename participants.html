@@ -35,13 +35,9 @@ permalink: /participants/
 
         <div class="attendee {% if attendee.ticket_type == '667251' %} golden-ticket{% endif %}">
           {% if attendee.title == 'Mme' %}
-          {% comment %}
-          COULD : Use these URL instead when we have a super-woman avatar
-          {{ "super-woman" | prepend: site.baseurl | prepend: site.url | cgi_escape }}
-          {% endcomment %}
-          <img class="attendee-avatar" src="https://secure.gravatar.com/avatar/{{ attendee.email }}?d=http%3A%2F%2Fsudweb.fr%2F2016%2Fassets%2Fimages%2Fdefault-avatar.png" alt="">
+          <img class="attendee-avatar" src="https://secure.gravatar.com/avatar/{{ attendee.email }}?d={{ super-woman | prepend: site.baseurl | prepend: site.url | cgi_escape }}" alt="Superwoman">
           {% else %}
-          <img class="attendee-avatar" src="https://secure.gravatar.com/avatar/{{ attendee.email }}?d={{ default-avatar | prepend: site.baseurl | prepend: site.url | cgi_escape }}" alt="">
+          <img class="attendee-avatar" src="https://secure.gravatar.com/avatar/{{ attendee.email }}?d={{ default-avatar | prepend: site.baseurl | prepend: site.url | cgi_escape }}" alt="Superman">
           {% endif %}
           <br>
           {% assign name = attendee.name | | split:" " %}
