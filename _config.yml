@@ -6,6 +6,7 @@ description: Deux journées pour faire le plein d'inspiration entre super-héros
 logo: images/logo-sud-web.png
 locale: fr
 url: http://sudweb.fr
+repository: sudweb/2016
 baseurl: /2016
 twitter:
   username: SudWeb
@@ -68,6 +69,7 @@ exclude:
   - script
 
 gems:
+- jekyll-github-metadata
 - jekyll-sitemap
 - jekyll-paginate
 - jekyll-seo-tag
