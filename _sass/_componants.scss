@@ -10,8 +10,6 @@
 	max-width: $svg-size; max-height: $svg-size;
 }
 
-
-
 .section-margin, .white-section, .yellow-section, .orange-section, .darkgrey-section {
 	padding-top: $section-margin; padding-bottom: $section-margin;
 }
@@ -31,8 +29,6 @@
 	background-color: $darkgrey;
 	color: $alternate-color;
 }
-
-
 
 [class*='banner'] {
 	display: block; padding: 15% 0;
@@ -56,8 +52,6 @@
 .place-banner {
 	background-image: url(../images/2016/cinema.jpg);
 }
-
-
 
 .pres-item {
 	padding: 2em;
@@ -117,8 +111,6 @@
 	}
 }
 
-
-
 .gallery {
 	img:not(:last-child) {
 		margin-bottom: $grid-goetter;
@@ -126,6 +118,22 @@
 }
 
 
+.attendee {
+	.attendee-avatar {
+		width: 5em;
+		margin-bottom: 1em;
+		border-radius: 50%;
+	}
+	.attendee-name {
+		font-weight: 700;
+	}
+	&.super-woman {
+
+	}
+	&.golden-ticket {
+
+	}
+}
 
 %partners {
 	margin-bottom: 5%;
