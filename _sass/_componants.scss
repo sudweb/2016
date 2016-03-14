@@ -8,9 +8,10 @@
 
 .svg-size {
 	max-width: $svg-size; max-height: $svg-size;
+	@media (min-width: $media-break-point) {
+		max-width: $svg-size * 1.125; max-height: $svg-size * 1.125;
+	}
 }
-
-
 
 .section-margin, .white-section, .yellow-section, .orange-section, .darkgrey-section {
 	padding-top: $section-margin; padding-bottom: $section-margin;
@@ -32,8 +33,6 @@
 	color: $alternate-color;
 }
 
-
-
 [class*='banner'] {
 	display: block; padding: 15% 0;
 	background: center / cover no-repeat;
@@ -53,8 +52,20 @@
 .hug-banner {
 	background-image: url(../images/hug.jpg);
 }
-.place-banner {
+.first-place-banner {
 	background-image: url(../images/2016/cinema.jpg);
+}
+.first-map-banner {
+	background-image: url(../images/2016/map-cinema.png);
+}
+.second-place-banner {
+	background-image: url(../images/2016/epitech.jpg);
+}
+.second-map-banner {
+	background-image: url(../images/2016/map-epitech.png);
+}
+.third-place-banner {
+	background-image: url(../images/2016/bordeaux.jpg);
 }
 
 
@@ -117,8 +128,6 @@
 	}
 }
 
-
-
 .gallery {
 	img:not(:last-child) {
 		margin-bottom: $grid-goetter;
@@ -126,6 +135,22 @@
 }
 
 
+.attendee {
+	.attendee-avatar {
+		width: 5em;
+		margin-bottom: 1em;
+		border-radius: 50%;
+	}
+	.attendee-name {
+		font-weight: 700;
+	}
+	&.super-woman {
+
+	}
+	&.golden-ticket {
+
+	}
+}
 
 %partners {
 	margin-bottom: 5%;

@@ -1,19 +1,19 @@
 # Gold
-- name: Région Aquitaine Limousin Poitou-Charentes
-  website: //laregion-alpc.fr/
-  title: ""
-  logo: region-alpc.svg
+- name: Ekino
+  website: //www.ekino.com
+  title: "L'innovation digitale au service de votre business"
+  logo: ekino.svg
   level: gold
 - name: Alienor
   website: //www.alienor.net/
   title: "Agence web sur Bordeaux : création de sites web, webmarketing et hébergement"
   logo: alienor.svg
   level: gold
-- name: Ekino
-  website: //www.ekino.com
-  title: "L'innovation digitale au service de votre business"
-  logo: ekino.svg
-  level: gold
+- name: Région Aquitaine Limousin Poitou-Charentes
+  website: //laregion-alpc.fr/
+  title: ""
+  logo: region-alpc.svg
+  level: gold  
 
 #Silver
 - name: Jolicode
@@ -26,10 +26,10 @@
   title: "Accélérateur de projet digitaux"
   logo: globalis.svg
   level: silver
-- name: Alwaysdata
-  website: //alwaysdata.com/
-  title: "Hébergement simple, rapide et infogéré"
-  logo: alwaysdata.svg
+- name: Le Wagon Bordeaux
+  website: //www.lewagon.com/fr/bordeaux
+  title: "Changez de vie : apprenez à coder"
+  logo: le-wagon-bordeaux.svg
   level: silver
 - name: Craftsmen
   website: //craftsmen.io
@@ -46,10 +46,10 @@
   title: "On gagne toujours à comparer"
   logo: jechange.svg
   level: silver
-- name: Le Wagon Bordeaux
-  website: //www.lewagon.com/fr/bordeaux
-  title: "Changez de vie : apprenez à coder"
-  logo: le-wagon-bordeaux.svg
+- name: Alwaysdata
+  website: //alwaysdata.com/
+  title: "Hébergement simple, rapide et infogéré"
+  logo: alwaysdata.svg
   level: silver
 
 # Bronze

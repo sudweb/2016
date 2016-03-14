@@ -20,12 +20,28 @@ permalink: /participants/
   <article>
     <section class="white-section">
       <div class="grid-4 text-center">
+
         {% assign attendees = site.data.attendees | sort: "name" | uniq: "name" %}
+        {% assign default-avatar = "/assets/images/default-avatar.png" %}
+        {% assign super-woman = "/assets/images/super-woman.png" %}
+
         {% for attendee in attendees %}
-        {% if attendee.ticket_type == '667250'%}{% continue %}{% endif %}
-        <div>
+        {% comment %}
+        Don't display speakers amongst the attendees
+        {% if attendee.ticket_type == '701385' %}
+          {% continue %}
+        {% endif %}
+        {% endcomment %}
+
+        <div class="attendee {% if attendee.ticket_type == '667251' %} golden-ticket{% endif %}">
+          {% if attendee.title == 'Mme' %}
+          <img class="attendee-avatar" src="https://secure.gravatar.com/avatar/{{ attendee.email }}?d={{ super-woman | prepend: site.baseurl | prepend: site.url | cgi_escape }}" alt="Superwoman">
+          {% else %}
+          <img class="attendee-avatar" src="https://secure.gravatar.com/avatar/{{ attendee.email }}?d={{ default-avatar | prepend: site.baseurl | prepend: site.url | cgi_escape }}" alt="Superman">
+          {% endif %}
+          <br>
           {% assign name = attendee.name | | split:" " %}
-          {{ name[0] | capitalize }} {{ name[1] | capitalize }} {{ name[2] | capitalize }}
+          <span class="attendee-name">{{ name[0] | capitalize }} {{ name[1] | capitalize }} {{ name[2] | capitalize }}</span>
           {% if attendee.twitter %}
           <br> <a href="https://twitter.com/{{ attendee.twitter }}">@{{ attendee.twitter }}</a>
           {% endif %}
