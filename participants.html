@@ -34,9 +34,9 @@ permalink: /participants/
         {% endcomment %}
 
         <div class="attendee {% if attendee.ticket_type == '667251' %} golden-ticket{% endif %}">
-          {% if attendee.title == 'Mme' %}
-          <img class="attendee-avatar" src="https://secure.gravatar.com/avatar/{{ attendee.email }}?d={{ super-woman | prepend: site.baseurl | prepend: site.url | cgi_escape }}" alt="Superwoman">
-          {% else %}
+          {% if attendee.avatar %}
+          <img class="attendee-avatar" src="{{ attendee.avatar }}" alt="SuperAvatar">
+          {% else if attendee.title == 'Mme' %}
           <img class="attendee-avatar" src="https://secure.gravatar.com/avatar/{{ attendee.email }}?d={{ default-avatar | prepend: site.baseurl | prepend: site.url | cgi_escape }}" alt="Superman">
           {% endif %}
           <br>
