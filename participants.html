@@ -36,7 +36,7 @@ permalink: /participants/
         <div class="attendee {% if attendee.ticket_type == '667251' %} golden-ticket{% endif %}">
           {% if attendee.twitter %}
           <img class="attendee-avatar" src="https://twitter.com/{{ attendee.twitter }}/profile_image?size=bigger" alt="Super Avatar">
-          {% elseif attendee.title == 'Mme' %}
+          {% elsif attendee.title == 'Mme' %}
           <img class="attendee-avatar" src="https://secure.gravatar.com/avatar/{{ attendee.email }}?d={{ super-woman | prepend: site.baseurl | prepend: site.url | cgi_escape }}" alt="Superwoman">
           {% else %}
           <img class="attendee-avatar" src="https://secure.gravatar.com/avatar/{{ attendee.email }}?d={{ default-avatar | prepend: site.baseurl | prepend: site.url | cgi_escape }}" alt="Superman">
