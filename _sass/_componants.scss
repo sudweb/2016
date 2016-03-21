@@ -33,6 +33,15 @@
 	color: $alternate-color;
 }
 
+.warning {
+	padding: .5em * $default-line-height 0;
+	background-color: $yellow;
+	color: $alternate-color;
+	text-align: center;
+	font-size: 1.5em;
+	font-weight: 700;
+}
+
 [class*='banner'] {
 	display: block; padding: 15% 0;
 	background: center / cover no-repeat;
@@ -133,7 +142,6 @@
 		margin-bottom: $grid-goetter;
 	}
 }
-
 
 .attendee {
 	.attendee-avatar {
