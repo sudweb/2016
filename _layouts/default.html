@@ -4,11 +4,13 @@ layout: compress
 
 {% include head.html %}
 
-    <body itemscope itemtype="http://schema.org/WebPage">
-        {% include navigation.html %}
-        {% include banner.html %}
+<body itemscope itemtype="http://schema.org/WebPage">
+  {% include navigation.html %}
+  {% include banner.html %}
 
-        {{ content }}
+  {{ content }}
 
-    </body>
+  {% include sponsors.html %}
+  {% include footer.html %}
+</body>
 </html>
