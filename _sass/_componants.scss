@@ -13,6 +13,8 @@
 	}
 }
 
+
+
 .section-margin, .white-section, .yellow-section, .orange-section, .darkgrey-section {
 	padding-top: $section-margin; padding-bottom: $section-margin;
 }
@@ -33,14 +35,13 @@
 	color: $alternate-color;
 }
 
+
 .warning {
-	padding: .5em * $default-line-height 0;
+	padding: .5em 0;
 	background-color: $yellow;
-	color: $alternate-color;
-	text-align: center;
-	font-size: 1.5em;
-	font-weight: 700;
+	font-size: $defaut-font-size; font-weight: $bold-font-weight; color: $alternate-color; text-align: center;
 }
+
 
 [class*='banner'] {
 	display: block; padding: 15% 0;
@@ -137,28 +138,32 @@
 	}
 }
 
+
+
 .gallery {
 	img:not(:last-child) {
 		margin-bottom: $grid-goetter;
 	}
 }
 
-.attendee {
-	.attendee-avatar {
-		width: 5em;
-		margin-bottom: 1em;
-		border-radius: 50%;
-	}
-	.attendee-name {
-		font-weight: 700;
-	}
-	&.super-woman {
 
-	}
+.attendee {
 	&.golden-ticket {
 
 	}
+	.attendee-avatar {
+		margin: 0 0 1em;
+		img {
+			width: 5em;
+			border-radius: 50%;
+		}
+	}
+	.attendee-name {
+		margin: 0;
+		font-size: $small-font-size;
+	}
 }
+
 
 %partners {
 	margin-bottom: 5%;
