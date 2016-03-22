@@ -23,10 +23,12 @@ $selection-color        : #b3d4fc;
 $default-color          : $darkgrey;
 $alternate-color        : $white;
 
-$nav-bg                 : $darkred;
+$nav-bg-first           : $darkred;
+$nav-bg-second          : $orange;
 $nav-color              : $alternate-color;
 
-$header-bg              : $red;
+$header-bg-first        : $red;
+$header-bg-second       : $yellow;
 $header-color           : $alternate-color;
 
 $default-button-bg      : $yellow;
@@ -82,7 +84,7 @@ $bold-font-weight       : 700;
 
 // Fonts
 
-$default-font-family    : 'Roboto', verdana, arial, sans-serif;
+$default-font-family    : 'Roboto', arial, sans-serif;
 $title-font-family      : 'Squada One', arial, sans-serif;
 
 
@@ -139,6 +141,8 @@ $easeInOutBack          :  "0.680, -0.550, 0.265, 1.550" !default;
 // Misc
 $default-delay          : .2s;
 $default-timing-function: cubic-bezier(unquote($easeOutBack));
+
+$header-anim-duration   : 15s;
 
 $button-default-radius  : .25em;
 $section-margin         : 5%;

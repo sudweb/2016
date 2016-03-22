@@ -7,3 +7,60 @@
 	65% { transform: scale(1); }
 	90% { transform: scale(1.05); }
 }
+
+
+// Headers animations -------------------------------------------------------
+
+@keyframes nav-alternate {
+	40% { background: $nav-bg-first; }
+	50% { background: $nav-bg-second; }
+	90% { background: $nav-bg-second; }
+	to  { background: $nav-bg-first; }
+}
+
+@keyframes sw-logo-alternate-a {
+	40% { fill: $darkred; }
+	50% { fill: $orange; }
+	90% { fill: $orange; }
+	to  { fill: $darkred; }
+}
+
+@keyframes sw-logo-alternate-b {
+	40% { fill: $red; }
+	50% { fill: $yellow; }
+	90% { fill: $yellow; }
+	to  { fill: $red; }
+}
+/*
+@keyframes header-alternate {
+	40% { background-color: $header-bg-first; background-image: url(../images/hero-male-small.svg); }
+	50% { background-color: $header-bg-second; background-image: url(../images/hero-female-small.svg); }
+	90% { background-color: $header-bg-second; background-image: url(../images/hero-female-small.svg); }
+	to  { background-color: $header-bg-first; background-image: url(../images/hero-male-small.svg); }
+}
+*/
+
+@keyframes header-alternate-before {
+	40% { opacity: 1; }
+	50% { opacity: 0; }
+	90% { opacity: 0; }
+	to  { opacity: 1; }
+}
+
+@keyframes header-alternate-after {
+	40% { opacity: 0; }
+	50% { opacity: 1; }
+	90% { opacity: 1; }
+	to  { opacity: 0; }
+}
+
+@keyframes header-content-alternate {
+	35% { opacity: 1; transform: translateY(0); }
+	40% { opacity: 0; margin-left: 0; transform: translateY(-.5em); }
+	45% { opacity: 0; margin-left: 35%; transform: translateY(-.5em); }
+	50% { opacity: 1; transform: translateY(0); }
+	85% { opacity: 1; transform: translateY(0); }
+	90% { opacity: 0; margin-left: 35%; transform: translateY(-.5em); }
+	95% { opacity: 0; margin-left: 0; transform: translateY(-.5em); }
+	to  { opacity: 1; transform: translateY(0); }
+}
