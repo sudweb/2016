@@ -1,5 +1,5 @@
 approve_by_comment: true
-approve_regex: '^(Approved|Approuvé|LGTM|OK|:+1:|:white_check_mark:|:shipit:)'
+approve_regex: '^(Approved|Approuvé|LGTM|OK|:\+1:|:white_check_mark:|:shipit:)'
 author_approval: default
 reject_regex: '^(Rejected|Rejeté|:-1:)'
 reject_value: -1
