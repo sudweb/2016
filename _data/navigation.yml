@@ -1,10 +1,11 @@
 # Primary navigation links
 primary:
-  - title: "Programme"
+  - name: "Programme"
     url: "/"
-  - title: "Lieux"
+  - name: "Lieux"
     url: "/lieux/"
-  - title: "Inscription"
+  - name: "<del>Inscription</del>"
+    title: "C'est complet !"
     url: "/inscription/"
-  - title: "Participants"
+  - name: "Participants"
     url: "/participants/"
