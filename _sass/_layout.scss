@@ -3,8 +3,8 @@
    ========================================================================== */
 
 .main-nav {
-	background: $nav-bg;
-	
+	background: $nav-bg-first;
+	animation: nav-alternate $header-anim-duration infinite cubic-bezier(unquote($easeInOutCubic));
 	.logo,
 	.nav {
 		display: inline-block;
@@ -33,26 +33,54 @@
 		padding: .25em 0;
 		&:hover,
 		&:focus {
-			animation: heart-beat 1s infinite; transition-timing-function: $easeInOutCubic;
+			animation: heart-beat 1s infinite cubic-bezier(unquote($easeInOutCubic));
 		}
 	}
 	.sw-logo {
 		width: 7em; /*height: auto;*/ height: 3.875em;
+		[id='sw-hands-shadows'],
+		[id='sw-heart-top'],
+		[id='sw-wave-shadow'] {
+			animation: sw-logo-alternate-a $header-anim-duration infinite cubic-bezier(unquote($easeInOutCubic));
+		}
+		[id='sw-wave'] {
+			animation: sw-logo-alternate-b $header-anim-duration infinite cubic-bezier(unquote($easeInOutCubic));
+		}
 	}
 }
 
 .page-header {
-	padding: 5% 0 30%;
-	background: $header-bg no-repeat right bottom / contain url(../images/hero-small.svg);
+	position: relative; padding: 5% 0 30%;
+	background-color: $header-bg-first;
 	color: $header-color;
+	// animation: header-alternate $header-anim-duration infinite cubic-bezier(unquote($easeInOutCubic));
+	&::before,
+	&::after {
+		position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: 0;
+		background: no-repeat right bottom / contain;
+		content: '';
+	}
+	&::before {
+		background-color: $header-bg-first; background-image: url(../images/hero-male-small.svg);
+		animation: header-alternate-before $header-anim-duration infinite cubic-bezier(unquote($easeInOutCubic));
+	}
+	&::after {
+		background-color: $header-bg-second; background-image: url(../images/hero-female-small.svg);
+		opacity: 0;
+		animation: header-alternate-after $header-anim-duration infinite cubic-bezier(unquote($easeInOutCubic));
+	}
 	@media (min-width: $media-break-point) {
-		padding: 20% 0 5%;
-		background: $header-bg no-repeat center bottom / cover url(../images/hero-small.svg);
+		padding: 24% 0 5%;
+		&::before,
+		&::after {
+			background-position: center bottom; background-size: cover;
+		}
 	}
 	.content {
-		width: auto;
+		position: relative; z-index: 1; width: auto;
 		@media (min-width: $media-break-point) {
 			width: 65%;
+			animation: header-content-alternate $header-anim-duration infinite cubic-bezier(unquote($easeInOutCubic));
 		}
 	}
 	.title {

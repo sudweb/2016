@@ -120,3 +120,17 @@ Malheureusement, puisque le site est hébergé sur GitHub, le plugin Autoprefixe
 Le plus gros problème que cela implique vient de l'utilisation de flexbox, notamment pour la grille, qui est pourtant [bien supporté](http://caniuse.com/flexbox). L'[issue #51](https://github.com/sudweb/2016/issues/51) montre qu'encore une fois c'est Safari qui fait ch\*\*\*.
 
 Donc pas le choix, j'ai du prefixer à la main via mixins. Merci d'ailleurs à @mastastealth pour [son aide](https://github.com/mastastealth/sass-flex-mixin/blob/master/_flexbox.scss). J'ai tout de même laisser les écritures valides en commentaires juste à côté de chaque include pour simplifier la future évolution.
+
+## L'animation du header
+
+Bien sûr, hors de question d'utiliser du javascript ici.
+
+Je tente donc de mettre des animations sur le `<nav>` et le `<header>`, mais impossible de toucher les éléments imbriqués, donc obligé de décomposer en plusieurs `@keyframes` en espérant que la synchronisation de chaque animation subsiste.
+
+Une première version fonctionne donc avec une animation sur le `<header>` qui consiste à alterner la couleur d'arrière plan, et également son image. Mais voilà, il semble que ce ne soit une possibilité récente, qui ne fonctionne actuellement que sous Chrome.
+
+L'alternative que j'ai choisie est d'utiliser les deux pseudo-éléments `::before` et `::after` configurés pour être placés derrière le contenu textuel et recouvrir tout le `<header>`. Un des deux est caché par défaut.
+
+Ça fonctionne.
+
+Un autre bug : il semble qu'une animation d'une marge à 0 vers auto (sur le content du header) ne fonctionne que sous Chrome également. J'ai donc dû faire cette animation de 0 vers 35%, soit 100% moins la largeur du contenu de 65% sur desktop.
