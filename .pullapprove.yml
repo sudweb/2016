@@ -7,5 +7,4 @@ reset_on_push: true
 reviewers:
   - name: thym
     required: 2
-    members:
-      - all
+    members: all
