@@ -8,5 +8,5 @@ type: conference
 symbol: expe
 date: 2016-05-27 09:40:00 +0100
 lang: en
-display-order: 1
+display-order: 6
 ---
