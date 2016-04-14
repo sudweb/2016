@@ -10,5 +10,5 @@ speaker:
 type: lt
 symbol: well
 date: 2016-05-27 10:30:00 +0100
-display-order: 5
+display-order: 3
 ---

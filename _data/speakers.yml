@@ -1,15 +1,5 @@
 # Conferences
 
-hannah:
-  name: Hannah Wolfe
-  bio:  >-
-    Hannah est cofondatrice et CTO de [Ghost](https://ghost.org), une plateforme de publication innovante à la fois libre et rentable, financée par le service payant Ghost(Pro).
-  location: Northampton
-  country: United Kingdom
-  twitter: erisds
-  avatar: hannah-wolfe
-  website: //hannah.wf/
-
 chris:
   name: Chris Lowis
   bio: >-
@@ -30,18 +20,6 @@ mylene:
   location: Bordeaux
   twitter: MilanAvJC
   website: //letskeepsewing.com/
-
-olivier:
-  name: Olivier Thereaux
-  bio: >-
-    Curieux, voyageur et adepte du *pun* britannique.
-
-    Olivier assemble Web et innovation auprès du W3C et
-    la [BBC R&D](//www.bbc.co.uk/rd).
-  avatar: olivier-thereaux
-  location: Londres
-  twitter: olivierthereaux
-  website: //olivier.thereaux.net/
 
 rachel:
     name: Rachel Saada
@@ -75,16 +53,6 @@ stefanie:
   twitter: stefpos
   avatar: stefanie-povasec
   website: //www.stefanieposavec.co.uk/
-
-stephanie:
-  name: Stéphanie Troeth
-  bio: >-
-    Stratège UX, designer/chercheur. Jardinière urbaine, afficionada du
-    slow food, polyglotte.
-  location: Londres
-  country: United Kingdom
-  twitter: sniffles
-  avatar: stephanie-troeth
 
 gaelle:
   name: Gaëlle Periat
