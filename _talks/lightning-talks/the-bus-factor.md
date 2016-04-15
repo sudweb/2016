@@ -8,5 +8,5 @@ speaker:
 type: lt
 symbol: educ
 date: 2016-05-27 15:50:00 +0100
-display-order: 2
+display-order: 4
 ---

@@ -12,5 +12,5 @@ type: conference
 symbol: crea
 date: 2016-05-27 10:30:00 +0100
 lang: en
-display-order: 3
+display-order: 2
 ---

@@ -7,5 +7,5 @@ speaker:
   - thomas
 type: lt
 symbol: educ
-display-order: 6
+display-order: 2
 ---

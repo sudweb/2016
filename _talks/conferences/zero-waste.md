@@ -11,5 +11,5 @@ speaker:
 type: conference
 symbol: crea
 date: 2016-05-27 14:00:00 +0100
-display-order: 8
+display-order: 7
 ---
