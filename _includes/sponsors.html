@@ -1,7 +1,7 @@
 <article class="white-section">
   <div class="wrapper text-center">
     <h2 class="great-title-size red uppercase">Nos super partenaires</h2>
-    {% assign sponsortypes = "gold|silver|bronze" | split: "|" %}
+    {% assign sponsortypes = "gold|silver" | split: "|" %}
     {% for sponsortype in sponsortypes %}
     <section class="{{ sponsortype }}-partners">
       {% assign sponsors = site.data.sponsors | where:"level", sponsortype %}

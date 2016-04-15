@@ -1,4 +1,3 @@
-# Gold
 - name: Ekino
   website: //www.ekino.com
   title: "L'innovation digitale au service de votre business"
@@ -15,7 +14,6 @@
   logo: region-alpc.svg
   level: gold
 
-#Silver
 - name: Jolicode
   website: //jolicode.com/
   title: "Agence experte dans la réalisation de projets Web et mobiles de qualité"
@@ -56,13 +54,13 @@
   title: "Create fully-interactive high-fidelity prototypes. No coding required."
   logo: protoio.svg
   level: silver
-
-# Bronze
 - name: Eyrolles
   website: //www.editions-eyrolles.com/Theme/116/informatique/conception-web
   title: "La librairie des passionnés et des experts"
-  level: bronze
+  logo: eyrolles.svg
+  level: silver
 - name: Epitech
   website: //epitech.eu/
   title: "L'école de l'innovation et de l'expertise informatique"
-  level: bronze
+  logo: epitech.svg
+  level: silver
