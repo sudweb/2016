@@ -13,7 +13,7 @@
   website: //laregion-alpc.fr/
   title: ""
   logo: region-alpc.svg
-  level: gold  
+  level: gold
 
 #Silver
 - name: Jolicode
@@ -50,6 +50,11 @@
   website: //alwaysdata.com/
   title: "Hébergement simple, rapide et infogéré"
   logo: alwaysdata.svg
+  level: silver
+- name: Proto.io
+  website: //proto.io/
+  title: "Create fully-interactive high-fidelity prototypes. No coding required."
+  logo: protoio.svg
   level: silver
 
 # Bronze
