@@ -19,14 +19,14 @@ permalink: /participants/
 	<article class="white-section">
 
 		<div class="wrapper text-center">
-			<h2 class="great-title-size red uppercase">Des visages, des figures</h2>
+      {% assign attendees = site.data.attendees | sort: "name" | uniq: "name" %}
+  		{% assign default-avatar = "/assets/images/default-avatar.png" %}
+  		{% assign super-woman = "/assets/images/super-woman.png" %}
+
+			<h2 class="great-title-size red uppercase">{{ attendees | size}} super-héros</h2>
 		</div>
 
 		<div class="grid-4 text-center">
-
-		{% assign attendees = site.data.attendees | sort: "name" | uniq: "name" %}
-		{% assign default-avatar = "/assets/images/default-avatar.png" %}
-		{% assign super-woman = "/assets/images/super-woman.png" %}
 
 		{% for attendee in attendees %}
 		{% comment %}
