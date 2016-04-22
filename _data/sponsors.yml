@@ -64,3 +64,8 @@
   title: "L'école de l'innovation et de l'expertise informatique"
   logo: epitech.svg
   level: silver
+
+- name: Mozilla
+  website: //mozilla.org/
+  title: "Nous œuvrons à améliorer Internet"
+  level: bronze
