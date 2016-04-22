@@ -29,9 +29,12 @@ node_modules
 # Jekyll
 _site/
 .sass-cache/
+.bundle
 .jekyll-metadata
 
 # node-waf configuration
 .DS_Store
 
 Gemfile.lock
+
+_data/attendees.json

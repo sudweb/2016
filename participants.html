@@ -19,7 +19,7 @@ permalink: /participants/
 	<article class="white-section">
 
 		<div class="wrapper text-center">
-      {% assign attendees = site.data.attendees | sort: "name" | uniq: "name" %}
+      {% assign attendees = site.data.attendees.participants | sort: "owner.first_name" | uniq: "id_participant" %}
   		{% assign default-avatar = "/assets/images/default-avatar.png" %}
   		{% assign super-woman = "/assets/images/super-woman.png" %}
 
@@ -31,23 +31,22 @@ permalink: /participants/
 		{% for attendee in attendees %}
 		{% comment %}
 		Don't display speakers amongst the attendees
-		{% if attendee.ticket_type == '701385' %}
+		{% if attendee.id_ticket == '701385' %}
 			{% continue %}
 		{% endif %}
 		{% endcomment %}
 
-		<section class="attendee {% if attendee.ticket_type == '667251' %} golden-ticket{% endif %}">
+		<section class="attendee {% if attendee.id_ticket == '667251' %} golden-ticket{% endif %}">
 			<figure class="attendee-avatar">
 				{% if attendee.twitter %}
 				<img src="https://twitter.com/{{ attendee.twitter }}/profile_image?size=bigger" alt="Super Avatar">
 				{% elsif attendee.title == 'Mme' %}
-				<img src="https://secure.gravatar.com/avatar/{{ attendee.email }}?d={{ super-woman | prepend: site.baseurl | prepend: site.url | cgi_escape }}" alt="Superwoman">
+				<img src="https://secure.gravatar.com/avatar/{{ attendee.owner.email | downcase | md5 }}?d={{ super-woman | prepend: site.baseurl | prepend: site.url | cgi_escape }}" alt="Superwoman">
 				{% else %}
-				<img src="https://secure.gravatar.com/avatar/{{ attendee.email }}?d={{ default-avatar | prepend: site.baseurl | prepend: site.url | cgi_escape }}" alt="Superman">
+				<img src="https://secure.gravatar.com/avatar/{{ attendee.owner.email | downcase | md5 }}?d={{ default-avatar | prepend: site.baseurl | prepend: site.url | cgi_escape }}" alt="Superman">
 				{% endif %}
 			</figure>
-			{% assign name = attendee.name | | split:" " %}
-			<h3 class="attendee-name">{{ name[0] | capitalize }} {{ name[1] | capitalize }} {{ name[2] | capitalize }}</h3>
+			<h3 class="attendee-name">{{ attendee.owner.first_name | capitalize }} {{ attendee.owner.last_name | capitalize }}</h3>
 			{% if attendee.twitter %}
 			<a href="https://twitter.com/{{ attendee.twitter }}">@{{ attendee.twitter }}</a>
 			{% endif %}
