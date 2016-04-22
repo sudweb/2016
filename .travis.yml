@@ -2,14 +2,7 @@ language: ruby
 cache: bundler
 sudo: false
 rvm: 2.1
-install:
-- travis_retry script/bootstrap
-before_script:
-- mkdir -p /tmp/bin
-- curl -SsL https://github.com/stedolan/jq/releases/download/jq-1.5/jq-linux64 > /tmp/bin/jq
-- chmod +x /tmp/bin/jq
-- export PATH=/tmp/bin:$PATH
-- script/gen-attendees
+install: travis_retry script/bootstrap
 script: script/cibuild
 env:
   global:
