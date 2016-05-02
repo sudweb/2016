@@ -10,7 +10,7 @@ chris:
   country: United Kingdom
   twitter: chrislowis
   avatar: chris-lowis
-  website: http://blog.chrislowis.co.uk/
+  website: https://blog.chrislowis.co.uk/
 
 mylene:
   name: Mylène L'Orguilloux
@@ -19,7 +19,7 @@ mylene:
   avatar: mylene
   location: Bordeaux
   twitter: MilanAvJC
-  website: //letskeepsewing.com/
+  website: https://letskeepsewing.com/
 
 rachel:
     name: Rachel Saada
@@ -30,7 +30,7 @@ rachel:
     avatar: rachel-saada
     location: Paris
     twitter: safsaada
-    website: //www.souffrance-et-travail.com/
+    website: http://www.souffrance-et-travail.com/
 
 roxane:
   name: Roxane Debruyker
@@ -52,7 +52,7 @@ stefanie:
   country: United Kingdom
   twitter: stefpos
   avatar: stefanie-povasec
-  website: //www.stefanieposavec.co.uk/
+  website: http://www.stefanieposavec.co.uk/
 
 gaelle:
   name: Gaëlle Periat
@@ -82,7 +82,7 @@ antoine:
     divers projets associatifs.
   avatar: antoine-fauchie
   twitter: antoinentl
-  website: //www.quaternum.net/
+  website: http://www.quaternum.net/
 
 basile:
   name: Basile Simon
@@ -91,7 +91,7 @@ basile:
     Data-journaliste bénévole [Airwars](http://airwars.org/).
   avatar: basile-simon
   twitter: basilesimon
-  website: //basilesimon.fr/
+  website: https://basilesimon.fr/
 
 bastien:
   name: Bastien Guerry
@@ -100,7 +100,7 @@ bastien:
     a contribué à de nombreux projets libres et est devenu hacktiviste indépendant.
   avatar: bastien-guerry
   twitter: bzg2
-  website: //bzg.fr/
+  website: https://bzg.fr/
 
 boris:
   name: Boris Schapira
@@ -111,7 +111,7 @@ boris:
   country: France
   twitter: borisschapira
   avatar: boris-schapira
-  website: //borisschapira.com/
+  website: https://borisschapira.com/
 
 charles:
   name: Charles Pernet
@@ -122,7 +122,7 @@ charles:
   country: France
   twitter: CharlesPernet
   avatar: charles-pernet
-  website: //charlespernet.com/
+  website: http://www.charlespernet.com/
 
 laurence:
   name: Laurence Vagner
@@ -133,7 +133,7 @@ laurence:
   country: France
   twitter: hellgy
   avatar: laurence-wagner
-  website: //www.redisdead.net/
+  website: http://www.redisdead.net/
 
 marion:
   name: Marion Lambert
@@ -153,7 +153,7 @@ raphael:
   country: France
   twitter: iergo
   avatar: raphael-yharrassarry
-  website: //www.iergo.fr/
+  website: http://www.iergo.fr/
 
 thomas:
   name: Thomas Gasc
