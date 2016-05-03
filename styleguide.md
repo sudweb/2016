@@ -4,8 +4,8 @@ title: "Styleguide"
 description: "Documentation des composants d'interface du site"
 excerpt: "Styleguide : couleurs, typographie, UI patterns et composants"
 permalink: /styleguide/
+sitemap: false
 ---
-
 
 <div class="wrapper container">
 
