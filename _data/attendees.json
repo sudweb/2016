@@ -1204,7 +1204,10 @@
 "date": "2016-04-20T10:55:47Z",
 "title": "M.",
 "name": "Antoine ARDILOUZE",
+<<<<<<< HEAD
 "hide": null,
+=======
+>>>>>>> gh-pages
 "twitter": "pctony33",
 "code_postal": "33000",
 "email": ""
@@ -1214,7 +1217,10 @@
 "date": "2016-04-20T10:55:47Z",
 "title": "M.",
 "name": "Julien VITTE",
+<<<<<<< HEAD
 "hide": null,
+=======
+>>>>>>> gh-pages
 "twitter": "pitchart",
 "code_postal": "33000",
 "email": ""
@@ -1224,12 +1230,16 @@
 "date": "2016-04-20T10:55:48Z",
 "title": "M.",
 "name": "Thomas CHOQUET",
+<<<<<<< HEAD
 "hide": null,
+=======
+>>>>>>> gh-pages
 "twitter": null,
 "code_postal": "33000",
 "email": ""
 },
 {
+<<<<<<< HEAD
 "ticket_type": "667249",
 "date": "2016-05-02T11:03:52Z",
 "title": null,
@@ -1260,6 +1270,8 @@
 "email": "0e6fa96b076108ef527fef5a94e1ec98"
 },
 {
+=======
+>>>>>>> gh-pages
 "ticket_type": "667250",
 "date": "2016-03-03T09:50:41Z",
 "title": null,

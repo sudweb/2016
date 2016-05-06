@@ -1,66 +1,71 @@
 - name: Ekino
-  website: //www.ekino.com
+  website: http://www.ekino.com/
   title: "L'innovation digitale au service de votre business"
   logo: ekino.svg
   level: gold
 - name: Alienor
-  website: //www.alienor.net/
+  website: http://www.alienor.net/
   title: "Agence web sur Bordeaux : création de sites web, webmarketing et hébergement"
   logo: alienor.svg
   level: gold
 - name: Région Aquitaine Limousin Poitou-Charentes
-  website: //laregion-alpc.fr/
+  website: http://laregion-alpc.fr/
   title: ""
   logo: region-alpc.svg
   level: gold
 
 - name: Jolicode
-  website: //jolicode.com/
+  website: http://jolicode.com/
   title: "Agence experte dans la réalisation de projets Web et mobiles de qualité"
   logo: jolicode.svg
   level: silver
 - name: Globalis
-  website: //www.globalis-ms.com/
+  website: https://www.globalis-ms.com/
   title: "Accélérateur de projet digitaux"
   logo: globalis.svg
   level: silver
 - name: Le Wagon Bordeaux
-  website: //www.lewagon.com/fr/bordeaux
+  website: https://www.lewagon.com/fr/bordeaux
   title: "Changez de vie : apprenez à coder"
   logo: le-wagon-bordeaux.svg
   level: silver
 - name: Craftsmen
-  website: //craftsmen.io
+  website: http://craftsmen.io/
   title: "Building a better digital world"
   logo: craftsmen.svg
   level: silver
 - name: Mailchimp
-  website: //mailchimp.com
+  website: http://mailchimp.com/
   title: "Send Better Email"
   logo: mailchimp.svg
   level: silver
 - name: jeChange.fr
-  website: //www.jechange.fr/
+  website: http://www.jechange.fr/
   title: "On gagne toujours à comparer"
   logo: jechange.svg
   level: silver
 - name: Alwaysdata
-  website: //alwaysdata.com/
+  website: https://www.alwaysdata.com/fr/
   title: "Hébergement simple, rapide et infogéré"
   logo: alwaysdata.svg
   level: silver
 - name: Proto.io
-  website: //proto.io/
+  website: https://proto.io/
   title: "Create fully-interactive high-fidelity prototypes. No coding required."
   logo: protoio.svg
   level: silver
 - name: Eyrolles
-  website: //www.editions-eyrolles.com/Theme/116/informatique/conception-web
+  website: http://www.editions-eyrolles.com/Theme/80300/design-et-developpement-web-mobile
   title: "La librairie des passionnés et des experts"
   logo: eyrolles.svg
   level: silver
 - name: Epitech
-  website: //epitech.eu/
+  website: http://www.epitech.eu/
   title: "L'école de l'innovation et de l'expertise informatique"
   logo: epitech.svg
   level: silver
+
+- name: Mozilla
+  website: https://www.mozilla.org/fr/
+  title: "Nous œuvrons à améliorer Internet"
+  level: bronze

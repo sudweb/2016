@@ -1,14 +1,20 @@
 <article class="white-section">
   <div class="wrapper text-center">
     <h2 class="great-title-size red uppercase">Nos super partenaires</h2>
-    {% assign sponsortypes = "gold|silver" | split: "|" %}
+    {% assign sponsortypes = "gold|silver|bronze" | split: "|" %}
     {% for sponsortype in sponsortypes %}
     <section class="{{ sponsortype }}-partners">
       {% assign sponsors = site.data.sponsors | where:"level", sponsortype %}
       {% include sponsors_loop.html %}
     </section>
     {% endfor %}
-    <a class="cta button-type1" href="{{ site.baseurl }}/assets/files/dossier-de-partenariat-sudweb-2016.pdf" data-event-category="cta" data-event-action="click" data-event-label="dossier-partenariat">Devenez partenaire</a>
-    <a class="cta button-type4" href="{{ site.baseurl }}/assets/files/sudweb-partnership.pdf" hreflang="en" data-event-category="cta" data-event-action="click" data-event-label="dossier-partenariat-en">Become a sponsor</a>
+    <div class="grid-2">
+      <div>
+        <a class="cta button-type1" href="{{ site.baseurl }}/assets/files/dossier-de-partenariat-sudweb-2016.pdf" data-event-category="cta" data-event-action="click" data-event-label="dossier-partenariat">Devenez partenaire</a>
+      </div>
+      <div>
+        <a class="cta button-type1" href="{{ site.baseurl }}/assets/files/sudweb-partnership.pdf" hreflang="en" data-event-category="cta" data-event-action="click" data-event-label="dossier-partenariat-en">Become a sponsor</a>
+      </div>
+    </div>
   </div>
 </article>
