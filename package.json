@@ -1,0 +1,29 @@
+{
+  "name": "sudweb-2016",
+  "description": "Website for the 6th Sud Web conference",
+  "version": "2.0.16",
+  "author": {
+    "name": "SudWeb Team",
+    "url": "https://sudweb.fr/"
+  },
+  "scripts": {
+    "js-min": "cat assets/js/main.js | uglifyjs > assets/js/main.min.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sudweb/2016.git"
+  },
+  "keywords": [
+    "event",
+    "jekyll"
+  ],
+  "bugs": {
+    "url": "https://github.com/sudweb/2016/issues"
+  },
+  "homepage": "https://github.com/sudweb/2016#readme",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "uglify-js": "^2.6.2"
+  }
+}

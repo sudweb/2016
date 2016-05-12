@@ -7,7 +7,7 @@ Site internet du cycle de conférences annuel Sud Web, dont la 6e édition aura 
 [http://sudweb.fr/2016](http://sudweb.fr/2016)
 
 ## Pré-requis
-Le site est géré via [Github Pages](https://pages.github.com/) et [Jekyll](http://jekyllrb.com/) et nécessite Ruby 2.1.x (voir `.ruby-version`)
+Le site est géré via [Github Pages](https://pages.github.com/) et [Jekyll](http://jekyllrb.com/) et nécessite Ruby 2.1.x (voir `.ruby-version`) et NodeJS.
 
 Nous vous recommandons de gérer l'installation de Ruby via [rbenv](http://rbenv.org/).
 
@@ -51,16 +51,28 @@ $ rbenv install
 
 Pour travailler sur le site et surveiller les modifications :
 ```bash
-$ bundle exec foreman start  
+$ bundle exec foreman start
 ```
 
 Si vous modifiez le fichier `_config.yml`, il faut lancer
 ```bash
-$ bundle exec jekyll build   
+$ bundle exec jekyll build
 ```
 Le site est maintenant accessible en local à l'adresse http://0.0.0.0:4000/2016/
 
 Pour plus d'information sur l'utilisation de Jekyll, reportez-vous à la [documentation officielle](http://jekyllrb.com/docs/home/).
+
+### Minification du Javascript
+
+Pour installer les dépendances :
+```bash
+npm install
+```
+
+Pour minifier le javascript :
+```bash
+npm run js-min
+```
 
 ## Styleguide et notes d'intégration
 
