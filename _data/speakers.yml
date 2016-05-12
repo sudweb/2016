@@ -35,8 +35,7 @@ rachel:
 roxane:
   name: Roxane Debruyker
   bio: >-
-    Étudiante en sciences cognitives, Roxanne est également
-    stagiaire chez [Ants](http://weareants.fr/).
+    Étudiante en sciences cognitives.
   location: Bordeaux
   country: France
   twitter: dbr_roxane
@@ -62,6 +61,14 @@ gaelle:
   country: France
   twitter: GaellePeriat
   avatar: gaelle-periat
+
+matthew:
+  name: Matthew Caruana Galizia
+  bio: >-
+    Journaliste et développeur web à l'[ICIJ](https://www.icij.org/). 100% pur Malte !
+  country: Costa Rica
+  twitter: mcaruanagalizia
+  avatar: matthew-caruana-galizia
 
 # Lightning talks
 

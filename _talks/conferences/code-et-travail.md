@@ -15,5 +15,5 @@ speaker:
 type: conference
 symbol: expe
 date: 2016-05-27 17:40:00 +0100
-display-order: 5
+display-order: 4
 ---
