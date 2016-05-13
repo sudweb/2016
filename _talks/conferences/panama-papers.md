@@ -1,5 +1,5 @@
 ---
-title: À l'heure de Panama Papers
+title: Au coeur des Panama Papers
 description: >-
   2,5To de données, 210.000 entreprises factices et 370 journalistes.
   C'est l'ampleur de *Panama Papers*, de pratiques d'optimisation fiscale
