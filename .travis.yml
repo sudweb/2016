@@ -3,8 +3,7 @@ cache: bundler
 sudo: false
 rvm: 2.1
 before_install:
-- openssl aes-256-cbc -K $encrypted_6f362c7b0d23_key -iv $encrypted_6f362c7b0d23_iv
-  -in deploy_rsa.enc -out deploy_rsa -d
+- openssl aes-256-cbc -K $encrypted_6f362c7b0d23_key -iv $encrypted_6f362c7b0d23_iv -in deploy_rsa.enc -out deploy_rsa -d
 install:
 - travis_retry script/bootstrap
 before_script:
