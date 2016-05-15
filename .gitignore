@@ -35,3 +35,4 @@ _site/
 .DS_Store
 
 Gemfile.lock
+_data/attendees.json
