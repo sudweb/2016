@@ -1,3 +1,6 @@
+# Aliases OSX md5 to GNU md5sum
+type md5 && alias md5sum="md5"
+
 curl -Ss -X GET -G \
   -d full=true \
   -d max=300 \
@@ -10,7 +13,7 @@ curl -Ss -X GET -G \
   | while read line; do \
       EMAIL=$(echo $line | grep -E -o "\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,6}\b") ; \
       if [ $EMAIL ]; then \
-	     echo "$line" | sed "s/$EMAIL/$(md5 -q -s $EMAIL)/" ; \
+	     echo "$line" | sed "s/$EMAIL/$(md5sum -q -s $EMAIL)/" ; \
       else echo "$line"; fi ; \
     done \
   > _data/attendees.json
