@@ -121,22 +121,27 @@
 		cursor: pointer;
 	}
 	.row {
-		@include flexbox; /*display: flex;*/
-		@include flex-flow(row nowrap); /*flex-flow: row nowrap;*/ @include align-items(stretch); /*align-items: stretch;*/
+		display: flex;
+		flex-flow: row nowrap;
+		align-items: stretch;
 	}
 	[id='mce-EMAIL'] { // From MailChimp
-		@include flex(1); /*flex: 1;*/ margin: 0;
+		flex: 1;
+		margin: 0;
 		border-radius: $button-default-radius 0 0 $button-default-radius;
 	}
 	button {
 		border-radius: 0 $button-default-radius $button-default-radius 0;
 	}
 	.social-links {
-		@include flexbox; /*display: flex;*/ margin: 2em 0;
-		@include flex-flow(row nowrap); /*flex-flow: row nowrap;*/ @include justify-content(space-between); /* justify-content: space-between;*/ @include align-items(center); /* align-items: center;*/
+		display: flex;
+		margin: 2em 0;
+		flex-flow: row nowrap;
+		justify-content: space-between;
+		align-items: center;
 		& > * {
 			display: block; margin: 0 5%;
-			@include flex(0 1 4em); /*flex: 0 1 4em;*/
+			flex: 0 1 4em;
 			font-size: 1em;
 			&:first-child {
 				margin-left: 0;

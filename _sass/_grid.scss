@@ -7,12 +7,12 @@
 }
 
 .grid {
-	@include flexbox; /*display: flex;*/ margin-left: -$grid-goetter; padding: 0;
-	@include flex-flow(row wrap); /*flex-flow: row wrap;*/
+	display: flex; margin-left: -$grid-goetter; padding: 0;
+	flex-flow: row wrap;
 	list-style: none; /* if list container */
 	& > * {
 		box-sizing: border-box; margin-top: $grid-goetter; margin-left: $grid-goetter;
-		@include flex(1 0 $grid-width / ($grid-max-col-number + 1)); /*flex: 1 0 $grid-width / ($grid-max-col-number + 1);*/
+		flex: 1 0 $grid-width / ($grid-max-col-number + 1);
 	}
 }
 
@@ -20,7 +20,7 @@
 	.grid-#{$i} {
 		@extend .grid;
 		& > * {
-			@include flex-basis(($grid-width / ($i + 1))); /*flex-basis: ($grid-width / ($i + 1));*/
+			flex-basis: ($grid-width / ($i + 1));
 		}
 	}
 }

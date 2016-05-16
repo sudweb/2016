@@ -124,7 +124,8 @@
 }
 
 .pres-link {
-	@include flexbox; /*display: flex;*/ padding: 1em;
+	display: flex;
+	padding: 1em;
 	border-radius: .5em;
 	background: $orange;
 	color: $alternate-color; text-align: center; text-decoration: none;
@@ -171,11 +172,14 @@
 		margin-bottom: 0;
 	}
 	.partners-hr {
-		@include flexbox; /*display: flex;*/ margin-bottom: 5%;
-		@include flex-flow(row nowrap); /*flex-flow: row nowrap;*/ @include justify-content(center); /*justify-content: center;*/ @include align-items(center); /*align-items: center;*/
+		display: flex;
+		margin-bottom: 5%;
+		flex-flow: row nowrap;
+		justify-content: center;
+		align-items: center;
 		&::before, &::after {
 			height: 1px;
-			@include flex(1 1 auto); /*flex: 1 1 auto;*/
+			flex: 1 1 auto;
 			background: $lightgrey;
 			content: '';
 		}
@@ -190,7 +194,7 @@
 		}
 	}
 	[class*='grid'] {
-		@include align-items(center); /*align-items: center;*/
+		align-items: center;
 	}
 	img {
 		width: 100%;
