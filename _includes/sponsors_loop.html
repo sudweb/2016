@@ -15,14 +15,10 @@
 <ul class="grid-4">
   {% for sponsor in sponsors %}
   <li>
-      {% if sponsor.level != "bronze" %}
       <figure>
           <a href="{{ sponsor.website }}" title=" {{ sponsor.title }}"><img src="{{ site.baseurl}}/assets/images/2016/partenaires/{{ sponsor.logo }}" alt="{{ sponsor.name }}"></a>
           <figcation class="visuallyhidden">{{ sponsor.name }}</figcation>
       </figure>
-      {% elsif sponsor.level == "bronze" %}
-        <a href="{{ sponsor.website }}" title="{{ sponsor.title }}">{{ sponsor.name }}</a>
-      {% endif %}
   </li>
   {% endfor %}
 </ul>

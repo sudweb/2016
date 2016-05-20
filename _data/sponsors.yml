@@ -54,18 +54,19 @@
   title: "Create fully-interactive high-fidelity prototypes. No coding required."
   logo: protoio.svg
   level: silver
-- name: Eyrolles
-  website: http://www.editions-eyrolles.com/Theme/80300/design-et-developpement-web-mobile
-  title: "La librairie des passionnés et des experts"
-  logo: eyrolles.svg
-  level: silver
-- name: Epitech
-  website: http://www.epitech.eu/
-  title: "L'école de l'innovation et de l'expertise informatique"
-  logo: epitech.svg
-  level: silver
 
 - name: Mozilla
   website: https://www.mozilla.org/fr/
   title: "Nous œuvrons à améliorer Internet"
+  logo: mozilla.svg
+  level: bronze
+- name: Epitech
+  website: http://www.epitech.eu/
+  title: "L'école de l'innovation et de l'expertise informatique"
+  logo: epitech.svg
+  level: bronze
+- name: Eyrolles
+  website: http://www.editions-eyrolles.com/Theme/80300/design-et-developpement-web-mobile
+  title: "La librairie des passionnés et des experts"
+  logo: eyrolles.svg
   level: bronze
