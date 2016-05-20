@@ -12,7 +12,6 @@
   Language:     French
   Standards:    HTML5, CSS3
   Built with:   Jekyll <http://jekyllrb.com>
-                Github Pages <https://pages.github.com/>
                 Atom <https://atom.io/>
   Components:   {% for dependency in site.github.versions %}{{ dependency[0] }}{% if forloop.rindex0 > 0 %}, {% endif %}{% endfor %}
 
