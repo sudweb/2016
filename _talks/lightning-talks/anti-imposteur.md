@@ -6,6 +6,6 @@ speaker:
   - raphael
 type: lt
 symbol: expe
-date: 2016-05-27 15:40:00 +0100
-display-order: 6
+date: 2016-05-27 14:45:00 +0100
+display-order: 11
 ---

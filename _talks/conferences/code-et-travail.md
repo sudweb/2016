@@ -14,6 +14,6 @@ speaker:
   - rachel
 type: conference
 symbol: expe
-date: 2016-05-27 17:40:00 +0100
-display-order: 4
+date: 2016-05-27 14:00:00 +0100
+display-order: 9
 ---

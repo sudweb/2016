@@ -8,5 +8,5 @@ speaker:
 type: conference
 symbol: educ
 date: 2016-05-27 11:40:00 +0100
-display-order: 5
+display-order: 8
 ---

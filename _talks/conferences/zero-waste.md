@@ -10,6 +10,6 @@ speaker:
   - mylene
 type: conference
 symbol: crea
-date: 2016-05-27 14:00:00 +0100
-display-order: 7
+date: 2016-05-27 16:20:00 +0100
+display-order: 17
 ---

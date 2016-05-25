@@ -9,7 +9,7 @@ speaker:
   - gaelle
 type: conference
 symbol: well
-date: 2016-05-27 15:40:00 +0100
+date: 2016-05-27 11:00:00 +0100
 lang: fr
 display-order: 6
 ---

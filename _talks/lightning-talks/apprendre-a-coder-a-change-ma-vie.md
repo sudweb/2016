@@ -8,6 +8,6 @@ speaker:
   - charles
 type: lt
 symbol: educ
-date: 2016-05-27 11:20:00 +0100
-display-order: 7
+date: 2016-05-27 14:50:00 +0100
+display-order: 12
 ---

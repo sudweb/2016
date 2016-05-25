@@ -9,7 +9,7 @@ speaker:
   - chris
 type: conference
 symbol: educ
-date: 2016-05-27 10:00:00 +0100
+date: 2016-05-27 9:15:00 +0100
 lang: en
-display-order: 3
+display-order: 1
 ---
