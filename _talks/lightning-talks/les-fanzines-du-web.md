@@ -6,6 +6,6 @@ speaker:
   - antoine
 type: lt
 symbol: crea
-date: 2016-05-27 15:40:00 +0100
+date: 2016-05-27 14:40:00 +0100
 display-order: 15
 ---

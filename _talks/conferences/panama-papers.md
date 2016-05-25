@@ -13,7 +13,7 @@ speaker:
   - matthew
 type: conference
 symbol: expe
-date: 2016-05-27 15:00:00 +0100
+date: 2016-05-27 14:00:00 +0100
 lang: en
 display-order: 13
 ---

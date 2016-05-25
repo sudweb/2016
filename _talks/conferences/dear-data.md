@@ -10,7 +10,7 @@ speaker:
   - stefanie
 type: conference
 symbol: crea
-date: 2016-05-27 10:00:00 +0100
+date: 2016-05-27 09:00:00 +0100
 lang: en
 display-order: 4
 ---

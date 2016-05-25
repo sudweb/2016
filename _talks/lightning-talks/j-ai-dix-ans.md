@@ -9,6 +9,6 @@ speaker:
   - bastien
 type: lt
 symbol: well
-date: 2016-05-27 14:50:00 +0100
-display-order: 12
+date: 2016-05-27 09:30:00 +0100
+display-order: 5
 ---

@@ -7,6 +7,6 @@ speaker:
   - roxane
 type: conference
 symbol: educ
-date: 2016-05-27 11:40:00 +0100
+date: 2016-05-27 10:40:00 +0100
 display-order: 8
 ---

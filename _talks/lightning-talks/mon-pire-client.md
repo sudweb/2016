@@ -6,6 +6,6 @@ speaker:
   - boris
 type: lt
 symbol: expe
-date: 2016-05-27 09:45:00 +0100
+date: 2016-05-27 08:45:00 +0100
 display-order: 2
 ---

@@ -6,6 +6,6 @@ speaker:
   - marion
 type: lt
 symbol: expe
-date: 2016-05-27 14:40:00 +0100
+date: 2016-05-27 13:40:00 +0100
 display-order: 10
 ---
