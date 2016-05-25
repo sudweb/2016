@@ -4,8 +4,5 @@ primary:
     url: "/"
   - name: "Lieux"
     url: "/lieux/"
-  - name: "<del>Inscription</del>"
-    title: "C'est complet !"
-    url: "/inscription/"
   - name: "Participants"
     url: "/participants/"
