@@ -61,30 +61,12 @@ image: /assets/images/twittercard.jpg
       </header>
 
       <!-- CONFERENCES -->
-      <section class="yellow-section">
+      <section class="darkgrey-section">
         <div class="wrapper text-center">
-          {% assign conferences = site.talks | where: "type","conference" | sort: "display-order" %}
+          {% assign conferences = site.talks | sort: "display-order" %}
           {% assign number_of_conferences = conferences | size | minus: 1 %}
           <h3 class="conf-title regular-title-size uppercase">{{ number_of_conferences }} conférences</h3>
           <p>Une sélection unique et variée qui devrait vous parler.</p>
-
-          <div class="grid-2">
-
-            {% include speakers.html %}
-            <!-- <a class="pres-link" href="#">
-              <span>Le programme complet<br> c'est par ici</span>
-            </a> -->
-          </div>
-        </div>
-      </section>
-
-      <!-- LIGHTNING TALKS -->
-      <section class="darkgrey-section">
-        <div class="wrapper text-center">
-          {% assign conferences = site.talks | where:"type","lt" | sort: "display-order" %}
-          {% assign number_of_lt = conferences | size %}
-          <h3 class="conf-title regular-title-size uppercase">{{ number_of_lt }} lightning talks</h3>
-          <p>Des conférences de 5 minutes pour donner du rythme.</p>
 
           <div class="grid-2">
             {% include speakers.html %}
