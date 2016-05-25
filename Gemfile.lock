@@ -18,7 +18,7 @@ GEM
     faraday (0.9.2)
       multipart-post (>= 1.2, < 3)
     ffi (1.9.10)
-    foreman (0.81.0)
+    foreman (0.82.0)
       thor (~> 0.19.1)
     html-proofer (3.0.6)
       activesupport (~> 4.2)
@@ -106,4 +106,4 @@ DEPENDENCIES
   rake (~> 11.0.0)
 
 BUNDLED WITH
-   1.11.2
+   1.12.4
