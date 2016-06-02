@@ -4,18 +4,7 @@
 
 .cta-zone-1 {
 	position: relative;
-	background: center / cover no-repeat url(../images/2016/bordeaux01.jpg);
-	@media (min-width: $media-break-point) {
-		background-attachment: fixed;
-	}
-	&::before {
-		position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: 0;
-		background: rgba(white, .85);
-		content: '';
-	}
-	& > * {
-		position: relative; z-index: 1;
-	}
+	
 	.cta-title {
 		font-size: $small-title-size;
 	}
