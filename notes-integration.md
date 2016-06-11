@@ -109,17 +109,13 @@ Le dimensionnement de ces colonnes étant défini par `flex-grow` et `flex-shrin
 
 ## La gestion responsive
 
-Puisque la grille est gérée par flexbox, une grande partie est déjà géree. Cependant, la taille de la police peut sembler très grande sur mobile.
+Puisque la grille est gérée par `flexbox`, une grande partie est déjà géree. Cependant, la taille de la police peut sembler très grande sur mobile.
 
 J'ai hésité à utilisé l'unité `wv` pour la taille de police&hellip; mais non. J'ai donc tout mis en `em`, je profite donc d'un héritage jusqu'au root `<html>`. C'est sur celui-ci que je diminue ou augmente la `font-size` en fonction de la largeur du média.
 
 ## L'auto prefixage
 
-Malheureusement, puisque le site est hébergé sur GitHub, le plugin Autoprefixer de Jekyll est apparemment bloqué (d'après @DirtyF).
-
-Le plus gros problème que cela implique vient de l'utilisation de flexbox, notamment pour la grille, qui est pourtant [bien supporté](http://caniuse.com/flexbox). L'[issue #51](https://github.com/sudweb/2016/issues/51) montre qu'encore une fois c'est Safari qui fait ch\*\*\*.
-
-Donc pas le choix, j'ai du prefixer à la main via mixins. Merci d'ailleurs à @mastastealth pour [son aide](https://github.com/mastastealth/sass-flex-mixin/blob/master/_flexbox.scss). J'ai tout de même laisser les écritures valides en commentaires juste à côté de chaque include pour simplifier la future évolution.
+Il est géré par le plugin [octopress-autoprefixer](https://github.com/octopress/autoprefixer) pour Jekyll.
 
 ## L'animation du header
 

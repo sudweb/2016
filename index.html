@@ -64,7 +64,7 @@ image: /assets/images/twittercard.jpg
       <section class="darkgrey-section">
         <div class="wrapper text-center">
           {% assign conferences = site.talks | sort: "display-order" %}
-          {% assign number_of_conferences = conferences | size | minus: 1 %}
+          {% assign number_of_conferences = conferences | size %}
           <h3 class="conf-title regular-title-size uppercase">{{ number_of_conferences }} conférences</h3>
           <p>Une sélection unique et variée qui devrait vous parler.</p>
 

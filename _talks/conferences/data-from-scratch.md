@@ -1,10 +1,10 @@
 ---
-title: S'adonner à la donnée
+title:
 description: >-
-  Petite ou grande, tout·e seul·e ou à plusieurs, on en manipule de la *data*.
+  Nous produisons de plus en plus de données et c'est tout un art de les faire parler. Plutôt que de se réfugier derrière des termes marketing insignifiants comme _big data_, Gaëlle préfère parler de _cute data_.
 
 
-  Pour que l'information circule entre les machines, encore faut-il qu'elle circule entre les individus.
+  Faire circuler l'information entre des machines est une chose, s'assurer de communiquer entre individus afin de construire une histoire à partir deS données en est une autre.
 speaker:
   - gaelle
 type: conference

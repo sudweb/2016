@@ -10,4 +10,5 @@ type: lt
 symbol: educ
 date: 2016-05-27 13:50:00 +0100
 display-order: 12
+video: https://vimeo.com/sudweb/apprendre-a-coder-a-change-ma-vie
 ---

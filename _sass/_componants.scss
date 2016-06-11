@@ -81,8 +81,6 @@
 	background-image: url(../images/2016/public.jpg);
 }
 
-
-
 .pres-item {
 	padding: 2em;
 	border-radius: .5em;
@@ -98,12 +96,36 @@
 			fill: $white;
 		}
 	}
+
 	.pres-title {
 		margin: 0;
 	}
 	.pres-desc p {
 		font-size: $small-font-size;
 	}
+
+	.pres-medias {
+    display: flex;
+		font-size: 1.2em
+  }
+
+	.pres-medias-link {
+    background: $white;
+
+    svg {
+      fill: $orange;
+      height: 2em;
+      width: 2em;
+    }
+
+		a {
+      font-weight: bold;
+			padding-left: .2em;
+			display: inline-block;
+			margin-right: 2em;
+    }
+  }
+
 	.pres-author {
 		margin-top: 1em;
 	}
