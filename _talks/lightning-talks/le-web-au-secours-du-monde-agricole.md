@@ -8,4 +8,6 @@ type: lt
 symbol: expe
 date: 2016-05-27 13:40:00 +0100
 display-order: 10
+video: https://vimeo.com/sudweb/le-web-au-secours-du-monde-agricole
+slides: /2016/assets/slides/web-monde-agricole-marion-lambert.pdf
 ---

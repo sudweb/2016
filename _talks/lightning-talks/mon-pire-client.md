@@ -8,4 +8,6 @@ type: lt
 symbol: expe
 date: 2016-05-27 08:45:00 +0100
 display-order: 2
+video: https://vimeo.com/sudweb/mon-pire-client-a-5-ans-boris-schapira
+slides: https://docs.google.com/presentation/d/1149eZRrbqR3s6PTtImE9RnEaIUupRAVTgq1MeXfunlM/edit?usp=sharing
 ---

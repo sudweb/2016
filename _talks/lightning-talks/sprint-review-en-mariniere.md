@@ -11,4 +11,5 @@ type: lt
 symbol: well
 date: 2016-05-27 14:30:00 +0100
 display-order: 14
+slides: /2016/assets/slides/sprint-review-alexandre-pronine.pdf
 ---
