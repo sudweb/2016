@@ -12,5 +12,6 @@ symbol: crea
 date: 2016-05-27 10:00:00 +0100
 lang: fr
 display-order: 6
+video: https://vimeo.com/171224574
 slides: /2016/assets/slides/data-mangez-en-gaelle-periat.pdf
 ---
