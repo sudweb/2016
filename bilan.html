@@ -1,0 +1,65 @@
+---
+layout: default
+title: Bilan
+description: Petit retour sur les précedentes éditions
+image: /assets/
+permalink: /bilan/
+---
+
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/pykcharts.1.1.0.min.css?v={{ site.github.build_revision }}">
+
+<header class="page-header">
+	<div class="wrapper">
+		<div class="content">
+			<h1 class="title">Bilan 2016 !</h1>
+			<p class="sstitle">Une petite dataviz pour savoir ce que disent les chiffres ?</p>
+		</div>
+	</div>
+</header>
+
+<main>
+
+	<article>
+		<header class="white-section">
+			<div class="wrapper text-center">
+				<h2 class="great-title-size red uppercase">Fréquentation</h2>
+        <div id="pieContainer"></div>
+			</div>
+		</header>
+
+		<section class="white-section">
+			<div class="wrapper text-center">
+				<h3 class="regular-title-size uppercase">Comment venir ?</h3>
+				<div class="grid-2 text-center">
+					<section>
+
+					</section>
+					<section>
+
+					</section>
+				</div>
+			</div>
+		</section>
+
+	</article>
+
+
+</main>
+
+<script>
+  window.PykChartsInit = function (e) {
+    var k = new PykCharts.multiD.column({
+        credit_my_site_url: "http://www.sudweb.fr/",
+        selector: "#pieContainer",
+        data: "{{ site.baseurl }}/sources/csv/bar.csv",
+        units_prefix: "$ ",
+        units_suffix: " /-",
+        mode: "Default",
+        shade_color: "firebrick",
+        label_size: 16,
+    });
+    k.execute();
+    console.log(k)
+}
+</script>
+<script src="{{ site.baseurl }}/assets/js/pykcharts.1.1.0.js"></script>
