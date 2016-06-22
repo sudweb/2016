@@ -1,2 +1,7 @@
-2011,2012,2013,2014,2015,2016
-21,15,17,13,23,27
+x,y,group,tooltip
+2011,21,ratiofemme,<table class='PykCharts'><tr><td>21%</td></tr></table>
+2012,17,ratiofemme,<table class='PykCharts'><tr><td>17%</td></tr></table>
+2013,12,ratiofemme,<table class='PykCharts'><tr><td>12%</td></tr></table>
+2014,15,ratiofemme,<table class='PykCharts'><tr><td>15%</td></tr></table>
+2015,21,ratiofemme,<table class='PykCharts'><tr><td>21%</td></tr></table>
+2016,27,ratiofemme,<table class='PykCharts'><tr><td>27%</td></tr></table>
