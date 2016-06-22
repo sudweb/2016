@@ -7,6 +7,12 @@ permalink: /bilan/
 ---
 
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/pykcharts.1.1.0.min.css?v={{ site.github.build_revision }}">
+<style>
+  .main-div {
+    margin: 0 auto;
+    max-width: 100%;
+  }
+</style>
 
 <header class="page-header">
 	<div class="wrapper">
@@ -20,22 +26,35 @@ permalink: /bilan/
 <main>
 
 	<article>
-		<header class="white-section">
-			<div class="wrapper text-center">
-				<h2 class="great-title-size red uppercase">Fréquentation</h2>
-        <div id="pieContainer"></div>
-			</div>
-		</header>
+
+    <section class="white-section">
+      <div class="wrapper text-center">
+        <h2 class="great-title-size red uppercase">Répartition</h2>
+        <div id="bilan-retour"></div>
+        <div id="bilan-fidelite"></div>
+        <div id="bilan-sexe"></div>
+      </div>
+    </section>
 
 		<section class="white-section">
 			<div class="wrapper text-center">
-				<h3 class="regular-title-size uppercase">Comment venir ?</h3>
+        <h2 class="great-title-size red uppercase">Fréquentation</h2>
+        <div class="grid-2 text-center">
+          <h3 class="regular-title-size uppercase">Villes</h3>
+          <section>
+            <div id="bilan-ville-2016"></div>
+          </section>
+          <section>
+            <div id="bilan-ville"></div>
+          </section>
+        </div>
+        <h3 class="regular-title-size uppercase">Départements</h3>
 				<div class="grid-2 text-center">
 					<section>
-
+            <div id="bilan-departement-2016"></div>
 					</section>
 					<section>
-
+            <div id="bilan-departement"></div>
 					</section>
 				</div>
 			</div>
@@ -48,18 +67,84 @@ permalink: /bilan/
 
 <script>
   window.PykChartsInit = function (e) {
-    var k = new PykCharts.multiD.column({
+
+    var retour = new PykCharts.multiD.column({
+        title_text: 'Retour d‘une édition à la suivante',
+        credit_my_site_name: 'Sud-Web',
         credit_my_site_url: "http://www.sudweb.fr/",
-        selector: "#pieContainer",
-        data: "{{ site.baseurl }}/sources/csv/bar.csv",
-        units_prefix: "$ ",
-        units_suffix: " /-",
-        mode: "Default",
-        shade_color: "firebrick",
-        label_size: 16,
+        selector: "#bilan-retour",
+        data: "{{ site.baseurl }}/sources/csv/bilan-retour.csv",
+        chart_width: 800,
+        chart_color: ["#e84538"],
     });
-    k.execute();
-    console.log(k)
+    retour.execute();
+
+    var fidelite = new PykCharts.multiD.column({
+        title_text: 'Pourcentage de participants étant déjà venus 2 fois ou plus',
+        credit_my_site_name: 'Sud-Web',
+        credit_my_site_url: "http://www.sudweb.fr/",
+        selector: "#bilan-fidelite",
+        data: "{{ site.baseurl }}/sources/csv/bilan-fidelite.csv",
+        chart_width: 800,
+        chart_color: ["#e84538"],
+    });
+    fidelite.execute();
+
+    var sexe = new PykCharts.multiD.column({
+        title_text: 'Pourcentage de femmes par édition',
+        credit_my_site_name: 'Sud-Web',
+        credit_my_site_url: "http://www.sudweb.fr/",
+        selector: "#bilan-sexe",
+        data: "{{ site.baseurl }}/sources/csv/bilan-sexe.csv",
+        units_suffix: " %",
+        chart_width: 800,
+        chart_color: ["#e84538"],
+    });
+    sexe.execute();
+
+    var departement = new PykCharts.multiD.column({
+        title_text: 'Provenance par départements depuis 2011',
+        credit_my_site_name: 'Sud-Web',
+        credit_my_site_url: "http://www.sudweb.fr/",
+        selector: "#bilan-departement",
+        data: "{{ site.baseurl }}/sources/csv/bilan-departement.csv",
+        chart_width: 800,
+        chart_color: ["#e84538"],
+    });
+    departement.execute();
+
+    var departement2016 = new PykCharts.multiD.column({
+        title_text: 'Provenance par départements 2016',
+        credit_my_site_name: 'Sud-Web',
+        credit_my_site_url: "http://www.sudweb.fr/",
+        selector: "#bilan-departement-2016",
+        data: "{{ site.baseurl }}/sources/csv/bilan-departement-2016.csv",
+        chart_width: 800,
+        chart_color: ["#e84538"],
+    });
+    departement2016.execute();
+
+    var ville = new PykCharts.multiD.column({
+        title_text: 'Provenance par villes depuis 2011',
+        credit_my_site_name: 'Sud-Web',
+        credit_my_site_url: "http://www.sudweb.fr/",
+        selector: "#bilan-ville",
+        data: "{{ site.baseurl }}/sources/csv/bilan-ville.csv",
+        chart_width: 800,
+        chart_color: ["#e84538"],
+    });
+    ville.execute();
+
+    var ville2016 = new PykCharts.multiD.column({
+        title_text: 'Provenance par villes 2016',
+        credit_my_site_name: 'Sud-Web',
+        credit_my_site_url: "http://www.sudweb.fr/",
+        selector: "#bilan-ville-2016",
+        data: "{{ site.baseurl }}/sources/csv/bilan-ville-2016.csv",
+        chart_width: 800,
+        chart_color: ["#e84538"],
+    });
+    ville2016.execute();
 }
 </script>
 <script src="{{ site.baseurl }}/assets/js/pykcharts.1.1.0.js"></script>
