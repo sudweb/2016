@@ -1,12 +1,12 @@
 ---
-title: Être étudiant·e en 2016
+title: Étudier… et après ?
 description: >-
-  Qu'est ce que je veux faire ? Pourquoi ? Quelles sont mes priorités ?
-  Je dois faire des choix et construire un projet pro qui influenceront tout le reste de ma vie&nbsp;: c'est quoi le mieux, faire une thèse sur un thème qui me passionne, faire de la gestion de projet dans une grande boîte, bosser dans un super cadre dans une startup… ?
+  Roxane partage ses interrogations du haut de ses 22 ans. Dans un an elle devra entrer dans la vie active. Comment continuer à concilier projets perso et projets pro ? Comment garder le temps pour se constuire une identité riche ? Quelles solutions pour rester fidèle à ses valeurs ?
 speaker:
   - roxane
 type: conference
 symbol: educ
 date: 2016-05-27 10:40:00 +0100
 display-order: 8
+video: https://vimeo.com/172225264
 ---
