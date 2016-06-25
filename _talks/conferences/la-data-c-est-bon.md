@@ -13,4 +13,5 @@ date: 2016-05-27 10:00:00 +0100
 lang: fr
 display-order: 6
 slides: /2016/assets/slides/data-mangez-en-gaelle-periat.pdf
+video: https://vimeo.com/sudweb/la-data-c-est-bon-mangez-en-gaelle-periat
 ---
