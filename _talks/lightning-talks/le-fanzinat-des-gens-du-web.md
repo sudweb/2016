@@ -9,4 +9,5 @@ symbol: crea
 date: 2016-05-27 14:40:00 +0100
 display-order: 15
 slides: http://presentations.quaternum.net/le-fanzinat-des-gens-du-web/
+video: https://vimeo.com/172225269
 ---
