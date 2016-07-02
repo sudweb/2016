@@ -16,4 +16,5 @@ type: conference
 symbol: expe
 date: 2016-05-27 13:00:00 +0100
 display-order: 9
+video: https://vimeo.com/173140773
 ---
