@@ -1,0 +1,14 @@
+{
+  "lang": "fr-FR",
+  "background_color": "#ffffff",
+  "name": "Sud Web",
+  "short_name": "Sud Web",
+  "display": "browser",
+  "icons": [
+    {
+      "src": "/assets/images/favicons/android-chrome-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    }
+  ]
+}
