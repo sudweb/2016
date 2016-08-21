@@ -9,4 +9,5 @@ symbol: educ
 date: 2016-05-27 8:55:00 +0100
 display-order: 3
 slides: https://docs.google.com/presentation/d/12Vy5fJInWK4ESgLxT5vzOX1P1s3fOxxtxyv9uaPQGng/edit?usp=sharing
+video: https://vimeo.com/sudweb/les-valeurs-de-lego-thomas-gasc
 ---
