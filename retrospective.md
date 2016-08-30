@@ -2,14 +2,15 @@
 layout: page
 title: Rétrospective
 description: "Sud Web est une association de type 1901 à but non-lucratif."
+permalink: /retrospective/
 ---
+
+# Retours des participants
 
 Ceci est la rétrospective collaborative de Sud Web 2016. Elle a été rédigée par les participant·e·s de cette édition.
 Une manière anonyme de dire ce qui a fonctionné, moins bien fonctionné et pas du tout fonctionné.
 
-Après la règle des deux pieds, y'a la règle des deux mains : à ton clavier !
-
-# Une impression à chaud ?
+## Une impression à chaud ?
 
 - Toujours aussi chouette. Beaucoup d'échanges.
 - Un vrai bol d'air frais comme d'hab :)
@@ -25,7 +26,7 @@ Après la règle des deux pieds, y'a la règle des deux mains : à ton clavier !
 - Un énorme coup de coeur pour la journée du samedi et ses ateliers : je n'avais jamais vu une telle spontanéité dans une conférence web.
 - C'était géant.
 
-# Ce qu'on devrait continuer à faire ?
+## Ce qu'on devrait continuer à faire ?
 
 - sélectionner le traiteur +1 +1+1+1+1+1+1+1+1+1+1+1
 - Nous surprendre avec un programme qui ouvre l'esprit  +1 +1 +1 +1+1 +1+1+1+1+1+1+1+1
@@ -38,11 +39,11 @@ Après la règle des deux pieds, y'a la règle des deux mains : à ton clavier !
 - continuer à favoriser la mixité chez les speakers+1+1+1
 - continuer à favoriser les explosions créatives spontanées à travers des ateliers improvisés, ou pourquoi pas de petits hackathons sur des thèmes proposés !+1+1
 
-# Ce qu'on devrait améliorer ?
+## Ce qu'on devrait améliorer ?
 
 - allonger la durée de certains élaboratoires (mixer entre 1h, 1h30, 2h, …)+1 -1 (on s'arrange bien comme ça) +1 :)
 - z'avez songé à prévoir deux jours pour les Elaboratoires ? ça passe bcp trop vite.
-  - pourquoi ne pas avoir deux types de durées dans des tracks différentes ? une série avec des sessions de 45mn, une avec des sessions de 1h30, une avec des sessions de 1h. Au final, on se rejoint au bout de 3h. > avec le "1h" ça complique beaucoup le passage d'un track à l'autre, non ? -1
+- pourquoi ne pas avoir deux types de durées dans des tracks différentes ? une série avec des sessions de 45mn, une avec des sessions de 1h30, une avec des sessions de 1h. Au final, on se rejoint au bout de 3h. > avec le "1h" ça complique beaucoup le passage d'un track à l'autre, non ? -1
 - permettre aux nouvelles personnes et personnes timides de mieux participer à la journée du samedi (comment ?)+1+1+1
 - Créer un stickers « Je suis nouveau, je ne mords pas, promis, venez me rencontrer »+1+1+1+1+1+1
 - tenter d'autres formats de feedback [Des exemples/pistes ?]
@@ -54,32 +55,31 @@ Après la règle des deux pieds, y'a la règle des deux mains : à ton clavier !
 - Vous n'y êtes pour rien car c'est du off mais je vous livre mon idée et vous en ferez ce que vous voudrez : Etant parisienne, je pars toujours plutôt le dimanche pour garder un moment de plus dans le sud, à profiter des gens ...et du soleil. Le brunch informel et improvisé (et bien sûr tout à fait facultatif) est une des étapes de Sud Web pour moi. Si vous pouviez d'avance nous repérer / proposer un endroit, ça aiderait les retrouvailles, voilà, voilà (en fait, par ma faute à moi uniquement, je me suis loupée sur les retrouvailles informelles cette année et je repars déçue de ça. D'où ma suggestion.) --> on y pense souvent mais on a déjà beaucoup à penser, mais on peut solliciter les locaux pour avoir des idées par ex Je crois me souvenir que sur le site il y avait des idées de lieux à visiter dans Bordeaux.+1
 - La démarche Zéro-Waste du goodie de cette année est très bonne mais le cuir est une matière issue de l'exploitation industrielle des animaux, et ça casse un peu le truc +1 yep, c'est un peu paradoxal par rapport à la volonté de démarche éthique et écologique
 - la zone de pause était plus restreinte où on se sentait un peu entassé. La disposition qu'on avait à Montpellier était plus agréable et permettait mieux les échanges  +1+1
-- faciliter l'accès au café en multipliant les sources. Le café c'est la vie. Avec le gras. Et le fromage.Et  le pinard (contrairement à l'eau bue qui explose) 
+- faciliter l'accès au café en multipliant les sources. Le café c'est la vie. Avec le gras. Et le fromage.Et  le pinard (contrairement à l'eau bue qui explose)
 - fournir un vestiaire. +1+1
 - Voir la lumière du jour ! notamment aux pauses le vendredi, sans être obligé de sortir ce qui scinde le groupe en deux. +1+1+1
-- L'année dernière les échanges en fin de journée le vendredi avait été riches, ils ont été un peu zappé cette année. 
+- L'année dernière les échanges en fin de journée le vendredi avait été riches, ils ont été un peu zappé cette année.
 - mettre les billets en vente un peu plus tôt : ça permet de réserver le train avant qu'il ne soit trop cher
 - l'idée de la curation des sujets est bien, ça offre une journée homogène. Le seul souci, c'est qu'on ne connait pas le thème avant qu'il ne soit annoncé et que tout soit fait.  :( Du coup, impossible de suggérer quelqu'un. Pas qu'on ait tous un carnet d'adresses monstrueux, mais sait-on jamais…
 - petit regret : le thème des super-héros n'a pas pu être vraiment abordé en fin de journée => dommage, même si cela ne gâche pas l'expérience
 - il y a eu beaucoup de références littéraires citées, si on pouvait trouver un moyen de centraliser le tout quelque part (autre que sur twitter)
 - Avez-vous déjà pensé à faire un "mentoring" pour les gens dont c'est la première édition ? Une team de gens prêts à accueillir, surtout pour la première journée, histoire de mettre en contact les gens, sans pour autant couper les échanges spontanés etc. Peut être par un système de "pairing" sur la page Participants du site ? Et sur la base du volontariat.
 
-
-# Ce qu'on ne devrait plus faire ?
+## Ce qu'on ne devrait plus faire ?
 
 - Organiser l'événement dans un cinéma [Pourquoi/pour quelles raisons ?] (-1 la salle était super !) -1
 Pas forcément lié au cinéma en général, mais l’acoustique du hall était pas très propice aux échanges. et j'ai trouvé qu'on etait assez sérrés.Et j'ai trouvé que ça manquait de lumière pour prendre des notes.
 - distribuer des goodies (je sais que tout le monde n'est pas d'accord) +10 ou pensez goodies utilisable et réutilisable (déja trés bonne idée de les mettres juste à dispo et pas de sitribuer à tout le monde)
 - Faire des blagues sur la mort. ou alors l'amener différemment. je n'ai pas été choqué outre mesure, mais d'autres ont pu l'être quand on a "annoncé" la mort de Pipo. (même sentiment, maladroit) (ressenti également) (pareil ici, j'ai mis quelques secondes à comprendre que ça faisait partie du jeu) +1
 
-# Que voudrais-tu *personnellement* faire pour contribuer à Sud Web ?
+## Que voudrais-tu *personnellement* faire pour contribuer à Sud Web ?
 
 - Réfléchir sérieusement à des sujets d'ateliers et/ou confs
 - Aider la Thym+1
 - Remplir ce feedback de façon pertinente :)
 - Continuer à dire aux gens que c'est bien pour le karma et le moral ;)+1+1+1
 
-# Un·e oratrice ou orateur à suggérer pour Sud Web 2017 ?
+## Un·e oratrice ou orateur à suggérer pour Sud Web 2017 ?
 
 - Antoinette Rouvroy => droit des données - La gouvernementalité algorithmique
 - Thierry Crouzet  => l'édition pour les auteurs de romans numériques
@@ -98,35 +98,31 @@ Pas forcément lié au cinéma en général, mais l’acoustique du hall était 
 - danah boyd : analyse permanente des rapports entre les réseaux sociaux et les individus, construction de l'image sociale différenciée selon le média, etc. +1(ouh oui)+1!
 - Monika Zamojska de London Bike Kitchen — Do It Yourself en réparation et montage de vélos (http://www.lbk.org.uk/)
 
-
-# Autres remarques ?
+## Autres remarques ?
 
 - J'ai aussi oublié de féliciter Enza pour "L'incroyable Hug" ! Trop mignon, merci ! +1 ! --> Dites-lui en tweet (@zizae)
 - Bravo et merci !! <3 +1000
 - Cannelément vôtre :)
 
-# Vos feedbacks en billets de blog
+## Billets de blog
 
-- https://correspondances-unilaterales.tumblr.com/post/145100336766/%C3%A9crire-sous-%C3%A9motion-1443-29052016
-- https://larlet.fr/david/blog/2016/sudweb-2016/
-- https://blog.notmyidea.org/cloisonnement-des-activites.html
-- http://maxlab.fr/2016/05/sudweb-2016-valeur-travail-chocolatines/
-- http://blog.clever-age.com/fr/2016/05/30/sud-web-2016-bordeaux/
-- http://jolicode.com/blog/sud-web-2016-bordeaux-un-excellent-millesime
-- http://lunatopia.fr/blog/premier-sud-web-retour-experience
-- http://marieguillaumet.com/sud-web-2016-en-un-mot-genial/
-- http://www.ekino.com/sud-web-2016-bordeaux/
-- http://www.ekino.com/zero-gachis-plein-de-questions/
-- http://www.ekino.com/sud-web-jai-decouvert-super-pouvoirs/
-- https://blog.ticabri.com/2016/06/02/sudweb-2016/
-- https://nota-bene.org/Sud-Web-2016-toujours-inattendu-toujours-satisfaisant
-- http://www.nomaditude.fr/bienveillance-partage-bienvenue-a-sud-web/
-- http://blog.pelmel.org/2016/06/01/sudweb-la-conference-qui-fait-du-bien/
-- http://www.nicolas-hoffmann.net/source/1694-Retour-sur-Sud-Web-2016-a-Bordeaux.html
-- https://www.yaal.fr/blog/sud-web-2016-retour-sur-ledition-bordelaise
-- https://davidbruant.github.io/writings/2016/06/20/trombone.html
-- https://blog.basilesimon.fr/2016/05/30/sudweb/
-- https://medium.com/@noeems/you-should-quit-move-and-become-a-freelancer-b04e420f9a5b#.vvikbf1du
-
-
-
+- [https://correspondances-unilaterales.tumblr.com/post/145100336766/%C3%A9crire-sous-%C3%A9motion-1443-29052016](https://correspondances-unilaterales.tumblr.com/post/145100336766/%C3%A9crire-sous-%C3%A9motion-1443-29052016)
+- [https://larlet.fr/david/blog/2016/sudweb-2016/](https://larlet.fr/david/blog/2016/sudweb-2016/)
+- [https://blog.notmyidea.org/cloisonnement-des-activites.html](https://blog.notmyidea.org/cloisonnement-des-activites.html)
+- [http://maxlab.fr/2016/05/sudweb-2016-valeur-travail-chocolatines/](http://maxlab.fr/2016/05/sudweb-2016-valeur-travail-chocolatines/)
+- [http://blog.clever-age.com/fr/2016/05/30/sud-web-2016-bordeaux/](http://blog.clever-age.com/fr/2016/05/30/sud-web-2016-bordeaux/)
+- [http://jolicode.com/blog/sud-web-2016-bordeaux-un-excellent-millesime](http://jolicode.com/blog/sud-web-2016-bordeaux-un-excellent-millesime)
+- [http://lunatopia.fr/blog/premier-sud-web-retour-experience](http://lunatopia.fr/blog/premier-sud-web-retour-experience)
+- [http://marieguillaumet.com/sud-web-2016-en-un-mot-genial/](http://marieguillaumet.com/sud-web-2016-en-un-mot-genial/)
+- [http://www.ekino.com/sud-web-2016-bordeaux/](http://www.ekino.com/sud-web-2016-bordeaux/)
+- [http://www.ekino.com/zero-gachis-plein-de-questions/](http://www.ekino.com/zero-gachis-plein-de-questions/)
+- [http://www.ekino.com/sud-web-jai-decouvert-super-pouvoirs/](http://www.ekino.com/sud-web-jai-decouvert-super-pouvoirs/)
+- [https://blog.ticabri.com/2016/06/02/sudweb-2016/](https://blog.ticabri.com/2016/06/02/sudweb-2016/)
+- [https://nota-bene.org/Sud-Web-2016-toujours-inattendu-toujours-satisfaisant](https://nota-bene.org/Sud-Web-2016-toujours-inattendu-toujours-satisfaisant)
+- [http://www.nomaditude.fr/bienveillance-partage-bienvenue-a-sud-web/](http://www.nomaditude.fr/bienveillance-partage-bienvenue-a-sud-web/)
+- [http://blog.pelmel.org/2016/06/01/sudweb-la-conference-qui-fait-du-bien/](http://blog.pelmel.org/2016/06/01/sudweb-la-conference-qui-fait-du-bien/)
+- [http://www.nicolas-hoffmann.net/source/1694-Retour-sur-Sud-Web-2016-a-Bordeaux.html](http://www.nicolas-hoffmann.net/source/1694-Retour-sur-Sud-Web-2016-a-Bordeaux.html)
+- [https://www.yaal.fr/blog/sud-web-2016-retour-sur-ledition-bordelaise](https://www.yaal.fr/blog/sud-web-2016-retour-sur-ledition-bordelaise)
+- [https://davidbruant.github.io/writings/2016/06/20/trombone.html](https://davidbruant.github.io/writings/2016/06/20/trombone.html)
+- [https://blog.basilesimon.fr/2016/05/30/sudweb/](https://blog.basilesimon.fr/2016/05/30/sudweb/)
+- [https://medium.com/@noeems/you-should-quit-move-and-become-a-freelancer-b04e420f9a5b#.vvikbf1du](https://medium.com/@noeems/you-should-quit-move-and-become-a-freelancer-b04e420f9a5b#.vvikbf1du)
