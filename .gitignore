@@ -30,9 +30,8 @@ node_modules
 _site/
 .sass-cache/
 .jekyll-metadata
+Gemfile.lock
+_data/attendees.json
 
 # node-waf configuration
 .DS_Store
-
-Gemfile.lock
-_data/attendees.json
