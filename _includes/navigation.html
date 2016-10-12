@@ -1,21 +1,21 @@
 <nav class="main-nav">
   <div class="wrapper">
-    <a class="logo" href="{{ site.baseurl }}/" title="Accueil" data-event-category="cta" data-event-action="click" data-event-label="navigation-logo">
+    <a class="logo" href="{{ "/" | relative_url }}" title="Accueil" data-event-category="cta" data-event-action="click" data-event-label="navigation-logo">
       <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="sw-logo redbg" viewBox="0 0 500 276.37">
         <title>Sud Web</title>
-        <use id="sw-hands" xlink:href="{{site.baseurl}}/assets/images/symbol-defs.svg#sw-hands" />
-        <use id="sw-hands-shadows" xlink:href="{{site.baseurl}}/assets/images/symbol-defs.svg#sw-hands-shadows" />
-        <use id="sw-heart" xlink:href="{{site.baseurl}}/assets/images/symbol-defs.svg#sw-heart" />
-        <use id="sw-heart-top" xlink:href="{{site.baseurl}}/assets/images/symbol-defs.svg#sw-heart-top" />
-        <use id="sw-wave-shadow" xlink:href="{{site.baseurl}}/assets/images/symbol-defs.svg#sw-wave-shadow" />
-        <use id="sw-wave" xlink:href="{{site.baseurl}}/assets/images/symbol-defs.svg#sw-wave" />
+        <use id="sw-hands" xlink:href="{{ "/assets/images/symbol-defs.svg#sw-hands" | relative_url }}" />
+        <use id="sw-hands-shadows" xlink:href="{{ "/assets/images/symbol-defs.svg#sw-hands-shadows" | relative_url }}" />
+        <use id="sw-heart" xlink:href="{{ "/assets/images/symbol-defs.svg#sw-heart" | relative_url }}" />
+        <use id="sw-heart-top" xlink:href="{{ "/assets/images/symbol-defs.svg#sw-heart-top" | relative_url }}" />
+        <use id="sw-wave-shadow" xlink:href="{{ "/assets/images/symbol-defs.svg#sw-wave-shadow" | relative_url }}" />
+        <use id="sw-wave" xlink:href="{{ "/assets/images/symbol-defs.svg#sw-wave" | relative_url }}" />
       </svg>
     </a>
     {% for link in site.data.navigation.primary %}
     {% if page.url == link.url %}
     <span class="nav is--active">{{ link.name }}</span>
     {% else %}
-    <a  class="nav" href="{{ site.baseurl }}{{ link.url }}" title="{{ link.title }}" data-event-category="cta" data-event-action="click" data-event-label="navigation-{{ link.name }}" >{{ link.name }}</a>
+    <a  class="nav" href="{{ link.url | relative_url }}" title="{{ link.title }}" data-event-category="cta" data-event-action="click" data-event-label="navigation-{{ link.name }}" >{{ link.name }}</a>
     {% endif %}
     {% endfor %}
   </div>

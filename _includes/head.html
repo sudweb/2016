@@ -6,8 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         {% seo %}
         <meta name="google-site-verification" content="d4ACEsgZ4SRtmiaMYlTAmL9bRKoVn7EMphY8QUaI9iU" />
-        <link href="{{ site.baseurl }}/assets/favicons/favicon.ico" rel="shortcut icon" type="image/x-icon">
-        <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/screen.css?v={{ site.github.build_revision }}">
+        <link href="{{ "/assets/favicons/favicon.ico" | relative_url }}" rel="shortcut icon" type="image/x-icon">
+        <link rel="stylesheet" href="{{ "/assets/css/screen.css" | relative_url }}">
         {% include favicons.html %}
         {% include analytics.html %}
     </head>

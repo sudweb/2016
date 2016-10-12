@@ -36,9 +36,9 @@ published: false
   				{% if attendee.twitter %}
   				<img src="https://twitter.com/{{ attendee.twitter }}/profile_image?size=bigger" alt="Super Avatar">
   				{% elsif attendee.title == 'Mme' %}
-  				<img src="https://secure.gravatar.com/avatar/{{ attendee.email | md5 }}?d={{ super-woman | prepend: site.baseurl | prepend: site.url | cgi_escape }}" alt="Superwoman">
+  				<img src="https://secure.gravatar.com/avatar/{{ attendee.email | md5 }}?d={{ super-woman | absolute_url | cgi_escape }}" alt="Superwoman">
   				{% else %}
-  				<img src="https://secure.gravatar.com/avatar/{{ attendee.email | md5 }}?d={{ default-avatar | prepend: site.baseurl | prepend: site.url | cgi_escape }}" alt="Superman">
+  				<img src="https://secure.gravatar.com/avatar/{{ attendee.email | md5 }}?d={{ default-avatar | absolute_url | cgi_escape }}" alt="Superman">
   				{% endif %}
   			</figure>
   			{% assign name = attendee.name | | split:" " %}
