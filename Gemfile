@@ -14,10 +14,9 @@ end
 
 group :development do
   gem 'foreman'
-# gem 'jekyll-livereload'
 end
 
 group :test do
-  gem 'rake', '~> 11.0.0'
-  gem 'html-proofer', '~> 3.0.0'
+  gem 'rake', '~> 12.0'
+  gem 'html-proofer', '~> 3.4'
 end
